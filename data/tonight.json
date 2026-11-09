@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
  "model_used": "market_blend",
- "generated": "2026-11-09T13:54",
+ "generated": "2026-11-09T14:17",
  "margin_sd": 13.49,
  "total_sd": 18.3,
  "games": [
@@ -109,8 +109,8 @@
    "elo_away": 1331,
    "spread": -10.5,
    "total": 218.5,
-   "home_ml": -490.0,
-   "away_ml": 376.0,
+   "home_ml": -518.0,
+   "away_ml": 394.0,
    "pred_margin": 12.0,
    "pure_margin": 15.6,
    "pred_total": 220.3,
@@ -121,19 +121,12 @@
    "away_b2b": 0,
    "picks": [
     {
-     "market": "moneyline",
-     "side": "home",
-     "edge": 0.0221,
-     "odds": -490.0,
-     "fair": -562
-    },
-    {
      "market": "spread",
      "side": "home",
      "edge": 0.021
     }
    ],
-   "mkt_p_home_win": 0.7981
+   "mkt_p_home_win": 0.8055
   },
   {
    "id": "401909955",
@@ -154,8 +147,8 @@
    "elo_away": 1401,
    "spread": -2.5,
    "total": 228.5,
-   "home_ml": -142.0,
-   "away_ml": 120.0,
+   "home_ml": -147.0,
+   "away_ml": 124.0,
    "pred_margin": 1.9,
    "pure_margin": 6.5,
    "pred_total": 228.8,
@@ -165,7 +158,7 @@
    "home_b2b": 0,
    "away_b2b": 0,
    "picks": [],
-   "mkt_p_home_win": 0.5635
+   "mkt_p_home_win": 0.5714
   },
   {
    "id": "401909956",
@@ -185,15 +178,15 @@
    "elo_home": 1448,
    "elo_away": 1357,
    "spread": -3.5,
-   "total": 225.5,
+   "total": 226.5,
    "home_ml": -161.0,
    "away_ml": 136.0,
    "pred_margin": 4.7,
    "pure_margin": 7.0,
-   "pred_total": 227.0,
+   "pred_total": 228.1,
    "p_home_win": 0.6584,
    "p_home_cover": 0.5364,
-   "p_over": 0.5331,
+   "p_over": 0.5355,
    "home_b2b": 1,
    "away_b2b": 0,
    "picks": [
@@ -296,15 +289,15 @@
    "away_color": "0a2240",
    "elo_home": 1522,
    "elo_away": 1429,
-   "spread": -9.5,
+   "spread": -8.5,
    "total": 232.5,
    "home_ml": -382.0,
    "away_ml": 303.0,
-   "pred_margin": 12.5,
+   "pred_margin": 11.6,
    "pure_margin": 10.9,
    "pred_total": 234.2,
-   "p_home_win": 0.8576,
-   "p_home_cover": 0.5878,
+   "p_home_win": 0.8399,
+   "p_home_cover": 0.5895,
    "p_over": 0.5364,
    "home_b2b": 0,
    "away_b2b": 1,
@@ -312,14 +305,14 @@
     {
      "market": "moneyline",
      "side": "home",
-     "edge": 0.0821,
+     "edge": 0.0598,
      "odds": -382.0,
-     "fair": -602
+     "fair": -525
     },
     {
      "market": "spread",
      "side": "home",
-     "edge": 0.064
+     "edge": 0.0657
     }
    ],
    "mkt_p_home_win": 0.7616

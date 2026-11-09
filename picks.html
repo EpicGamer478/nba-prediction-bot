@@ -1,0 +1,180 @@
+<title>Tonight's NBA Picks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow column — budget bar, winners list, props list, summary. Quiet neutrals, one hardwood-orange accent. */
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --line: #e4e7ec; --fg: #0f1419; --muted: #6a7380; --faint: #eef0f3;
+  --accent: #d9541e; --accent-soft: #fbe9e1; --good: #128a5a;
+  --sans: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --mono: "Geist Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0b0d10; --surface: #13161b; --line: #232830; --fg: #eef1f5; --muted: #8b94a1; --faint: #1a1e25;
+  --accent: #ff7a3d; --accent-soft: #2c1910; --good: #3fcf8e; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0b0d10; --surface: #13161b; --line: #232830; --fg: #eef1f5; --muted: #8b94a1; --faint: #1a1e25;
+  --accent: #ff7a3d; --accent-soft: #2c1910; --good: #3fcf8e; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 15px; line-height: 1.45; -webkit-font-smoothing: antialiased }
+.page { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 36px }
+.top { display: flex; flex-direction: column; gap: 6px }
+.eyebrow { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase }
+h1 { margin: 0; font-size: 34px; font-weight: 700; letter-spacing: -.025em; text-wrap: balance }
+.budget { display: flex; align-items: center; gap: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 6px 6px 6px 16px }
+.budget label { color: var(--muted); font-size: 14px; white-space: nowrap }
+.budget .field { flex: 1; display: flex; align-items: center; gap: 2px; font-family: var(--mono); font-size: 22px; font-weight: 500; min-width: 0 }
+.budget input { border: 0; background: transparent; color: var(--fg); font: inherit; width: 100%; min-width: 0; padding: 8px 0 }
+.budget input:focus { outline: none }
+.budget:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft) }
+.chips { display: flex; gap: 4px }
+.chips button { appearance: none; border: 0; background: var(--faint); color: var(--fg); font: 500 13px var(--mono); padding: 8px 10px; border-radius: 9px; cursor: pointer }
+.chips button:hover { background: var(--accent-soft); color: var(--accent) }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+@media (max-width: 480px) { .chips button:nth-child(n+3) { display: none } h1 { font-size: 28px } }
+section { display: flex; flex-direction: column; gap: 10px }
+.sh { display: flex; justify-content: space-between; align-items: baseline; gap: 12px }
+h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted) }
+.sh .meta { font-size: 12px; color: var(--muted); font-family: var(--mono) }
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden }
+.row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 16px; border-top: 1px solid var(--line) }
+.row:first-child { border-top: 0 }
+.who { display: flex; align-items: center; gap: 12px; min-width: 0 }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none }
+.name { font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.sub { font-size: 13px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.txt { min-width: 0 }
+.right { display: flex; align-items: center; gap: 14px }
+.conf { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; min-width: 64px }
+.pct { font-family: var(--mono); font-weight: 600; font-variant-numeric: tabular-nums }
+.bar { width: 64px; height: 4px; background: var(--faint); border-radius: 2px; overflow: hidden }
+.bar i { display: block; height: 100%; background: var(--fg); border-radius: 2px }
+.stake { font-family: var(--mono); font-size: 13px; font-weight: 600; padding: 5px 9px; border-radius: 8px; min-width: 64px; text-align: center; font-variant-numeric: tabular-nums }
+.stake.on { background: var(--accent-soft); color: var(--accent) }
+.stake.off { color: var(--muted); background: var(--faint); font-weight: 500 }
+.side { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: .03em }
+.side.over { color: var(--good) } .side.under { color: var(--accent) }
+.summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden }
+.summary div { background: var(--surface); padding: 14px 16px }
+.summary .k { font-size: 12px; color: var(--muted) }
+.summary .v { font-family: var(--mono); font-size: 20px; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums }
+@media (max-width: 480px) { .summary { grid-template-columns: minmax(0, 1fr) } }
+.note { font-size: 13px; color: var(--muted); max-width: 62ch; margin: 0 }
+.note b { color: var(--fg); font-weight: 600 }
+.empty { padding: 20px 16px; color: var(--muted); font-size: 14px }
+.hidden-sm { }
+@media (max-width: 480px) { .hidden-sm { display: none } .right { gap: 10px } }
+</style>
+
+<script id="data" type="application/json">{"date":"2026-11-09","generated":"2026-11-09T14:17","kelly_fraction":0.25,"max_per_bet":0.15,"winners":[{"id":"401909952","tip":"2026-11-10T00:00Z","status":"11/9 - 7:00 PM EST","team":"Atlanta Hawks","abbr":"ATL","color":"c8102e","opp":"Los Angeles Lakers","opp_abbr":"LAL","at_home":true,"p_model":0.5894,"p":0.561539378238342,"odds":-125.0,"spread":-1.5,"pred_margin":2.7},{"id":"401909953","tip":"2026-11-10T00:00Z","status":"11/9 - 7:00 PM EST","team":"Cleveland Cavaliers","abbr":"CLE","color":"860038","opp":"Charlotte Hornets","opp_abbr":"CHA","at_home":false,"p_model":0.8121,"p":0.7762917008135874,"odds":-337.0,"spread":8.5,"pred_margin":-9.7},{"id":"401909954","tip":"2026-11-10T00:00Z","status":"11/9 - 7:00 PM EST","team":"Detroit Pistons","abbr":"DET","color":"1d428a","opp":"Washington Wizards","opp_abbr":"WSH","at_home":true,"p_model":0.8489,"p":0.8271859832794026,"odds":-518.0,"spread":-10.5,"pred_margin":12.0},{"id":"401909955","tip":"2026-11-10T00:30Z","status":"11/9 - 7:30 PM EST","team":"Toronto Raptors","abbr":"TOR","color":"d91244","opp":"Memphis Grizzlies","opp_abbr":"MEM","at_home":true,"p_model":0.5586,"p":0.5649944540848199,"odds":-147.0,"spread":-2.5,"pred_margin":1.9},{"id":"401909956","tip":"2026-11-10T01:00Z","status":"11/9 - 8:00 PM EST","team":"Dallas Mavericks","abbr":"DAL","color":"0064b1","opp":"Indiana Pacers","opp_abbr":"IND","at_home":true,"p_model":0.6584,"p":0.6255991512730903,"odds":-161.0,"spread":-3.5,"pred_margin":4.7},{"id":"401909957","tip":"2026-11-10T01:30Z","status":"11/9 - 8:30 PM EST","team":"Houston Rockets","abbr":"HOU","color":"ce0e2d","opp":"Denver Nuggets","opp_abbr":"DEN","at_home":true,"p_model":0.7897,"p":0.7670758034809835,"odds":-344.0,"spread":-8.5,"pred_margin":9.3},{"id":"401909958","tip":"2026-11-10T02:00Z","status":"11/9 - 9:00 PM EST","team":"San Antonio Spurs","abbr":"SA","color":"000000","opp":"Phoenix Suns","opp_abbr":"PHX","at_home":false,"p_model":0.8084,"p":0.7828707246853664,"odds":-372.0,"spread":8.5,"pred_margin":-9.5},{"id":"401909959","tip":"2026-11-10T03:00Z","status":"11/9 - 10:00 PM EST","team":"Golden State Warriors","abbr":"GS","color":"fdb927","opp":"New Orleans Pelicans","opp_abbr":"NO","at_home":true,"p_model":0.8399,"p":0.8007292387680192,"odds":-382.0,"spread":-8.5,"pred_margin":11.6}],"props":[{"name":"Oso Ighodaro","team":"PHX","side":"under","line":5.5,"odds":114.0,"proj":7.4,"p":0.4891},{"name":"Kevin Huerter","team":"DET","side":"under","line":7.5,"odds":102.0,"proj":9.6,"p":0.5077},{"name":"Marcus Smart","team":"HOU","side":"under","line":6.5,"odds":102.0,"proj":8.4,"p":0.5065},{"name":"Kyshawn George","team":"WSH","side":"under","line":14.5,"odds":-104.0,"proj":17.9,"p":0.5195},{"name":"Kelly Oubre Jr.","team":"IND","side":"under","line":7.5,"odds":-102.0,"proj":10.4,"p":0.5137}],"props_backtest":{"props":2077,"days":19,"picks":75,"hit_rate":0.52,"roi":0.04422774050897161,"units":3.3170805381728705,"brier_model":0.27213241102393204,"brier_market":0.24954099554542133},"game_backtest":{"games":522,"brier_model":0.1761,"brier_market":0.1732,"brier_elo":0.1853,"winner_acc_model":0.7261,"winner_acc_market":0.7318,"margin_mae_model":11.25,"margin_mae_market":11.1,"total_mae_model":14.71,"total_mae_market":14.32}}</script>
+
+<div class="page">
+  <div class="top">
+    <span class="eyebrow" id="when"></span>
+    <h1>Tonight's picks</h1>
+  </div>
+
+  <div class="budget">
+    <label for="budget">Budget</label>
+    <div class="field"><span>$</span><input id="budget" inputmode="decimal" placeholder="0" autocomplete="off"></div>
+    <div class="chips"><button data-v="50">50</button><button data-v="100">100</button><button data-v="250">250</button><button data-v="500">500</button></div>
+  </div>
+
+  <section>
+    <div class="sh"><h2>Winners</h2><span class="meta" id="w-meta"></span></div>
+    <div class="list" id="winners"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Top 5 points props</h2><span class="meta" id="p-meta"></span></div>
+    <div class="list" id="props"></div>
+  </section>
+
+  <section id="sum-wrap" hidden>
+    <div class="summary">
+      <div><div class="k">Total bet</div><div class="v" id="s-bet"></div></div>
+      <div><div class="k">Keep unbet</div><div class="v" id="s-keep"></div></div>
+      <div><div class="k">Expected profit</div><div class="v" id="s-ev"></div></div>
+    </div>
+  </section>
+
+  <p class="note" id="foot"></p>
+</div>
+
+<script>
+const D = JSON.parse(document.getElementById("data").textContent);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const payout = ml => ml > 0 ? ml / 100 : 100 / -ml;
+const fmtOdds = ml => (ml > 0 ? "+" : "") + Math.round(ml);
+const usd = v => "$" + v.toFixed(2);
+
+// Quarter-Kelly sizing, capped per bet, scaled so the total never exceeds the budget.
+function allocate(bets, budget) {
+  bets.forEach(b => {
+    if (b.p == null || b.odds == null) { b.frac = 0; return; }
+    const k = (payout(b.odds) * b.p - (1 - b.p)) / payout(b.odds);
+    b.frac = Math.min(D.kelly_fraction * Math.max(0, k), D.max_per_bet);
+  });
+  const total = bets.reduce((s, b) => s + b.frac, 0);
+  const scale = total > 1 ? 1 / total : 1;
+  bets.forEach(b => {
+    b.stake = Math.floor(budget * b.frac * scale * 100) / 100;
+    b.ev = b.p == null ? 0 : b.stake * (b.p * payout(b.odds) - (1 - b.p));
+  });
+}
+
+const wins = D.winners.slice().sort((a, b) => b.p_model - a.p_model);
+const props = D.props;
+
+function stakeChip(b, budget) {
+  if (!budget) return "";
+  return b.stake > 0 ? `<span class="stake on">${usd(b.stake)}</span>` : `<span class="stake off" title="No edge over the sportsbook price">skip</span>`;
+}
+
+function render() {
+  const budget = Math.max(0, parseFloat($("#budget").value) || 0);
+  allocate([...wins, ...props], budget);
+
+  $("#winners").innerHTML = wins.map(w => {
+    const t = w.tip ? new Date(w.tip).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
+    return `<div class="row">
+      <div class="who"><span class="dot" style="background:#${esc(w.color || "8a8f98")}"></span>
+        <div class="txt"><div class="name">${esc(w.team)}</div>
+        <div class="sub">${w.at_home ? "vs" : "at"} ${esc(w.opp)}${t ? " · " + t : ""}${w.odds != null ? " · " + fmtOdds(w.odds) : ""}</div></div></div>
+      <div class="right">
+        <div class="conf"><span class="pct">${Math.round(w.p_model * 100)}%</span><span class="bar"><i style="width:${(w.p_model * 100).toFixed(0)}%"></i></span></div>
+        ${stakeChip(w, budget)}
+      </div></div>`;
+  }).join("");
+
+  $("#props").innerHTML = props.length ? props.map(p => `<div class="row">
+      <div class="who"><div class="txt"><div class="name">${esc(p.name)}</div>
+        <div class="sub"><span class="side ${p.side}">${p.side.toUpperCase()} ${p.line}</span> · ${fmtOdds(p.odds)} · projects ${p.proj}<span class="hidden-sm"> · ${esc(p.team)}</span></div></div></div>
+      <div class="right">
+        <div class="conf"><span class="pct">${Math.round(p.p * 100)}%</span><span class="bar"><i style="width:${(p.p * 100).toFixed(0)}%"></i></span></div>
+        ${stakeChip(p, budget)}
+      </div></div>`).join("")
+    : `<div class="empty">Points props aren't posted yet. They usually appear by early afternoon.</div>`;
+
+  const all = [...wins, ...props];
+  const bet = all.reduce((s, b) => s + b.stake, 0), ev = all.reduce((s, b) => s + b.ev, 0);
+  $("#sum-wrap").hidden = !budget;
+  $("#s-bet").textContent = usd(bet);
+  $("#s-keep").textContent = usd(Math.max(0, budget - bet));
+  $("#s-ev").textContent = (ev >= 0 ? "+" : "−") + usd(Math.abs(ev));
+}
+
+const day = new Date(D.date + "T12:00:00");
+$("#when").textContent = day.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" }) + " · " + D.winners.length + " games";
+const gb = D.game_backtest, pb = D.props_backtest;
+$("#w-meta").textContent = gb ? `${(gb.winner_acc_model * 100).toFixed(0)}% right in backtest` : "";
+$("#p-meta").textContent = pb ? `${(pb.hit_rate * 100).toFixed(0)}% hit in backtest` : "";
+$("#foot").innerHTML = `Percentages are the model's chance each pick hits. With a budget entered, amounts use <b>quarter Kelly</b>: bigger stakes where the model sees more value, <b>skip</b> where it sees none, and never more than ${Math.round(D.max_per_bet * 100)}% on one bet. The backtest hasn't shown a reliable edge over sportsbook lines, so treat amounts as a guide. Lines as of ${esc(D.generated.replace("T", " "))}.`;
+
+$("#budget").addEventListener("input", () => { render(); try { localStorage.setItem("budget", $("#budget").value); } catch (e) {} });
+document.querySelectorAll(".chips button").forEach(b => b.addEventListener("click", () => { $("#budget").value = b.dataset.v; render(); try { localStorage.setItem("budget", b.dataset.v); } catch (e) {} }));
+try { const v = localStorage.getItem("budget"); if (v) $("#budget").value = v; } catch (e) {}
+render();
+</script>

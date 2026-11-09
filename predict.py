@@ -17,8 +17,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 BREAKEVEN = 110 / 210
 
 
-def main():
-    day = datetime.strptime(sys.argv[1], "%Y%m%d").date() if len(sys.argv) > 1 else date.today()
+def main(day=None):
+    day = day or date.today()
     ds = day.strftime("%Y%m%d")
     raw = fd.get_json(fd.SCOREBOARD.format(d=ds), f"sb_{ds}.json", use_cache=False)
     meta = {}
@@ -98,4 +98,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(datetime.strptime(sys.argv[1], "%Y%m%d").date() if len(sys.argv) > 1 else None)

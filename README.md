@@ -1,7 +1,7 @@
 # NBA prediction bot
 
-Predicts NBA moneylines, spreads and totals, backtests against historical closing lines, and renders a
-Polymarket-style paper-trading page (`markets.html`). Play money only.
+Predicts NBA moneylines, spreads and totals, backtests against historical closing lines, and renders a clean
+picks page (`picks.html`) with winners, top 5 points props and a budget splitter (quarter Kelly).
 
 ## How it works
 
@@ -16,7 +16,7 @@ Polymarket-style paper-trading page (`markets.html`). Play money only.
 - **Backtest** (`backtest.py`): walk-forward. Each month is predicted by a model trained only on earlier
   games, then bet with flat 1-unit stakes at the closing line (spreads and totals at -110). The version with
   the most accurate win probabilities (lowest Brier score) is used for tonight's prices.
-- **Daily** (`daily.sh`): fetch new results, grade yesterday's picks, re-run the backtest, retrain, price
+- **Props** (`props.py`): points projections from box scores, blended with DraftKings prices; top 5 by expected value.
   tonight's slate, rebuild the page.
 
 ## Run

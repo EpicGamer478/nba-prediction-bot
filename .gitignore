@@ -1,4 +1,4 @@
 data/cache/
-data/fetch.log
+data/*.log
 __pycache__/
 .DS_Store
