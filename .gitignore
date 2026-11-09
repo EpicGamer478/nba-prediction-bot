@@ -1,0 +1,4 @@
+data/cache/
+data/fetch.log
+__pycache__/
+.DS_Store
