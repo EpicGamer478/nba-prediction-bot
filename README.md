@@ -23,8 +23,8 @@ picks page (`picks.html`) with winners, top 5 points props and a budget splitter
 
 ```bash
 pip install pandas numpy scikit-learn scipy certifi
-./daily.sh
-open markets.html
+./daily.sh 100      # optional: split a $100 budget
+open picks.html
 ```
 
 ## Caveats
