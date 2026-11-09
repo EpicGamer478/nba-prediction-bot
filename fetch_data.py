@@ -131,8 +131,18 @@ def main():
             rows.append(r)
             if i % 1000 == 0:
                 print(f"  odds {i}/{len(games)}", flush=True)
-    df = pd.DataFrame(rows).drop_duplicates("id").sort_values(["date", "id"])
-    df.to_csv(os.path.join(HERE, "data", "games.csv"), index=False)
+    if not rows:
+        print("No games found for those seasons; games.csv left unchanged.")
+        return
+    df = pd.DataFrame(rows)
+    out_path = os.path.join(HERE, "data", "games.csv")
+    if sys.argv[1:] and os.path.exists(out_path):
+        # Refreshing only some seasons: keep every other season already saved.
+        old = pd.read_csv(out_path, dtype={"id": str})
+        df["id"] = df["id"].astype(str)
+        df = pd.concat([old[~old.id.isin(df.id)], df])
+    df = df.drop_duplicates("id", keep="last").sort_values(["date", "id"])
+    df.to_csv(out_path, index=False)
     fin = df[df.completed]
     print(f"Saved {len(df)} games ({len(fin)} finished). With spread: {fin.spread.notna().sum()}, "
           f"total: {fin.total.notna().sum()}, moneyline: {fin.home_ml.notna().sum()}")

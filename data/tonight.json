@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
  "model_used": "market_blend",
- "generated": "2026-11-09T14:17",
+ "generated": "2026-11-09T15:08",
  "margin_sd": 13.49,
  "total_sd": 18.3,
  "games": [
@@ -24,8 +24,8 @@
    "elo_away": 1608,
    "spread": -1.5,
    "total": 236.5,
-   "home_ml": -125.0,
-   "away_ml": 106.0,
+   "home_ml": -120.0,
+   "away_ml": 102.0,
    "pred_margin": 2.7,
    "pure_margin": 1.7,
    "pred_total": 238.8,
@@ -38,8 +38,8 @@
     {
      "market": "moneyline",
      "side": "home",
-     "edge": 0.0609,
-     "odds": -125.0,
+     "edge": 0.0806,
+     "odds": -120.0,
      "fair": -144
     },
     {
@@ -48,7 +48,7 @@
      "edge": 0.0253
     }
    ],
-   "mkt_p_home_win": 0.5337
+   "mkt_p_home_win": 0.5242
   },
   {
    "id": "401909953",
@@ -108,15 +108,15 @@
    "elo_home": 1642,
    "elo_away": 1331,
    "spread": -10.5,
-   "total": 218.5,
+   "total": 219.5,
    "home_ml": -518.0,
    "away_ml": 394.0,
    "pred_margin": 12.0,
    "pure_margin": 15.6,
-   "pred_total": 220.3,
+   "pred_total": 221.4,
    "p_home_win": 0.8489,
    "p_home_cover": 0.5448,
-   "p_over": 0.5398,
+   "p_over": 0.5422,
    "home_b2b": 1,
    "away_b2b": 0,
    "picks": [
@@ -147,8 +147,8 @@
    "elo_away": 1401,
    "spread": -2.5,
    "total": 228.5,
-   "home_ml": -147.0,
-   "away_ml": 124.0,
+   "home_ml": -142.0,
+   "away_ml": 120.0,
    "pred_margin": 1.9,
    "pure_margin": 6.5,
    "pred_total": 228.8,
@@ -158,7 +158,7 @@
    "home_b2b": 0,
    "away_b2b": 0,
    "picks": [],
-   "mkt_p_home_win": 0.5714
+   "mkt_p_home_win": 0.5635
   },
   {
    "id": "401909956",
@@ -179,8 +179,8 @@
    "elo_away": 1357,
    "spread": -3.5,
    "total": 226.5,
-   "home_ml": -161.0,
-   "away_ml": 136.0,
+   "home_ml": -170.0,
+   "away_ml": 143.0,
    "pred_margin": 4.7,
    "pure_margin": 7.0,
    "pred_total": 228.1,
@@ -193,12 +193,12 @@
     {
      "market": "moneyline",
      "side": "home",
-     "edge": 0.0673,
-     "odds": -161.0,
+     "edge": 0.0457,
+     "odds": -170.0,
      "fair": -193
     }
    ],
-   "mkt_p_home_win": 0.5928
+   "mkt_p_home_win": 0.6047
   },
   {
    "id": "401909957",
@@ -217,20 +217,28 @@
    "away_color": "0e2240",
    "elo_home": 1612,
    "elo_away": 1582,
-   "spread": -8.5,
-   "total": 219.5,
-   "home_ml": -344.0,
-   "away_ml": 276.0,
-   "pred_margin": 9.3,
+   "spread": -4.5,
+   "total": 222.5,
+   "home_ml": -182.0,
+   "away_ml": 152.0,
+   "pred_margin": 5.5,
    "pure_margin": 4.5,
-   "pred_total": 219.9,
-   "p_home_win": 0.7897,
-   "p_home_cover": 0.5229,
-   "p_over": 0.5077,
+   "pred_total": 223.2,
+   "p_home_win": 0.6838,
+   "p_home_cover": 0.5301,
+   "p_over": 0.515,
    "home_b2b": 0,
    "away_b2b": 0,
-   "picks": [],
-   "mkt_p_home_win": 0.7445
+   "picks": [
+    {
+     "market": "moneyline",
+     "side": "home",
+     "edge": 0.0595,
+     "odds": -182.0,
+     "fair": -216
+    }
+   ],
+   "mkt_p_home_win": 0.6192
   },
   {
    "id": "401909958",

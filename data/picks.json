@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "generated": "2026-11-09T14:17",
+ "generated": "2026-11-09T15:08",
  "kelly_fraction": 0.25,
  "max_per_bet": 0.15,
  "winners": [
@@ -15,8 +15,8 @@
    "opp_abbr": "LAL",
    "at_home": true,
    "p_model": 0.5894,
-   "p": 0.561539378238342,
-   "odds": -125.0,
+   "p": 0.5568107266435987,
+   "odds": -120.0,
    "spread": -1.5,
    "pred_margin": 2.7
   },
@@ -63,8 +63,8 @@
    "opp_abbr": "MEM",
    "at_home": true,
    "p_model": 0.5586,
-   "p": 0.5649944540848199,
-   "odds": -147.0,
+   "p": 0.5610460317460317,
+   "odds": -142.0,
    "spread": -2.5,
    "pred_margin": 1.9
   },
@@ -79,8 +79,8 @@
    "opp_abbr": "IND",
    "at_home": true,
    "p_model": 0.6584,
-   "p": 0.6255991512730903,
-   "odds": -161.0,
+   "p": 0.6315715415019763,
+   "odds": -170.0,
    "spread": -3.5,
    "pred_margin": 4.7
   },
@@ -94,11 +94,11 @@
    "opp": "Denver Nuggets",
    "opp_abbr": "DEN",
    "at_home": true,
-   "p_model": 0.7897,
-   "p": 0.7670758034809835,
-   "odds": -344.0,
-   "spread": -8.5,
-   "pred_margin": 9.3
+   "p_model": 0.6838,
+   "p": 0.6515241088788075,
+   "odds": -182.0,
+   "spread": -4.5,
+   "pred_margin": 5.5
   },
   {
    "id": "401909958",
@@ -144,40 +144,40 @@
    "p": 0.4891
   },
   {
+   "name": "Collin Gillespie",
+   "team": "PHX",
+   "side": "under",
+   "line": 7.5,
+   "odds": 106.0,
+   "proj": 9.1,
+   "p": 0.4984
+  },
+  {
    "name": "Kevin Huerter",
    "team": "DET",
    "side": "under",
    "line": 7.5,
-   "odds": 102.0,
+   "odds": 101.0,
    "proj": 9.6,
-   "p": 0.5077
-  },
-  {
-   "name": "Marcus Smart",
-   "team": "HOU",
-   "side": "under",
-   "line": 6.5,
-   "odds": 102.0,
-   "proj": 8.4,
-   "p": 0.5065
+   "p": 0.5098
   },
   {
    "name": "Kyshawn George",
    "team": "WSH",
    "side": "under",
    "line": 14.5,
-   "odds": -104.0,
+   "odds": -103.0,
    "proj": 17.9,
-   "p": 0.5195
+   "p": 0.518
   },
   {
-   "name": "Kelly Oubre Jr.",
-   "team": "IND",
+   "name": "Marcus Smart",
+   "team": "HOU",
    "side": "under",
-   "line": 7.5,
-   "odds": -102.0,
-   "proj": 10.4,
-   "p": 0.5137
+   "line": 6.5,
+   "odds": 100.0,
+   "proj": 8.4,
+   "p": 0.5101
   }
  ],
  "props_backtest": {
