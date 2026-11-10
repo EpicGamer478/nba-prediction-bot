@@ -1,474 +1,774 @@
 {
  "stats_only": {
   "accuracy": {
-   "games": 522,
-   "brier_model": 0.1848,
-   "brier_market": 0.1732,
-   "brier_elo": 0.1853,
-   "winner_acc_model": 0.7261,
-   "winner_acc_market": 0.7318,
-   "margin_mae_model": 11.76,
-   "margin_mae_market": 11.1,
-   "total_mae_model": 15.61,
-   "total_mae_market": 14.32
+   "games": 7922,
+   "brier_model": 0.2166,
+   "brier_market": 0.2063,
+   "brier_elo": 0.2185,
+   "winner_acc_model": 0.6525,
+   "winner_acc_market": 0.6792,
+   "margin_mae_model": 11.03,
+   "margin_mae_market": 10.6,
+   "total_mae_model": 14.85,
+   "total_mae_market": 14.25
   },
   "by_threshold": {
    "0.0": {
     "moneyline": {
-     "bets": 445,
-     "win_rate": 0.5618,
-     "profit": -43.48,
-     "roi": -0.0977
+     "bets": 6508,
+     "win_rate": 0.3686,
+     "profit": -456.19,
+     "roi": -0.0701
     },
     "spread": {
-     "bets": 458,
-     "win_rate": 0.5131,
-     "profit": -9.36,
-     "roi": -0.0204
+     "bets": 6290,
+     "win_rate": 0.4917,
+     "profit": -385.18,
+     "roi": -0.0612
     },
     "total": {
-     "bets": 469,
-     "win_rate": 0.4861,
-     "profit": -33.73,
-     "roi": -0.0719
+     "bets": 6451,
+     "win_rate": 0.4922,
+     "profit": -389.64,
+     "roi": -0.0604
     }
    },
    "0.02": {
     "moneyline": {
-     "bets": 397,
-     "win_rate": 0.5441,
-     "profit": -39.24,
-     "roi": -0.0988
+     "bets": 5890,
+     "win_rate": 0.3531,
+     "profit": -401.51,
+     "roi": -0.0682
     },
     "spread": {
-     "bets": 401,
-     "win_rate": 0.5112,
-     "profit": -9.64,
-     "roi": -0.024
+     "bets": 5073,
+     "win_rate": 0.4914,
+     "profit": -313.64,
+     "roi": -0.0618
     },
     "total": {
-     "bets": 414,
-     "win_rate": 0.4831,
-     "profit": -32.18,
-     "roi": -0.0777
+     "bets": 5267,
+     "win_rate": 0.4916,
+     "profit": -324.36,
+     "roi": -0.0616
     }
    },
    "0.04": {
     "moneyline": {
-     "bets": 352,
-     "win_rate": 0.5227,
-     "profit": -33.63,
-     "roi": -0.0955
+     "bets": 5387,
+     "win_rate": 0.3414,
+     "profit": -364.07,
+     "roi": -0.0676
     },
     "spread": {
-     "bets": 347,
-     "win_rate": 0.5216,
-     "profit": -1.45,
-     "roi": -0.0042
+     "bets": 4005,
+     "win_rate": 0.4841,
+     "profit": -303.27,
+     "roi": -0.0757
     },
     "total": {
-     "bets": 363,
-     "win_rate": 0.4904,
-     "profit": -23.18,
-     "roi": -0.0639
+     "bets": 4204,
+     "win_rate": 0.4924,
+     "profit": -252.18,
+     "roi": -0.06
     }
    },
    "0.06": {
     "moneyline": {
-     "bets": 314,
-     "win_rate": 0.4936,
-     "profit": -34.67,
-     "roi": -0.1104
+     "bets": 4913,
+     "win_rate": 0.3283,
+     "profit": -350.34,
+     "roi": -0.0713
     },
     "spread": {
-     "bets": 292,
-     "win_rate": 0.5205,
-     "profit": -1.82,
-     "roi": -0.0062
+     "bets": 3039,
+     "win_rate": 0.4929,
+     "profit": -179.18,
+     "roi": -0.059
     },
     "total": {
-     "bets": 320,
-     "win_rate": 0.5062,
-     "profit": -10.73,
-     "roi": -0.0335
+     "bets": 3276,
+     "win_rate": 0.4884,
+     "profit": -221.45,
+     "roi": -0.0676
     }
    },
    "0.08": {
     "moneyline": {
-     "bets": 285,
-     "win_rate": 0.4772,
-     "profit": -31.94,
-     "roi": -0.1121
+     "bets": 4478,
+     "win_rate": 0.3151,
+     "profit": -349.94,
+     "roi": -0.0781
     },
     "spread": {
-     "bets": 235,
-     "win_rate": 0.5234,
-     "profit": -0.18,
-     "roi": -0.0008
+     "bets": 2225,
+     "win_rate": 0.4998,
+     "profit": -102.09,
+     "roi": -0.0459
     },
     "total": {
-     "bets": 273,
-     "win_rate": 0.5092,
-     "profit": -7.64,
-     "roi": -0.028
+     "bets": 2475,
+     "win_rate": 0.4844,
+     "profit": -186.0,
+     "roi": -0.0752
     }
    }
   },
   "by_season": {
-   "2026": {
+   "2021": {
     "moneyline": {
-     "bets": 249,
-     "win_rate": 0.5341,
-     "profit": -14.79,
-     "roi": -0.0594
+     "bets": 850,
+     "win_rate": 0.3706,
+     "profit": -24.87,
+     "roi": -0.0293
     },
     "spread": {
-     "bets": 258,
-     "win_rate": 0.5271,
-     "profit": 1.64,
-     "roi": 0.0063
+     "bets": 637,
+     "win_rate": 0.4741,
+     "profit": -60.45,
+     "roi": -0.0949
     },
     "total": {
-     "bets": 274,
-     "win_rate": 0.4964,
-     "profit": -14.36,
-     "roi": -0.0524
+     "bets": 577,
+     "win_rate": 0.4939,
+     "profit": -32.91,
+     "roi": -0.057
+    }
+   },
+   "2022": {
+    "moneyline": {
+     "bets": 862,
+     "win_rate": 0.3399,
+     "profit": -62.26,
+     "roi": -0.0722
+    },
+    "spread": {
+     "bets": 601,
+     "win_rate": 0.4709,
+     "profit": -60.73,
+     "roi": -0.101
+    },
+    "total": {
+     "bets": 654,
+     "win_rate": 0.4664,
+     "profit": -71.73,
+     "roi": -0.1097
+    }
+   },
+   "2023": {
+    "moneyline": {
+     "bets": 910,
+     "win_rate": 0.3505,
+     "profit": 6.53,
+     "roi": 0.0072
+    },
+    "spread": {
+     "bets": 663,
+     "win_rate": 0.4917,
+     "profit": -40.64,
+     "roi": -0.0613
+    },
+    "total": {
+     "bets": 670,
+     "win_rate": 0.5104,
+     "profit": -17.09,
+     "roi": -0.0255
+    }
+   },
+   "2024": {
+    "moneyline": {
+     "bets": 880,
+     "win_rate": 0.3261,
+     "profit": -86.19,
+     "roi": -0.0979
+    },
+    "spread": {
+     "bets": 670,
+     "win_rate": 0.4806,
+     "profit": -55.27,
+     "roi": -0.0825
+    },
+    "total": {
+     "bets": 705,
+     "win_rate": 0.5291,
+     "profit": 7.09,
+     "roi": 0.0101
+    }
+   },
+   "2025": {
+    "moneyline": {
+     "bets": 895,
+     "win_rate": 0.343,
+     "profit": -58.73,
+     "roi": -0.0656
+    },
+    "spread": {
+     "bets": 649,
+     "win_rate": 0.5008,
+     "profit": -28.55,
+     "roi": -0.044
+    },
+    "total": {
+     "bets": 779,
+     "win_rate": 0.475,
+     "profit": -72.64,
+     "roi": -0.0932
+    }
+   },
+   "2026": {
+    "moneyline": {
+     "bets": 898,
+     "win_rate": 0.3252,
+     "profit": -103.16,
+     "roi": -0.1149
+    },
+    "spread": {
+     "bets": 713,
+     "win_rate": 0.4895,
+     "profit": -46.73,
+     "roi": -0.0655
+    },
+    "total": {
+     "bets": 738,
+     "win_rate": 0.4837,
+     "profit": -56.45,
+     "roi": -0.0765
     }
    },
    "2027": {
     "moneyline": {
-     "bets": 103,
-     "win_rate": 0.4951,
-     "profit": -18.83,
-     "roi": -0.1829
+     "bets": 92,
+     "win_rate": 0.2826,
+     "profit": -35.39,
+     "roi": -0.3847
     },
     "spread": {
-     "bets": 89,
-     "win_rate": 0.5056,
-     "profit": -3.09,
-     "roi": -0.0347
+     "bets": 72,
+     "win_rate": 0.4444,
+     "profit": -10.91,
+     "roi": -0.1515
     },
     "total": {
-     "bets": 89,
-     "win_rate": 0.4719,
-     "profit": -8.82,
-     "roi": -0.0991
+     "bets": 81,
+     "win_rate": 0.4691,
+     "profit": -8.45,
+     "roi": -0.1044
     }
    }
   }
  },
  "market_blend": {
   "accuracy": {
-   "games": 522,
-   "brier_model": 0.1761,
-   "brier_market": 0.1732,
-   "brier_elo": 0.1853,
-   "winner_acc_model": 0.7261,
-   "winner_acc_market": 0.7318,
-   "margin_mae_model": 11.25,
-   "margin_mae_market": 11.1,
-   "total_mae_model": 14.71,
-   "total_mae_market": 14.32
+   "games": 7922,
+   "brier_model": 0.2065,
+   "brier_market": 0.2063,
+   "brier_elo": 0.2185,
+   "winner_acc_model": 0.6774,
+   "winner_acc_market": 0.6792,
+   "margin_mae_model": 10.61,
+   "margin_mae_market": 10.6,
+   "total_mae_model": 14.26,
+   "total_mae_market": 14.25
   },
   "by_threshold": {
    "0.0": {
     "moneyline": {
-     "bets": 403,
-     "win_rate": 0.6998,
-     "profit": -6.37,
-     "roi": -0.0158
+     "bets": 3527,
+     "win_rate": 0.3998,
+     "profit": -109.88,
+     "roi": -0.0312
     },
     "spread": {
-     "bets": 371,
-     "win_rate": 0.531,
-     "profit": 5.09,
-     "roi": 0.0137
+     "bets": 1018,
+     "win_rate": 0.5098,
+     "profit": -27.18,
+     "roi": -0.0267
     },
     "total": {
-     "bets": 377,
-     "win_rate": 0.4589,
-     "profit": -46.73,
-     "roi": -0.1239
+     "bets": 1031,
+     "win_rate": 0.5015,
+     "profit": -44.0,
+     "roi": -0.0427
     }
    },
    "0.02": {
     "moneyline": {
-     "bets": 320,
-     "win_rate": 0.6781,
-     "profit": -6.61,
-     "roi": -0.0207
+     "bets": 2222,
+     "win_rate": 0.3344,
+     "profit": -97.3,
+     "roi": -0.0438
     },
     "spread": {
-     "bets": 270,
-     "win_rate": 0.5074,
-     "profit": -8.45,
-     "roi": -0.0313
+     "bets": 87,
+     "win_rate": 0.5402,
+     "profit": 2.73,
+     "roi": 0.0313
     },
     "total": {
-     "bets": 281,
-     "win_rate": 0.4804,
-     "profit": -23.27,
-     "roi": -0.0828
+     "bets": 254,
+     "win_rate": 0.4921,
+     "profit": -15.36,
+     "roi": -0.0605
     }
    },
    "0.04": {
     "moneyline": {
-     "bets": 234,
-     "win_rate": 0.6453,
-     "profit": -8.4,
-     "roi": -0.0359
+     "bets": 1418,
+     "win_rate": 0.2638,
+     "profit": -94.52,
+     "roi": -0.0667
     },
     "spread": {
-     "bets": 186,
-     "win_rate": 0.5215,
-     "profit": -0.82,
-     "roi": -0.0044
+     "bets": 11,
+     "win_rate": 0.3636,
+     "profit": -3.36,
+     "roi": -0.3058
     },
     "total": {
-     "bets": 201,
-     "win_rate": 0.5174,
-     "profit": -2.45,
-     "roi": -0.0122
+     "bets": 49,
+     "win_rate": 0.5102,
+     "profit": -1.27,
+     "roi": -0.026
     }
    },
    "0.06": {
     "moneyline": {
-     "bets": 171,
-     "win_rate": 0.6082,
-     "profit": -7.47,
-     "roi": -0.0437
+     "bets": 1006,
+     "win_rate": 0.2127,
+     "profit": -69.67,
+     "roi": -0.0693
     },
     "spread": {
-     "bets": 129,
-     "win_rate": 0.4806,
-     "profit": -10.64,
-     "roi": -0.0825
+     "bets": 1,
+     "win_rate": 0.0,
+     "profit": -1.0,
+     "roi": -1.0
     },
     "total": {
-     "bets": 128,
-     "win_rate": 0.4922,
-     "profit": -7.73,
-     "roi": -0.0604
+     "bets": 6,
+     "win_rate": 0.5,
+     "profit": -0.27,
+     "roi": -0.0455
     }
    },
    "0.08": {
     "moneyline": {
-     "bets": 127,
-     "win_rate": 0.5591,
-     "profit": -10.71,
-     "roi": -0.0844
+     "bets": 756,
+     "win_rate": 0.1839,
+     "profit": -58.39,
+     "roi": -0.0772
     },
     "spread": {
-     "bets": 85,
-     "win_rate": 0.5059,
-     "profit": -2.91,
-     "roi": -0.0342
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
     },
     "total": {
-     "bets": 70,
-     "win_rate": 0.5143,
-     "profit": -1.27,
-     "roi": -0.0182
+     "bets": 1,
+     "win_rate": 0.0,
+     "profit": -1.0,
+     "roi": -1.0
     }
    }
   },
   "by_season": {
-   "2026": {
+   "2021": {
     "moneyline": {
-     "bets": 168,
-     "win_rate": 0.6607,
-     "profit": -3.79,
-     "roi": -0.0226
+     "bets": 317,
+     "win_rate": 0.2208,
+     "profit": -40.84,
+     "roi": -0.1288
     },
     "spread": {
-     "bets": 154,
-     "win_rate": 0.526,
-     "profit": 0.64,
-     "roi": 0.0041
+     "bets": 5,
+     "win_rate": 0.4,
+     "profit": -1.18,
+     "roi": -0.2364
     },
     "total": {
-     "bets": 156,
-     "win_rate": 0.5385,
-     "profit": 4.36,
-     "roi": 0.028
+     "bets": 28,
+     "win_rate": 0.4643,
+     "profit": -3.18,
+     "roi": -0.1136
+    }
+   },
+   "2022": {
+    "moneyline": {
+     "bets": 283,
+     "win_rate": 0.2438,
+     "profit": 20.97,
+     "roi": 0.0741
+    },
+    "spread": {
+     "bets": 2,
+     "win_rate": 0.5,
+     "profit": -0.09,
+     "roi": -0.0455
+    },
+    "total": {
+     "bets": 21,
+     "win_rate": 0.5714,
+     "profit": 1.91,
+     "roi": 0.0909
+    }
+   },
+   "2023": {
+    "moneyline": {
+     "bets": 172,
+     "win_rate": 0.2791,
+     "profit": -1.49,
+     "roi": -0.0086
+    },
+    "spread": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
+    },
+    "total": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
+    }
+   },
+   "2024": {
+    "moneyline": {
+     "bets": 226,
+     "win_rate": 0.2522,
+     "profit": -29.44,
+     "roi": -0.1303
+    },
+    "spread": {
+     "bets": 2,
+     "win_rate": 0.5,
+     "profit": -0.09,
+     "roi": -0.0455
+    },
+    "total": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
+    }
+   },
+   "2025": {
+    "moneyline": {
+     "bets": 251,
+     "win_rate": 0.2869,
+     "profit": -22.15,
+     "roi": -0.0883
+    },
+    "spread": {
+     "bets": 2,
+     "win_rate": 0.0,
+     "profit": -2.0,
+     "roi": -1.0
+    },
+    "total": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
+    }
+   },
+   "2026": {
+    "moneyline": {
+     "bets": 157,
+     "win_rate": 0.3312,
+     "profit": -21.18,
+     "roi": -0.1349
+    },
+    "spread": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
+    },
+    "total": {
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
     }
    },
    "2027": {
     "moneyline": {
-     "bets": 66,
-     "win_rate": 0.6061,
-     "profit": -4.61,
-     "roi": -0.0698
+     "bets": 12,
+     "win_rate": 0.5,
+     "profit": -0.4,
+     "roi": -0.0337
     },
     "spread": {
-     "bets": 32,
-     "win_rate": 0.5,
-     "profit": -1.45,
-     "roi": -0.0455
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
     },
     "total": {
-     "bets": 45,
-     "win_rate": 0.4444,
-     "profit": -6.82,
-     "roi": -0.1515
+     "bets": 0,
+     "win_rate": null,
+     "profit": 0,
+     "roi": null
     }
    }
   }
  },
  "market_gbm": {
   "accuracy": {
-   "games": 522,
-   "brier_model": 0.1801,
-   "brier_market": 0.1732,
-   "brier_elo": 0.1853,
-   "winner_acc_model": 0.7165,
-   "winner_acc_market": 0.7318,
-   "margin_mae_model": 11.28,
-   "margin_mae_market": 11.1,
-   "total_mae_model": 15.05,
-   "total_mae_market": 14.32
+   "games": 7922,
+   "brier_model": 0.2089,
+   "brier_market": 0.2063,
+   "brier_elo": 0.2185,
+   "winner_acc_model": 0.675,
+   "winner_acc_market": 0.6792,
+   "margin_mae_model": 10.69,
+   "margin_mae_market": 10.6,
+   "total_mae_model": 14.37,
+   "total_mae_market": 14.25
   },
   "by_threshold": {
    "0.0": {
     "moneyline": {
-     "bets": 430,
-     "win_rate": 0.6605,
-     "profit": -20.15,
-     "roi": -0.0468
+     "bets": 4816,
+     "win_rate": 0.5199,
+     "profit": -230.46,
+     "roi": -0.0479
     },
     "spread": {
-     "bets": 418,
-     "win_rate": 0.5048,
-     "profit": -15.18,
-     "roi": -0.0363
+     "bets": 4423,
+     "win_rate": 0.4974,
+     "profit": -223.0,
+     "roi": -0.0504
     },
     "total": {
-     "bets": 453,
-     "win_rate": 0.4812,
-     "profit": -36.82,
-     "roi": -0.0813
+     "bets": 4962,
+     "win_rate": 0.5089,
+     "profit": -141.55,
+     "roi": -0.0285
     }
    },
    "0.02": {
     "moneyline": {
-     "bets": 371,
-     "win_rate": 0.6442,
-     "profit": -15.05,
-     "roi": -0.0406
+     "bets": 3590,
+     "win_rate": 0.4936,
+     "profit": -198.85,
+     "roi": -0.0554
     },
     "spread": {
-     "bets": 329,
-     "win_rate": 0.5167,
-     "profit": -4.45,
-     "roi": -0.0135
+     "bets": 2479,
+     "win_rate": 0.4998,
+     "profit": -113.64,
+     "roi": -0.0458
     },
     "total": {
-     "bets": 352,
-     "win_rate": 0.483,
-     "profit": -27.45,
-     "roi": -0.078
+     "bets": 3095,
+     "win_rate": 0.5002,
+     "profit": -139.73,
+     "roi": -0.0451
     }
    },
    "0.04": {
     "moneyline": {
-     "bets": 313,
-     "win_rate": 0.6198,
-     "profit": -12.14,
-     "roi": -0.0388
+     "bets": 2684,
+     "win_rate": 0.4672,
+     "profit": -153.45,
+     "roi": -0.0572
     },
     "spread": {
-     "bets": 243,
-     "win_rate": 0.5391,
-     "profit": 7.09,
-     "roi": 0.0292
+     "bets": 1305,
+     "win_rate": 0.4858,
+     "profit": -94.64,
+     "roi": -0.0725
     },
     "total": {
-     "bets": 297,
-     "win_rate": 0.4714,
-     "profit": -29.73,
-     "roi": -0.1001
+     "bets": 1819,
+     "win_rate": 0.4931,
+     "profit": -106.55,
+     "roi": -0.0586
     }
    },
    "0.06": {
     "moneyline": {
-     "bets": 263,
-     "win_rate": 0.597,
-     "profit": -7.02,
-     "roi": -0.0267
+     "bets": 2031,
+     "win_rate": 0.4367,
+     "profit": -153.61,
+     "roi": -0.0756
     },
     "spread": {
-     "bets": 183,
-     "win_rate": 0.5355,
-     "profit": 4.09,
-     "roi": 0.0224
+     "bets": 656,
+     "win_rate": 0.4832,
+     "profit": -50.82,
+     "roi": -0.0775
     },
     "total": {
-     "bets": 221,
-     "win_rate": 0.457,
-     "profit": -28.18,
-     "roi": -0.1275
+     "bets": 1023,
+     "win_rate": 0.4995,
+     "profit": -47.45,
+     "roi": -0.0464
     }
    },
    "0.08": {
     "moneyline": {
-     "bets": 228,
-     "win_rate": 0.5921,
-     "profit": -5.69,
-     "roi": -0.0249
+     "bets": 1502,
+     "win_rate": 0.4028,
+     "profit": -133.81,
+     "roi": -0.0891
     },
     "spread": {
-     "bets": 141,
-     "win_rate": 0.5674,
-     "profit": 11.73,
-     "roi": 0.0832
+     "bets": 325,
+     "win_rate": 0.52,
+     "profit": -2.36,
+     "roi": -0.0073
     },
     "total": {
-     "bets": 180,
-     "win_rate": 0.4667,
-     "profit": -19.64,
-     "roi": -0.1091
+     "bets": 532,
+     "win_rate": 0.5,
+     "profit": -24.18,
+     "roi": -0.0455
     }
    }
   },
   "by_season": {
-   "2026": {
+   "2021": {
     "moneyline": {
-     "bets": 202,
-     "win_rate": 0.6089,
-     "profit": -5.81,
-     "roi": -0.0288
+     "bets": 590,
+     "win_rate": 0.4746,
+     "profit": -40.63,
+     "roi": -0.0689
     },
     "spread": {
-     "bets": 161,
-     "win_rate": 0.559,
-     "profit": 10.82,
-     "roi": 0.0672
+     "bets": 318,
+     "win_rate": 0.5,
+     "profit": -14.45,
+     "roi": -0.0455
     },
     "total": {
-     "bets": 190,
-     "win_rate": 0.4737,
-     "profit": -18.18,
-     "roi": -0.0957
+     "bets": 417,
+     "win_rate": 0.47,
+     "profit": -42.82,
+     "roi": -0.1027
+    }
+   },
+   "2022": {
+    "moneyline": {
+     "bets": 523,
+     "win_rate": 0.4665,
+     "profit": -10.34,
+     "roi": -0.0198
+    },
+    "spread": {
+     "bets": 271,
+     "win_rate": 0.5092,
+     "profit": -7.55,
+     "roi": -0.0278
+    },
+    "total": {
+     "bets": 407,
+     "win_rate": 0.5037,
+     "profit": -15.64,
+     "roi": -0.0384
+    }
+   },
+   "2023": {
+    "moneyline": {
+     "bets": 440,
+     "win_rate": 0.4545,
+     "profit": -6.28,
+     "roi": -0.0143
+    },
+    "spread": {
+     "bets": 194,
+     "win_rate": 0.4381,
+     "profit": -31.73,
+     "roi": -0.1635
+    },
+    "total": {
+     "bets": 379,
+     "win_rate": 0.4776,
+     "profit": -33.45,
+     "roi": -0.0883
+    }
+   },
+   "2024": {
+    "moneyline": {
+     "bets": 421,
+     "win_rate": 0.4941,
+     "profit": -31.22,
+     "roi": -0.0742
+    },
+    "spread": {
+     "bets": 197,
+     "win_rate": 0.5228,
+     "profit": -0.36,
+     "roi": -0.0018
+    },
+    "total": {
+     "bets": 252,
+     "win_rate": 0.5,
+     "profit": -11.45,
+     "roi": -0.0455
+    }
+   },
+   "2025": {
+    "moneyline": {
+     "bets": 371,
+     "win_rate": 0.4232,
+     "profit": -48.42,
+     "roi": -0.1305
+    },
+    "spread": {
+     "bets": 170,
+     "win_rate": 0.4706,
+     "profit": -17.27,
+     "roi": -0.1016
+    },
+    "total": {
+     "bets": 148,
+     "win_rate": 0.4797,
+     "profit": -12.45,
+     "roi": -0.0842
+    }
+   },
+   "2026": {
+    "moneyline": {
+     "bets": 311,
+     "win_rate": 0.4952,
+     "profit": -5.62,
+     "roi": -0.0181
+    },
+    "spread": {
+     "bets": 143,
+     "win_rate": 0.4476,
+     "profit": -20.82,
+     "roi": -0.1456
+    },
+    "total": {
+     "bets": 202,
+     "win_rate": 0.5693,
+     "profit": 17.55,
+     "roi": 0.0869
     }
    },
    "2027": {
     "moneyline": {
-     "bets": 111,
-     "win_rate": 0.6396,
-     "profit": -6.33,
-     "roi": -0.057
+     "bets": 28,
+     "win_rate": 0.3929,
+     "profit": -10.94,
+     "roi": -0.3909
     },
     "spread": {
-     "bets": 82,
-     "win_rate": 0.5,
-     "profit": -3.73,
-     "roi": -0.0455
+     "bets": 12,
+     "win_rate": 0.4167,
+     "profit": -2.45,
+     "roi": -0.2045
     },
     "total": {
-     "bets": 107,
-     "win_rate": 0.4673,
-     "profit": -11.55,
-     "roi": -0.1079
+     "bets": 14,
+     "win_rate": 0.2143,
+     "profit": -8.27,
+     "roi": -0.5909
     }
    }
   }
