@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Tonight's NBA Picks</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,6 +64,28 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
 .note { font-size: 13px; color: var(--muted); max-width: 62ch; margin: 0 }
 .note b { color: var(--fg); font-weight: 600 }
 .empty { padding: 20px 16px; color: var(--muted); font-size: 14px }
+.tabs { display: inline-flex; align-self: flex-start; background: var(--faint); border-radius: 11px; padding: 3px; gap: 2px; margin-top: -18px }
+.tabs button { appearance: none; border: 0; background: transparent; color: var(--muted); font: 500 14px var(--sans); padding: 7px 16px; border-radius: 8px; cursor: pointer }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 1px 2px rgb(0 0 0 / .08), 0 0 0 1px var(--line) }
+.view { display: flex; flex-direction: column; gap: 36px }
+.view[hidden] { display: none }
+.summary .s { font-size: 12px; color: var(--muted); margin-top: 2px; font-family: var(--mono) }
+.lead { margin: -18px 0 0; color: var(--muted); font-size: 14px; max-width: 62ch }
+.chart { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 12px 6px }
+.chart svg { display: block; width: 100%; height: 220px; overflow: visible; touch-action: pan-y }
+.chart text { fill: var(--muted); font: 11px var(--mono) }
+.chart .endlbl { fill: var(--fg); font-weight: 600 }
+.tip { position: absolute; top: 8px; pointer-events: none; background: var(--fg); color: var(--bg); font: 12px/1.35 var(--mono); padding: 6px 9px; border-radius: 8px; white-space: nowrap; transform: translateX(-50%) }
+.tip[hidden] { display: none }
+.tbl .row { grid-template-columns: minmax(0, 1fr) 64px 64px 72px; gap: 8px }
+.tbl .hd { font-size: 12px; color: var(--muted); padding-block: 10px; background: var(--faint) }
+.tbl .num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right }
+.tbl .num.dim { color: var(--muted) }
+.pill { font: 600 11px var(--mono); color: var(--accent); background: var(--accent-soft); padding: 2px 6px; border-radius: 6px; margin-left: 6px; vertical-align: 1px }
+.seg { display: flex; gap: 4px; flex-wrap: wrap }
+.seg button { appearance: none; border: 0; background: var(--faint); color: var(--muted); font: 500 12px var(--mono); padding: 6px 9px; border-radius: 8px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--fg); color: var(--bg) }
+@media (max-width: 480px) { .tbl .row { grid-template-columns: minmax(0, 1fr) 52px 52px 60px; gap: 6px; padding-inline: 12px } }
 .hidden-sm { }
 @media (max-width: 480px) { .hidden-sm { display: none } .right { gap: 10px } }
 </style>
@@ -72,9 +95,43 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
 <div class="page">
   <div class="top">
     <span class="eyebrow" id="when"></span>
-    <h1>Tonight's picks</h1>
+    <h1 id="title">Tonight's picks</h1>
   </div>
 
+  <div class="tabs" role="tablist">
+    <button role="tab" data-tab="tonight" aria-selected="true">Tonight</button>
+    <button role="tab" data-tab="backtest" aria-selected="false">Backtest</button>
+  </div>
+
+  <div class="view" id="v-backtest" hidden>
+    <p class="lead" id="bt-lead"></p>
+    <section>
+      <div class="summary" id="bt-tiles"></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Running profit</h2><span class="meta" id="c-meta"></span></div>
+      <div class="chart" id="curve"><svg aria-label="Running profit of the model's bets over time"></svg><div class="tip" hidden></div></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Picking winners by season</h2><span class="meta">model vs favorite</span></div>
+      <div class="list tbl" id="bt-seasons"></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Bets by value needed</h2><div class="seg" id="thr"></div></div>
+      <div class="list tbl" id="bt-markets"></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Model versions</h2><span class="meta">lower error is better</span></div>
+      <div class="list tbl" id="bt-variants"></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Points props</h2><span class="meta" id="pr-meta"></span></div>
+      <div class="summary" id="bt-props"></div>
+    </section>
+    <p class="note" id="bt-foot"></p>
+  </div>
+
+  <div class="view" id="v-tonight">
   <div class="budget">
     <label for="budget">Budget</label>
     <div class="field"><span>$</span><input id="budget" inputmode="decimal" placeholder="0" autocomplete="off"></div>
@@ -100,6 +157,7 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
   </section>
 
   <p class="note" id="foot"></p>
+  </div>
 </div>
 
 <script>
@@ -177,4 +235,120 @@ $("#budget").addEventListener("input", () => { render(); try { localStorage.setI
 document.querySelectorAll(".chips button").forEach(b => b.addEventListener("click", () => { $("#budget").value = b.dataset.v; render(); try { localStorage.setItem("budget", b.dataset.v); } catch (e) {} }));
 try { const v = localStorage.getItem("budget"); if (v) $("#budget").value = v; } catch (e) {}
 render();
+
+// ---------- Backtest tab ----------
+const B = D.bt || {};
+const pct = (v, d = 1) => v == null ? "–" : (v * 100).toFixed(d) + "%";
+const units = v => (v >= 0 ? "+" : "−") + Math.abs(v).toFixed(1) + "u";
+const seasonLbl = s => `${s - 1}-${String(s).slice(2)}`;
+const NAMES = { stats_only: "Stats only (ignores the line)", market_blend: "Line + small adjustment",
+                market_gbm: "Line + boosted trees" };
+
+function renderBacktest() {
+  const a = B.accuracy;
+  if (!a) { $("#bt-lead").textContent = "No backtest yet."; return; }
+  const seasons = Object.keys(B.acc_by_season || {}).map(Number).sort();
+  $("#bt-lead").textContent = `Tested on ${a.games.toLocaleString()} games from ${seasonLbl(seasons[0])} to now. ` +
+    `Each month was predicted by a model trained only on the games before it.`;
+
+  const t4 = B.by_threshold["0.04"] || {};
+  const nb = Object.values(t4).reduce((s, m) => s + m.bets, 0), pf = Object.values(t4).reduce((s, m) => s + m.profit, 0);
+  $("#bt-tiles").innerHTML = `
+    <div><div class="k">Picked the winner</div><div class="v">${pct(a.winner_acc_model)}</div><div class="s">favorite: ${pct(a.winner_acc_market)}</div></div>
+    <div><div class="k">Games tested</div><div class="v">${a.games.toLocaleString()}</div><div class="s">${seasons.length} seasons</div></div>
+    <div><div class="k">Profit on its bets</div><div class="v">${units(pf)}</div><div class="s">${nb.toLocaleString()} bets · ${pct(nb ? pf / nb : 0)} each</div></div>`;
+
+  $("#bt-seasons").innerHTML = `<div class="row hd"><span>Season</span><span class="num">Games</span><span class="num">Model</span><span class="num">Favorite</span></div>` +
+    seasons.map((s, i) => { const r = B.acc_by_season[s]; return `<div class="row">
+      <span class="name">${seasonLbl(s)}${i === seasons.length - 1 ? ' <span class="sub" style="display:inline">so far</span>' : ""}</span>
+      <span class="num dim">${r.games.toLocaleString()}</span><span class="num">${pct(r.winner_acc_model)}</span><span class="num dim">${pct(r.winner_acc_market)}</span></div>`; }).join("");
+
+  const vs = B.variants || {};
+  $("#bt-variants").innerHTML = `<div class="row hd"><span>Version</span><span class="num">Winner</span><span class="num">Error</span><span class="num">Book</span></div>` +
+    Object.keys(vs).map(k => `<div class="row">
+      <span class="name">${esc(NAMES[k] || k)}${k === B.model ? '<span class="pill">used</span>' : ""}</span>
+      <span class="num">${pct(vs[k].winner_acc_model)}</span><span class="num">${vs[k].brier_model.toFixed(4)}</span><span class="num dim">${vs[k].brier_market.toFixed(4)}</span></div>`).join("");
+
+  const pr = B.props;
+  if (pr) {
+    $("#pr-meta").textContent = `${pr.days} days this season`;
+    $("#bt-props").innerHTML = `
+      <div><div class="k">Props tested</div><div class="v">${pr.props.toLocaleString()}</div><div class="s">DraftKings lines</div></div>
+      <div><div class="k">Top-5 picks hit</div><div class="v">${pct(pr.hit_rate, 0)}</div><div class="s">${pr.picks} picks</div></div>
+      <div><div class="k">Profit</div><div class="v">${units(pr.units)}</div><div class="s">${pct(pr.roi)} each</div></div>`;
+  } else $("#bt-props").closest("section").hidden = true;
+
+  $("#bt-foot").innerHTML = `<b>Favorite</b> means always taking the team the sportsbook favors. <b>Error</b> (Brier score) measures how close the win percentages were to what happened; the version with the lowest error is the one used for tonight. Bets are 1 unit each at the closing price, spreads and totals at −110. Over this many games, matching the sportsbook is the realistic ceiling; no version has beaten it.`;
+}
+
+let thr = "0.04";
+function renderMarkets() {
+  const ts = Object.keys(B.by_threshold || {});
+  $("#thr").innerHTML = ts.map(t => `<button aria-pressed="${t === thr}" data-t="${t}">${Math.round(t * 100)}%+</button>`).join("");
+  const mk = B.by_threshold?.[thr] || {};
+  $("#bt-markets").innerHTML = `<div class="row hd"><span>Market</span><span class="num">Bets</span><span class="num">Won</span><span class="num">Return</span></div>` +
+    ["moneyline", "spread", "total"].map(m => { const r = mk[m] || { bets: 0 }; return `<div class="row">
+      <span class="name">${m === "moneyline" ? "Moneyline" : m === "spread" ? "Spread" : "Total"}</span>
+      <span class="num dim">${r.bets.toLocaleString()}</span><span class="num">${r.bets ? pct(r.win_rate) : "–"}</span>
+      <span class="num">${r.bets ? (r.roi >= 0 ? "+" : "") + pct(r.roi) : "–"}</span></div>`; }).join("");
+  $("#thr").querySelectorAll("button").forEach(b => b.onclick = () => { thr = b.dataset.t; renderMarkets(); });
+}
+
+function drawCurve() {
+  const pts = B.curve, box = $("#curve"), svg = box.querySelector("svg"), tip = box.querySelector(".tip");
+  if (!pts || pts.length < 2) { box.closest("section").hidden = true; return; }
+  const last = pts[pts.length - 1];
+  $("#c-meta").textContent = `1 unit per bet · ${last[2].toLocaleString()} bets`;
+  const W = svg.clientWidth || 600, H = 220, L = 44, R = 52, T = 10, Bt = 22;
+  const ys = pts.map(p => p[1]), lo = Math.min(0, ...ys), hi = Math.max(0, ...ys);
+  const step = [5, 10, 20, 25, 50, 100, 200].find(s => (hi - lo) / s <= 5) || 500;
+  const y0 = Math.floor(lo / step) * step, y1 = Math.ceil(hi / step) * step;
+  const X = i => L + (W - L - R) * i / (pts.length - 1), Y = v => T + (H - T - Bt) * (y1 - v) / (y1 - y0 || 1);
+  let g = "";
+  for (let v = y0; v <= y1 + 1e-9; v += step)
+    g += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="var(--${v === 0 ? "muted" : "line"})" stroke-width="1" ${v === 0 ? 'stroke-dasharray="3 3"' : ""}/>` +
+         `<text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v > 0 ? "+" : ""}${v}</text>`;
+  let seen = new Set();
+  pts.forEach((p, i) => { const yr = p[0].slice(0, 4); if (!seen.has(yr) && p[0].slice(5, 7) <= "02") { seen.add(yr);
+    g += `<text x="${X(i)}" y="${H - 4}" text-anchor="middle">${yr}</text>`; } });
+  const d = pts.map((p, i) => (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(p[1]).toFixed(1)).join("");
+  g += `<path d="${d}" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>`;
+  g += `<text class="endlbl" x="${X(pts.length - 1) + 6}" y="${Y(last[1]) + 4}">${units(last[1])}</text>`;
+  g += `<g id="hv" visibility="hidden"><line id="hv-l" y1="${T}" y2="${H - Bt}" stroke="var(--muted)" stroke-width="1"/>` +
+       `<circle id="hv-c" r="4" fill="var(--accent)" stroke="var(--surface)" stroke-width="2"/></g>` +
+       `<rect x="${L}" y="0" width="${W - L - R}" height="${H}" fill="transparent" id="hit"/>`;
+  svg.innerHTML = g;
+  const hv = svg.querySelector("#hv"), hit = svg.querySelector("#hit");
+  const move = e => {
+    const r = svg.getBoundingClientRect(), x = e.clientX - r.left;
+    const i = Math.max(0, Math.min(pts.length - 1, Math.round((x - L) / (W - L - R) * (pts.length - 1))));
+    const p = pts[i], px = X(i), py = Y(p[1]);
+    hv.setAttribute("visibility", "visible");
+    svg.querySelector("#hv-l").setAttribute("x1", px); svg.querySelector("#hv-l").setAttribute("x2", px);
+    svg.querySelector("#hv-c").setAttribute("cx", px); svg.querySelector("#hv-c").setAttribute("cy", py);
+    const dt = new Date(p[0] + "T12:00:00").toLocaleDateString([], { month: "short", day: "numeric", year: "numeric" });
+    tip.innerHTML = `${dt}<br>${units(p[1])} after ${p[2].toLocaleString()} bets`;
+    tip.hidden = false;
+    tip.style.left = Math.max(80, Math.min(box.clientWidth - 80, px + 12)) + "px";
+  };
+  hit.addEventListener("pointermove", move);
+  hit.addEventListener("pointerdown", move);
+  hit.addEventListener("pointerleave", () => { hv.setAttribute("visibility", "hidden"); tip.hidden = true; });
+}
+
+function showTab(t) {
+  document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === t));
+  $("#v-tonight").hidden = t !== "tonight";
+  $("#v-backtest").hidden = t !== "backtest";
+  $("#title").textContent = t === "backtest" ? "Backtest" : "Tonight's picks";
+  if (t === "backtest") drawCurve();
+  try { localStorage.setItem("tab", t); } catch (e) {}
+}
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
+window.addEventListener("resize", () => { if (!$("#v-backtest").hidden) drawCurve(); });
+renderBacktest();
+renderMarkets();
+let startTab = "tonight";
+try { startTab = location.hash === "#backtest" ? "backtest" : localStorage.getItem("tab") || "tonight"; } catch (e) {}
+showTab(startTab);
 </script>

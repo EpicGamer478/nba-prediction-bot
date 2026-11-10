@@ -95,7 +95,8 @@ def main():
     first = int(seasons_with_odds[1]) if len(seasons_with_odds) > 1 else int(seasons_with_odds[0])
     for name, (use_market, kind) in VARIANTS.items():
         p = walk_forward(df, use_market, kind, first)
-        rep = {"accuracy": accuracy(p), "by_threshold": {}, "by_season": {}}
+        rep = {"accuracy": accuracy(p), "by_threshold": {}, "by_season": {},
+               "acc_by_season": {str(s): accuracy(ps) for s, ps in p.groupby("season")}}
         for thr in THRESHOLDS:
             b = make_bets(p, thr)
             rep["by_threshold"][str(thr)] = {m: summarize(b[b.market == m]) for m in

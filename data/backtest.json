@@ -255,6 +255,92 @@
      "roi": -0.1044
     }
    }
+  },
+  "acc_by_season": {
+   "2021": {
+    "games": 1171,
+    "brier_model": 0.2251,
+    "brier_market": 0.2156,
+    "brier_elo": 0.2277,
+    "winner_acc_model": 0.6208,
+    "winner_acc_market": 0.6593,
+    "margin_mae_model": 11.21,
+    "margin_mae_market": 10.76,
+    "total_mae_model": 14.93,
+    "total_mae_market": 14.45
+   },
+   "2022": {
+    "games": 1323,
+    "brier_model": 0.2208,
+    "brier_market": 0.2095,
+    "brier_elo": 0.2223,
+    "winner_acc_model": 0.6614,
+    "winner_acc_market": 0.6788,
+    "margin_mae_model": 11.17,
+    "margin_mae_market": 10.7,
+    "total_mae_model": 14.89,
+    "total_mae_market": 14.15
+   },
+   "2023": {
+    "games": 1320,
+    "brier_model": 0.2282,
+    "brier_market": 0.2179,
+    "brier_elo": 0.2286,
+    "winner_acc_model": 0.6295,
+    "winner_acc_market": 0.6606,
+    "margin_mae_model": 10.26,
+    "margin_mae_market": 9.82,
+    "total_mae_model": 14.71,
+    "total_mae_market": 14.13
+   },
+   "2024": {
+    "games": 1319,
+    "brier_model": 0.2113,
+    "brier_market": 0.1996,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6611,
+    "winner_acc_market": 0.6914,
+    "margin_mae_model": 11.06,
+    "margin_mae_market": 10.66,
+    "total_mae_model": 14.51,
+    "total_mae_market": 14.14
+   },
+   "2025": {
+    "games": 1321,
+    "brier_model": 0.2099,
+    "brier_market": 0.2011,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6593,
+    "winner_acc_market": 0.6934,
+    "margin_mae_model": 11.06,
+    "margin_mae_market": 10.63,
+    "total_mae_model": 14.86,
+    "total_mae_market": 14.14
+   },
+   "2026": {
+    "games": 1322,
+    "brier_model": 0.2066,
+    "brier_market": 0.1974,
+    "brier_elo": 0.2073,
+    "winner_acc_model": 0.6755,
+    "winner_acc_market": 0.6853,
+    "margin_mae_model": 11.43,
+    "margin_mae_market": 11.01,
+    "total_mae_model": 15.14,
+    "total_mae_market": 14.51
+   },
+   "2027": {
+    "games": 146,
+    "brier_model": 0.2023,
+    "brier_market": 0.1844,
+    "brier_elo": 0.2086,
+    "winner_acc_model": 0.6849,
+    "winner_acc_market": 0.7192,
+    "margin_mae_model": 11.35,
+    "margin_mae_market": 10.87,
+    "total_mae_model": 15.27,
+    "total_mae_market": 14.36
+   }
   }
  },
  "market_blend": {
@@ -513,6 +599,92 @@
      "roi": null
     }
    }
+  },
+  "acc_by_season": {
+   "2021": {
+    "games": 1171,
+    "brier_model": 0.2164,
+    "brier_market": 0.2156,
+    "brier_elo": 0.2277,
+    "winner_acc_model": 0.6593,
+    "winner_acc_market": 0.6593,
+    "margin_mae_model": 10.79,
+    "margin_mae_market": 10.76,
+    "total_mae_model": 14.47,
+    "total_mae_market": 14.45
+   },
+   "2022": {
+    "games": 1323,
+    "brier_model": 0.2093,
+    "brier_market": 0.2095,
+    "brier_elo": 0.2223,
+    "winner_acc_model": 0.6788,
+    "winner_acc_market": 0.6788,
+    "margin_mae_model": 10.71,
+    "margin_mae_market": 10.7,
+    "total_mae_model": 14.2,
+    "total_mae_market": 14.15
+   },
+   "2023": {
+    "games": 1320,
+    "brier_model": 0.218,
+    "brier_market": 0.2179,
+    "brier_elo": 0.2286,
+    "winner_acc_model": 0.6598,
+    "winner_acc_market": 0.6606,
+    "margin_mae_model": 9.84,
+    "margin_mae_market": 9.82,
+    "total_mae_model": 14.13,
+    "total_mae_market": 14.13
+   },
+   "2024": {
+    "games": 1319,
+    "brier_model": 0.1997,
+    "brier_market": 0.1996,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6846,
+    "winner_acc_market": 0.6914,
+    "margin_mae_model": 10.65,
+    "margin_mae_market": 10.66,
+    "total_mae_model": 14.17,
+    "total_mae_market": 14.14
+   },
+   "2025": {
+    "games": 1321,
+    "brier_model": 0.2006,
+    "brier_market": 0.2011,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6919,
+    "winner_acc_market": 0.6934,
+    "margin_mae_model": 10.62,
+    "margin_mae_market": 10.63,
+    "total_mae_model": 14.14,
+    "total_mae_market": 14.14
+   },
+   "2026": {
+    "games": 1322,
+    "brier_model": 0.1986,
+    "brier_market": 0.1974,
+    "brier_elo": 0.2073,
+    "winner_acc_model": 0.6838,
+    "winner_acc_market": 0.6853,
+    "margin_mae_model": 11.0,
+    "margin_mae_market": 11.01,
+    "total_mae_model": 14.49,
+    "total_mae_market": 14.51
+   },
+   "2027": {
+    "games": 146,
+    "brier_model": 0.1828,
+    "brier_market": 0.1844,
+    "brier_elo": 0.2086,
+    "winner_acc_model": 0.7123,
+    "winner_acc_market": 0.7192,
+    "margin_mae_model": 10.82,
+    "margin_mae_market": 10.87,
+    "total_mae_model": 14.42,
+    "total_mae_market": 14.36
+   }
   }
  },
  "market_gbm": {
@@ -770,6 +942,92 @@
      "profit": -8.27,
      "roi": -0.5909
     }
+   }
+  },
+  "acc_by_season": {
+   "2021": {
+    "games": 1171,
+    "brier_model": 0.2223,
+    "brier_market": 0.2156,
+    "brier_elo": 0.2277,
+    "winner_acc_model": 0.6558,
+    "winner_acc_market": 0.6593,
+    "margin_mae_model": 10.89,
+    "margin_mae_market": 10.76,
+    "total_mae_model": 14.71,
+    "total_mae_market": 14.45
+   },
+   "2022": {
+    "games": 1323,
+    "brier_model": 0.212,
+    "brier_market": 0.2095,
+    "brier_elo": 0.2223,
+    "winner_acc_model": 0.6712,
+    "winner_acc_market": 0.6788,
+    "margin_mae_model": 10.79,
+    "margin_mae_market": 10.7,
+    "total_mae_model": 14.35,
+    "total_mae_market": 14.15
+   },
+   "2023": {
+    "games": 1320,
+    "brier_model": 0.2203,
+    "brier_market": 0.2179,
+    "brier_elo": 0.2286,
+    "winner_acc_model": 0.653,
+    "winner_acc_market": 0.6606,
+    "margin_mae_model": 9.95,
+    "margin_mae_market": 9.82,
+    "total_mae_model": 14.34,
+    "total_mae_market": 14.13
+   },
+   "2024": {
+    "games": 1319,
+    "brier_model": 0.2008,
+    "brier_market": 0.1996,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6907,
+    "winner_acc_market": 0.6914,
+    "margin_mae_model": 10.7,
+    "margin_mae_market": 10.66,
+    "total_mae_model": 14.17,
+    "total_mae_market": 14.14
+   },
+   "2025": {
+    "games": 1321,
+    "brier_model": 0.2033,
+    "brier_market": 0.2011,
+    "brier_elo": 0.2136,
+    "winner_acc_model": 0.6874,
+    "winner_acc_market": 0.6934,
+    "margin_mae_model": 10.72,
+    "margin_mae_market": 10.63,
+    "total_mae_model": 14.14,
+    "total_mae_market": 14.14
+   },
+   "2026": {
+    "games": 1322,
+    "brier_model": 0.1989,
+    "brier_market": 0.1974,
+    "brier_elo": 0.2073,
+    "winner_acc_model": 0.6876,
+    "winner_acc_market": 0.6853,
+    "margin_mae_model": 11.05,
+    "margin_mae_market": 11.01,
+    "total_mae_model": 14.5,
+    "total_mae_market": 14.51
+   },
+   "2027": {
+    "games": 146,
+    "brier_model": 0.187,
+    "brier_market": 0.1844,
+    "brier_elo": 0.2086,
+    "winner_acc_model": 0.6918,
+    "winner_acc_market": 0.7192,
+    "margin_mae_model": 10.99,
+    "margin_mae_market": 10.87,
+    "total_mae_model": 14.78,
+    "total_mae_market": 14.36
    }
   }
  },
