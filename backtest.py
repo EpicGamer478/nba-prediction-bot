@@ -16,6 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 STD_PAYOUT = 100 / 110
 BREAKEVEN = 110 / 210
 THRESHOLDS = [0.0, 0.02, 0.04, 0.06, 0.08]
+LOCK = 0.80  # a pick is a "lock" when the model gives the winner at least this chance
 
 
 VARIANTS = {"stats_only": (False, "ridge"), "market_blend": (True, "ridge"), "market_gbm": (True, "gbm")}
@@ -67,6 +68,21 @@ def summarize(b):
             "profit": round(float(b.profit.sum()), 2), "roi": round(float(b.profit.mean()), 4)}
 
 
+def lock_stats(p, thr=LOCK):
+    """How picks at or above `thr` confidence did, and what flat moneyline bets on them returned."""
+    home = p.p_home_win >= 0.5
+    conf = p.p_home_win.where(home, 1 - p.p_home_win)
+    won = (p.margin > 0) == home
+    ml = p.home_ml.where(home, p.away_ml)
+    m = conf >= thr
+    pl = [american_to_payout(o) if w else -1.0 for o, w in zip(ml[m], won[m])]
+    return {"threshold": thr, "games": int(m.sum()), "acc": round(float(won[m].mean()), 4),
+            "per_night": round(float(m.sum() / p.date.dt.date.nunique()), 2),
+            "roi": round(float(np.mean(pl)), 4) if pl else None,
+            "by_level": {str(t): {"games": int((conf >= t).sum()), "acc": round(float(won[conf >= t].mean()), 4)}
+                         for t in (0.6, 0.7, 0.75, 0.8, 0.85)}}
+
+
 def accuracy(p):
     vig_free = p.home_ml.map(american_to_prob) / (
         p.home_ml.map(american_to_prob) + p.away_ml.map(american_to_prob))
@@ -96,7 +112,8 @@ def main():
     for name, (use_market, kind) in VARIANTS.items():
         p = walk_forward(df, use_market, kind, first)
         rep = {"accuracy": accuracy(p), "by_threshold": {}, "by_season": {},
-               "acc_by_season": {str(s): accuracy(ps) for s, ps in p.groupby("season")}}
+               "acc_by_season": {str(s): accuracy(ps) for s, ps in p.groupby("season")},
+               "locks": lock_stats(p)}
         for thr in THRESHOLDS:
             b = make_bets(p, thr)
             rep["by_threshold"][str(thr)] = {m: summarize(b[b.market == m]) for m in
@@ -111,6 +128,9 @@ def main():
 
         print(f"\n===== {name} =====")
         print(json.dumps(rep["accuracy"], indent=1))
+        lk = rep["locks"]
+        print(f"Locks ({lk['threshold']:.0%}+): {lk['games']} games, {lk['acc']:.1%} right, "
+              f"{lk['per_night']} per night, moneyline ROI {lk['roi']:+.1%}")
         print("Edge threshold -> bets / win% / ROI")
         for thr, mk in rep["by_threshold"].items():
             print(f"  {float(thr):.0%}: " + " | ".join(

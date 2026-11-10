@@ -13,7 +13,7 @@ def backtest_payload():
     best = rep["best"]
     r = rep[best]
     out = {"model": best, "accuracy": r["accuracy"], "acc_by_season": r.get("acc_by_season", {}),
-           "by_threshold": r["by_threshold"], "variants": {
+           "by_threshold": r["by_threshold"], "locks": r.get("locks"), "variants": {
                k: rep[k]["accuracy"] for k in rep if k != "best"}}
     # Running profit of every bet the model would have made (4%+ edge, 1 unit each).
     b = pd.read_csv(os.path.join(HERE, "data", "backtest_bets.csv"))

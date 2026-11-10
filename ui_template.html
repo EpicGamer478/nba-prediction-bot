@@ -81,6 +81,8 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
 .tbl .hd { font-size: 12px; color: var(--muted); padding-block: 10px; background: var(--faint) }
 .tbl .num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right }
 .tbl .num.dim { color: var(--muted) }
+.pill.lock { color: var(--good); background: color-mix(in srgb, var(--good) 14%, transparent) }
+.tbl .row.hi { background: var(--accent-soft) }
 .pill { font: 600 11px var(--mono); color: var(--accent); background: var(--accent-soft); padding: 2px 6px; border-radius: 6px; margin-left: 6px; vertical-align: 1px }
 .seg { display: flex; gap: 4px; flex-wrap: wrap }
 .seg button { appearance: none; border: 0; background: var(--faint); color: var(--muted); font: 500 12px var(--mono); padding: 6px 9px; border-radius: 8px; cursor: pointer }
@@ -107,6 +109,10 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
     <p class="lead" id="bt-lead"></p>
     <section>
       <div class="summary" id="bt-tiles"></div>
+    </section>
+    <section>
+      <div class="sh"><h2>Locks: only the most confident picks</h2><span class="meta" id="bl-meta"></span></div>
+      <div class="list tbl" id="bt-locks"></div>
     </section>
     <section>
       <div class="sh"><h2>Running profit</h2><span class="meta" id="c-meta"></span></div>
@@ -139,7 +145,12 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
   </div>
 
   <section>
-    <div class="sh"><h2>Winners</h2><span class="meta" id="w-meta"></span></div>
+    <div class="sh"><h2>Locks</h2><span class="meta" id="l-meta"></span></div>
+    <div class="list" id="locks"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2 id="w-title">Other games</h2><span class="meta" id="w-meta"></span></div>
     <div class="list" id="winners"></div>
   </section>
 
@@ -183,6 +194,8 @@ function allocate(bets, budget) {
   });
 }
 
+const LK = (D.bt && D.bt.locks) || D.locks_backtest || null;
+const LOCK = LK ? LK.threshold : 0.8;
 const wins = D.winners.slice().sort((a, b) => b.p_model - a.p_model);
 const props = D.props;
 
@@ -195,7 +208,8 @@ function render() {
   const budget = Math.max(0, parseFloat($("#budget").value) || 0);
   allocate([...wins, ...props], budget);
 
-  $("#winners").innerHTML = wins.map(w => {
+  const isLock = w => w.lock ?? (w.p_model >= LOCK);
+  const row = w => {
     const t = w.tip ? new Date(w.tip).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
     return `<div class="row">
       <div class="who"><span class="dot" style="background:#${esc(w.color || "8a8f98")}"></span>
@@ -205,7 +219,13 @@ function render() {
         <div class="conf"><span class="pct">${Math.round(w.p_model * 100)}%</span><span class="bar"><i style="width:${(w.p_model * 100).toFixed(0)}%"></i></span></div>
         ${stakeChip(w, budget)}
       </div></div>`;
-  }).join("");
+  };
+  const lk = wins.filter(isLock), rest = wins.filter(w => !isLock(w));
+  $("#locks").innerHTML = lk.length ? lk.map(row).join("")
+    : `<div class="empty">No locks tonight. No team is ${Math.round(LOCK * 100)}%+ to win.</div>`;
+  $("#winners").innerHTML = rest.map(row).join("");
+  $("#winners").closest("section").hidden = !rest.length;
+  $("#w-title").textContent = lk.length ? "Other games" : "Winners";
 
   $("#props").innerHTML = props.length ? props.map(p => `<div class="row">
       <div class="who"><div class="txt"><div class="name">${esc(p.name)}</div>
@@ -228,6 +248,7 @@ const day = new Date(D.date + "T12:00:00");
 $("#when").textContent = day.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" }) + " · " + D.winners.length + " games";
 const gb = D.game_backtest, pb = D.props_backtest;
 $("#w-meta").textContent = gb ? `${(gb.winner_acc_model * 100).toFixed(0)}% right in backtest` : "";
+$("#l-meta").textContent = LK ? `${Math.round(LOCK * 100)}%+ confident · ${(LK.acc * 100).toFixed(0)}% won in backtest` : "";
 $("#p-meta").textContent = pb ? `${(pb.hit_rate * 100).toFixed(0)}% hit in backtest` : "";
 $("#foot").innerHTML = `Percentages are the model's chance each pick hits. With a budget entered, amounts use <b>quarter Kelly</b>: bigger stakes where the model sees more value, <b>skip</b> where it sees none, and never more than ${Math.round(D.max_per_bet * 100)}% on one bet. The backtest hasn't shown a reliable edge over sportsbook lines, so treat amounts as a guide. Lines as of ${esc(D.generated.replace("T", " "))}.`;
 
@@ -263,6 +284,14 @@ function renderBacktest() {
       <span class="name">${seasonLbl(s)}${i === seasons.length - 1 ? ' <span class="sub" style="display:inline">so far</span>' : ""}</span>
       <span class="num dim">${r.games.toLocaleString()}</span><span class="num">${pct(r.winner_acc_model)}</span><span class="num dim">${pct(r.winner_acc_market)}</span></div>`; }).join("");
 
+  if (LK) {
+    $("#bl-meta").textContent = `betting them returned ${(LK.roi >= 0 ? "+" : "") + pct(LK.roi)} per bet`;
+    $("#bt-locks").innerHTML = `<div class="row hd"><span>Only pick when model is</span><span class="num">Games</span><span class="num">Won</span><span class="num">Per night</span></div>` +
+      Object.entries(LK.by_level).map(([t, r]) => `<div class="row${+t === LOCK ? " hi" : ""}">
+        <span class="name">${Math.round(t * 100)}%+ sure${+t === LOCK ? '<span class="pill lock">locks</span>' : ""}</span>
+        <span class="num dim">${r.games.toLocaleString()}</span><span class="num">${pct(r.acc)}</span>
+        <span class="num dim">${(r.games * LK.per_night / LK.games).toFixed(1)}</span></div>`).join("");
+  } else $("#bt-locks").closest("section").hidden = true;
   const vs = B.variants || {};
   $("#bt-variants").innerHTML = `<div class="row hd"><span>Version</span><span class="num">Winner</span><span class="num">Error</span><span class="num">Book</span></div>` +
     Object.keys(vs).map(k => `<div class="row">

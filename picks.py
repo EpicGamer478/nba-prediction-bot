@@ -14,6 +14,7 @@ from datetime import date
 
 import props
 import predict
+from backtest import LOCK
 from model import american_to_payout, american_to_prob
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -56,13 +57,17 @@ def main():
         home = g["p_home_win"] >= 0.5
         win = g["home_name"] if home else g["away_name"]
         p_model = g["p_home_win"] if home else 1 - g["p_home_win"]
-        print(f"  {win:<24} {p_model:>4.0%}   ({g['away']} @ {g['home']})")
+        tag = "  LOCK" if p_model >= LOCK else ""
+        print(f"  {win:<24} {p_model:>4.0%}   ({g['away']} @ {g['home']}){tag}")
         if g.get("home_ml") is not None and g.get("away_ml") is not None:
             ml = g["home_ml"] if home else g["away_ml"]
             ph, pa = american_to_prob(g["home_ml"]), american_to_prob(g["away_ml"])
             p_mkt = (ph if home else pa) / (ph + pa)
             p = (1 - MARKET_WEIGHT) * p_model + MARKET_WEIGHT * p_mkt
             bets.append({"label": f"{win} to win", "odds": ml, "p": p})
+
+    locks = [w for w in t["games"] if max(w["p_home_win"], 1 - w["p_home_win"]) >= LOCK]
+    print(f"\nLOCKS ({LOCK:.0%}+ confidence): {len(locks)} tonight" if locks else f"\nNo locks ({LOCK:.0%}+) tonight.")
 
     print("\nTOP 5 POINTS PROPS")
     top = props.today()
@@ -85,6 +90,7 @@ def main():
             "color": g.get("home_color") if home else g.get("away_color"),
             "opp": g["away_name"] if home else g["home_name"], "opp_abbr": g["away"] if home else g["home"],
             "at_home": home, "p_model": g["p_home_win"] if home else 1 - g["p_home_win"],
+            "lock": max(g["p_home_win"], 1 - g["p_home_win"]) >= LOCK,
             "p": b["p"] if b else None, "odds": b["odds"] if b else None,
             "spread": g.get("spread"), "pred_margin": g.get("pred_margin")})
     for r in top.itertuples():
@@ -97,6 +103,7 @@ def main():
     with open(os.path.join(HERE, "data", "backtest.json")) as f:
         gbt = json.load(f)
     out["game_backtest"] = gbt[gbt["best"]]["accuracy"]
+    out["locks_backtest"] = gbt[gbt["best"]].get("locks")
     with open(os.path.join(HERE, "data", "picks.json"), "w") as f:
         json.dump(out, f, indent=1, default=float)
 
