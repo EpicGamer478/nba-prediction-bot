@@ -83,6 +83,32 @@ def lock_stats(p, thr=LOCK):
                          for t in (0.6, 0.7, 0.75, 0.8, 0.85)}}
 
 
+def parlay_backtest(p, stake=10.0, min_profit=10.0):
+    """Each night, build the double-up parlay from that night's picks at closing sportsbook prices."""
+    from parlay import best_combo
+    home = p.p_home_win >= 0.5
+    df = p.assign(conf=p.p_home_win.where(home, 1 - p.p_home_win), won=(p.margin > 0) == home,
+                  ml=p.home_ml.where(home, p.away_ml), day=p.date.dt.date)
+    res = []
+    for day, g in df.groupby("day"):
+        legs = [{"p": r.conf, "dec": 1 + american_to_payout(r.ml), "won": r.won} for r in g.itertuples()]
+        c = best_combo(legs, 1 + min_profit / stake)
+        if c:
+            hit = all(l["won"] for l in c["legs"])
+            res.append({"date": str(day), "legs": len(c["legs"]), "p": c["p"], "dec": c["dec"], "hit": hit,
+                        "profit": stake * (c["dec"] - 1) if hit else -stake})
+    r = pd.DataFrame(res)
+    if r.empty:
+        return None
+    r["cum"] = r.profit.cumsum()
+    return {"stake": stake, "nights": int(len(r)), "of_nights": int(df.day.nunique()),
+            "hit_rate": round(float(r.hit.mean()), 4), "model_said": round(float(r.p.mean()), 4),
+            "avg_profit_when_hit": round(float(stake * (r.dec.mean() - 1)), 2),
+            "roi": round(float(r.profit.mean() / stake), 4), "total_profit": round(float(r.profit.sum()), 2),
+            "legs": {str(k): int(v) for k, v in r.legs.value_counts().sort_index().items()},
+            "curve": [[d, round(c, 2)] for d, c in zip(r.date, r.cum)]}
+
+
 def accuracy(p):
     vig_free = p.home_ml.map(american_to_prob) / (
         p.home_ml.map(american_to_prob) + p.away_ml.map(american_to_prob))
@@ -106,11 +132,13 @@ def main():
     df = build_features(games)
     report = {}
     all_bets = []
+    preds = {}
     # Test on every season that has at least one earlier season of lines to train on.
     seasons_with_odds = sorted(df[df.spread.notna()].season.unique())
     first = int(seasons_with_odds[1]) if len(seasons_with_odds) > 1 else int(seasons_with_odds[0])
     for name, (use_market, kind) in VARIANTS.items():
         p = walk_forward(df, use_market, kind, first)
+        preds[name] = p
         rep = {"accuracy": accuracy(p), "by_threshold": {}, "by_season": {},
                "acc_by_season": {str(s): accuracy(ps) for s, ps in p.groupby("season")},
                "locks": lock_stats(p)}
@@ -142,6 +170,11 @@ def main():
     # Pick the variant whose win probabilities were most accurate (lowest Brier score).
     report["best"] = min(VARIANTS, key=lambda k: report[k]["accuracy"]["brier_model"])
     print("\nBest variant:", report["best"])
+    report["parlay"] = parlay_backtest(preds[report["best"]])
+    if report["parlay"]:
+        pb = report["parlay"]
+        print(f"Double-up parlay: {pb['nights']} nights, hit {pb['hit_rate']:.1%} (model said {pb['model_said']:.1%}), "
+              f"${pb['stake']:.0f} each, total {pb['total_profit']:+.2f}, return {pb['roi']:+.1%}")
     with open(os.path.join(HERE, "data", "backtest.json"), "w") as f:
         json.dump(report, f, indent=1)
     pd.concat(all_bets).to_csv(os.path.join(HERE, "data", "backtest_bets.csv"), index=False)

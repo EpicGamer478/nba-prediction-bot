@@ -1,4 +1,1421 @@
 game_id,athlete_id,market,line,over_odds,under_odds
+401909965,3995,Total Points,12.5,-127.0,-101.0
+401909965,6606,Total Points,19.5,-103.0,-123.0
+401909965,2991350,Total Points,6.5,-124.0,-102.0
+401909965,3133626,Total Points,7.5,-106.0,-120.0
+401909965,4066211,Total Points,5.5,-119.0,-107.0
+401909965,4222252,Total Points,9.5,-104.0,-123.0
+401909965,4278073,Total Points,33.5,-107.0,-119.0
+401909965,4431736,Total Points,12.5,-126.0,-101.0
+401909965,4683021,Total Points,22.5,-103.0,-123.0
+401909965,4683678,Total Points,9.5,-103.0,-123.0
+401909965,4683778,Total Points,12.5,-110.0,-116.0
+401909965,4900671,Total Points,19.5,-109.0,-117.0
+401909965,5081727,Total Points,6.5,-108.0,-118.0
+401909965,5105565,Total Points,11.5,102.0,-131.0
+401909965,5174983,Total Points,8.5,108.0,-138.0
+401909965,5241364,Total Points,6.5,-120.0,-106.0
+401909965,3995,Total Assists,4.5,112.0,-147.0
+401909965,6606,Total Assists,4.5,110.0,-146.0
+401909965,2991350,Total Assists,2.5,127.0,-168.0
+401909965,4222252,Total Assists,3.5,-140.0,106.0
+401909965,4278073,Total Assists,5.5,-107.0,-123.0
+401909965,4431736,Total Assists,1.5,111.0,-146.0
+401909965,4683021,Total Assists,5.5,-151.0,114.0
+401909965,4683678,Total Assists,1.5,-172.0,130.0
+401909965,4900671,Total Assists,4.5,123.0,-163.0
+401909965,5081727,Total Assists,1.5,-156.0,118.0
+401909965,5105565,Total Assists,1.5,-131.0,-101.0
+401909965,5174983,Total Assists,1.5,115.0,-152.0
+401909965,3995,Total Rebounds,4.5,122.0,-161.0
+401909965,6606,Total Rebounds,3.5,-109.0,-121.0
+401909965,2991350,Total Rebounds,3.5,-102.0,-129.0
+401909965,3133626,Total Rebounds,4.5,-137.0,104.0
+401909965,4066211,Total Rebounds,6.5,110.0,-146.0
+401909965,4222252,Total Rebounds,10.5,-105.0,-125.0
+401909965,4278073,Total Rebounds,3.5,-165.0,125.0
+401909965,4431736,Total Rebounds,4.5,108.0,-142.0
+401909965,4683021,Total Rebounds,6.5,-146.0,111.0
+401909965,4683678,Total Rebounds,2.5,141.0,-187.0
+401909965,4683778,Total Rebounds,2.5,-171.0,129.0
+401909965,4900671,Total Rebounds,3.5,-127.0,-104.0
+401909965,5081727,Total Rebounds,2.5,-171.0,129.0
+401909965,5105565,Total Rebounds,10.5,-101.0,-130.0
+401909965,5174983,Total Rebounds,6.5,112.0,-148.0
+401909965,3995,Total 3-Point Field Goals,2.5,116.0,-153.0
+401909965,6606,Total 3-Point Field Goals,2.5,-154.0,117.0
+401909965,2991350,Total 3-Point Field Goals,1.5,130.0,-172.0
+401909965,3133626,Total 3-Point Field Goals,1.5,142.0,-189.0
+401909965,4278073,Total 3-Point Field Goals,2.5,125.0,-165.0
+401909965,4431736,Total 3-Point Field Goals,2.5,-155.0,117.0
+401909965,4683021,Total 3-Point Field Goals,1.5,-147.0,112.0
+401909965,4683678,Total 3-Point Field Goals,1.5,148.0,-196.0
+401909965,4683778,Total 3-Point Field Goals,2.5,145.0,-192.0
+401909965,4900671,Total 3-Point Field Goals,0.5,-214.0,161.0
+401909965,5081727,Total 3-Point Field Goals,0.5,-180.0,136.0
+401909965,5105565,Total 3-Point Field Goals,0.5,-216.0,162.0
+401909965,5241364,Total 3-Point Field Goals,1.5,-103.0,-127.0
+401909965,3995,Total Points and Assists,17.5,-114.0,-115.0
+401909965,6606,Total Points and Assists,23.5,-117.0,-112.0
+401909965,2991350,Total Points and Assists,9.5,-106.0,-125.0
+401909965,3133626,Total Points and Assists,9.5,101.0,-133.0
+401909965,4222252,Total Points and Assists,13.5,-104.0,-126.0
+401909965,4278073,Total Points and Assists,38.5,-121.0,-109.0
+401909965,4431736,Total Points and Assists,14.5,-117.0,-112.0
+401909965,4683021,Total Points and Assists,28.5,-109.0,-120.0
+401909965,4683678,Total Points and Assists,11.5,-109.0,-121.0
+401909965,4683778,Total Points and Assists,14.5,-113.0,-116.0
+401909965,4900671,Total Points and Assists,23.5,-118.0,-112.0
+401909965,5081727,Total Points and Assists,8.5,-110.0,-119.0
+401909965,5105565,Total Points and Assists,12.5,-126.0,-104.0
+401909965,5174983,Total Points and Assists,9.5,-118.0,-111.0
+401909965,3995,Total Points and Rebounds,17.5,-108.0,-122.0
+401909965,6606,Total Points and Rebounds,22.5,-121.0,-108.0
+401909965,2991350,Total Points and Rebounds,10.5,-114.0,-115.0
+401909965,3133626,Total Points and Rebounds,12.5,-108.0,-122.0
+401909965,4066211,Total Points and Rebounds,11.5,-122.0,-108.0
+401909965,4222252,Total Points and Rebounds,19.5,-119.0,-111.0
+401909965,4278073,Total Points and Rebounds,37.5,-116.0,-113.0
+401909965,4431736,Total Points and Rebounds,17.5,-111.0,-118.0
+401909965,4683021,Total Points and Rebounds,29.5,-110.0,-119.0
+401909965,4683678,Total Points and Rebounds,11.5,-113.0,-116.0
+401909965,4683778,Total Points and Rebounds,15.5,-117.0,-112.0
+401909965,4900671,Total Points and Rebounds,23.5,-108.0,-122.0
+401909965,5081727,Total Points and Rebounds,9.5,-117.0,-112.0
+401909965,5105565,Total Points and Rebounds,21.5,-119.0,-111.0
+401909965,5174983,Total Points and Rebounds,14.5,-112.0,-117.0
+401909965,3995,Total Assists and Rebounds,8.5,-108.0,-122.0
+401909965,6606,Total Assists and Rebounds,7.5,-131.0,-101.0
+401909965,2991350,Total Assists and Rebounds,5.5,-124.0,-106.0
+401909965,3133626,Total Assists and Rebounds,6.5,-116.0,-113.0
+401909965,4222252,Total Assists and Rebounds,14.5,-108.0,-122.0
+401909965,4278073,Total Assists and Rebounds,9.5,-116.0,-114.0
+401909965,4431736,Total Assists and Rebounds,5.5,-125.0,-105.0
+401909965,4683021,Total Assists and Rebounds,13.5,101.0,-133.0
+401909965,4683678,Total Assists and Rebounds,4.5,118.0,-156.0
+401909965,4683778,Total Assists and Rebounds,4.5,-143.0,109.0
+401909965,4900671,Total Assists and Rebounds,7.5,-142.0,108.0
+401909965,5081727,Total Assists and Rebounds,4.5,-147.0,112.0
+401909965,5105565,Total Assists and Rebounds,12.5,103.0,-136.0
+401909965,5174983,Total Assists and Rebounds,7.5,-117.0,-113.0
+401909965,3995,"Total Points, Rebounds, and Assists",21.5,-120.0,-110.0
+401909965,6606,"Total Points, Rebounds, and Assists",27.5,-110.0,-120.0
+401909965,2991350,"Total Points, Rebounds, and Assists",12.5,-124.0,-106.0
+401909965,3133626,"Total Points, Rebounds, and Assists",14.5,-104.0,-127.0
+401909965,4222252,"Total Points, Rebounds, and Assists",23.5,-121.0,-108.0
+401909965,4431736,"Total Points, Rebounds, and Assists",18.5,-127.0,-104.0
+401909965,4683021,"Total Points, Rebounds, and Assists",35.5,-116.0,-113.0
+401909965,4683678,"Total Points, Rebounds, and Assists",13.5,-117.0,-113.0
+401909965,4683778,"Total Points, Rebounds, and Assists",17.5,-118.0,-111.0
+401909965,4900671,"Total Points, Rebounds, and Assists",27.5,-115.0,-114.0
+401909965,5081727,"Total Points, Rebounds, and Assists",11.5,-117.0,-113.0
+401909965,5105565,"Total Points, Rebounds, and Assists",23.5,-118.0,-112.0
+401909965,5174983,"Total Points, Rebounds, and Assists",15.5,-129.0,-102.0
+401909964,3064440,Total Points,18.5,-121.0,-106.0
+401909964,3155942,Total Points,14.5,-101.0,-126.0
+401909964,4065732,Total Points,13.5,-105.0,-121.0
+401909964,4066262,Total Points,9.5,-106.0,-121.0
+401909964,4066320,Total Points,20.5,-110.0,-116.0
+401909964,4277847,Total Points,13.5,-113.0,-112.0
+401909964,4278572,Total Points,10.5,-111.0,-115.0
+401909964,4431679,Total Points,7.5,-117.0,-109.0
+401909964,4566434,Total Points,24.5,-110.0,-116.0
+401909964,4594327,Total Points,9.5,101.0,-128.0
+401909964,4702382,Total Points,13.5,-106.0,-120.0
+401909964,4712849,Total Points,16.5,100.0,-127.0
+401909964,5142620,Total Points,24.5,-116.0,-110.0
+401909964,5239561,Total Points,8.5,-105.0,-122.0
+401909964,3064440,Total Assists,2.5,-109.0,-121.0
+401909964,3155942,Total Assists,5.5,-125.0,-105.0
+401909964,4065732,Total Assists,1.5,136.0,-180.0
+401909964,4066262,Total Assists,3.5,104.0,-138.0
+401909964,4066320,Total Assists,3.5,134.0,-177.0
+401909964,4277847,Total Assists,1.5,-127.0,-104.0
+401909964,4431679,Total Assists,1.5,156.0,-208.0
+401909964,4566434,Total Assists,8.5,112.0,-147.0
+401909964,4594327,Total Assists,1.5,143.0,-190.0
+401909964,4712849,Total Assists,5.5,111.0,-147.0
+401909964,5142620,Total Assists,6.5,-136.0,103.0
+401909964,5239561,Total Assists,2.5,-134.0,102.0
+401909964,3064440,Total Rebounds,2.5,-158.0,120.0
+401909964,3155942,Total Rebounds,12.5,-128.0,-103.0
+401909964,4065732,Total Rebounds,4.5,-104.0,-127.0
+401909964,4066320,Total Rebounds,4.5,109.0,-144.0
+401909964,4277847,Total Rebounds,8.5,-113.0,-116.0
+401909964,4278572,Total Rebounds,4.5,-137.0,104.0
+401909964,4431679,Total Rebounds,5.5,-134.0,102.0
+401909964,4566434,Total Rebounds,6.5,101.0,-133.0
+401909964,4594327,Total Rebounds,3.5,-115.0,-114.0
+401909964,4702382,Total Rebounds,3.5,-155.0,117.0
+401909964,4712849,Total Rebounds,4.5,-151.0,114.0
+401909964,5142620,Total Rebounds,3.5,117.0,-154.0
+401909964,5239561,Total Rebounds,2.5,131.0,-173.0
+401909964,3064440,Total 3-Point Field Goals,2.5,-106.0,-125.0
+401909964,4065732,Total 3-Point Field Goals,1.5,-154.0,117.0
+401909964,4066262,Total 3-Point Field Goals,1.5,119.0,-156.0
+401909964,4066320,Total 3-Point Field Goals,2.5,-177.0,133.0
+401909964,4277847,Total 3-Point Field Goals,0.5,-193.0,145.0
+401909964,4278572,Total 3-Point Field Goals,1.5,-108.0,-121.0
+401909964,4566434,Total 3-Point Field Goals,1.5,101.0,-133.0
+401909964,4594327,Total 3-Point Field Goals,1.5,169.0,-226.0
+401909964,4702382,Total 3-Point Field Goals,2.5,-132.0,100.0
+401909964,4712849,Total 3-Point Field Goals,1.5,-143.0,109.0
+401909964,5142620,Total 3-Point Field Goals,2.5,-129.0,-102.0
+401909964,5239561,Total 3-Point Field Goals,0.5,-228.0,170.0
+401909964,3064440,Total Points and Assists,21.5,-112.0,-118.0
+401909964,3155942,Total Points and Assists,20.5,-104.0,-126.0
+401909964,4065732,Total Points and Assists,14.5,-117.0,-113.0
+401909964,4066262,Total Points and Assists,12.5,-124.0,-106.0
+401909964,4066320,Total Points and Assists,23.5,-121.0,-108.0
+401909964,4277847,Total Points and Assists,15.5,-111.0,-118.0
+401909964,4431679,Total Points and Assists,8.5,-129.0,-102.0
+401909964,4566434,Total Points and Assists,32.5,-120.0,-109.0
+401909964,4594327,Total Points and Assists,10.5,-112.0,-118.0
+401909964,4712849,Total Points and Assists,21.5,-112.0,-118.0
+401909964,5142620,Total Points and Assists,31.5,-124.0,-106.0
+401909964,5239561,Total Points and Assists,11.5,-104.0,-127.0
+401909964,3064440,Total Points and Rebounds,21.5,-122.0,-108.0
+401909964,3155942,Total Points and Rebounds,27.5,-109.0,-121.0
+401909964,4065732,Total Points and Rebounds,17.5,-123.0,-107.0
+401909964,4066320,Total Points and Rebounds,24.5,-122.0,-108.0
+401909964,4277847,Total Points and Rebounds,22.5,-113.0,-116.0
+401909964,4278572,Total Points and Rebounds,15.5,-117.0,-112.0
+401909964,4431679,Total Points and Rebounds,13.5,-117.0,-112.0
+401909964,4566434,Total Points and Rebounds,31.5,-106.0,-124.0
+401909964,4594327,Total Points and Rebounds,12.5,-126.0,-105.0
+401909964,4702382,Total Points and Rebounds,17.5,-111.0,-119.0
+401909964,4712849,Total Points and Rebounds,21.5,-110.0,-120.0
+401909964,5142620,Total Points and Rebounds,28.5,-106.0,-125.0
+401909964,5239561,Total Points and Rebounds,10.5,-115.0,-114.0
+401909964,3064440,Total Assists and Rebounds,5.5,-114.0,-116.0
+401909964,3155942,Total Assists and Rebounds,18.5,-120.0,-109.0
+401909964,4065732,Total Assists and Rebounds,5.5,-126.0,-105.0
+401909964,4066320,Total Assists and Rebounds,7.5,-110.0,-120.0
+401909964,4277847,Total Assists and Rebounds,10.5,-106.0,-125.0
+401909964,4431679,Total Assists and Rebounds,6.5,-146.0,111.0
+401909964,4566434,Total Assists and Rebounds,14.5,-113.0,-117.0
+401909964,4594327,Total Assists and Rebounds,4.5,-138.0,105.0
+401909964,4712849,Total Assists and Rebounds,10.5,-102.0,-129.0
+401909964,5142620,Total Assists and Rebounds,10.5,102.0,-134.0
+401909964,5239561,Total Assists and Rebounds,4.5,-148.0,112.0
+401909964,3064440,"Total Points, Rebounds, and Assists",24.5,-113.0,-116.0
+401909964,3155942,"Total Points, Rebounds, and Assists",33.5,-107.0,-123.0
+401909964,4065732,"Total Points, Rebounds, and Assists",19.5,-107.0,-123.0
+401909964,4066320,"Total Points, Rebounds, and Assists",28.5,-110.0,-120.0
+401909964,4277847,"Total Points, Rebounds, and Assists",24.5,-110.0,-120.0
+401909964,4431679,"Total Points, Rebounds, and Assists",14.5,-127.0,-103.0
+401909964,4566434,"Total Points, Rebounds, and Assists",39.5,-111.0,-118.0
+401909964,4594327,"Total Points, Rebounds, and Assists",14.5,-104.0,-126.0
+401909964,4712849,"Total Points, Rebounds, and Assists",26.5,-117.0,-112.0
+401909964,5142620,"Total Points, Rebounds, and Assists",35.5,-112.0,-118.0
+401909964,5239561,"Total Points, Rebounds, and Assists",13.5,-115.0,-114.0
+401909963,6475,Total Points,13.5,-110.0,-116.0
+401909963,3032977,Total Points,28.5,-104.0,-123.0
+401909963,3059319,Total Points,8.5,-128.0,100.0
+401909963,3064482,Total Points,8.5,-101.0,-127.0
+401909963,4065663,Total Points,7.5,106.0,-136.0
+401909963,4066261,Total Points,18.5,-106.0,-121.0
+401909963,4066336,Total Points,23.5,-105.0,-121.0
+401909963,4278053,Total Points,13.5,-103.0,-123.0
+401909963,4397077,Total Points,9.5,-123.0,-104.0
+401909963,4432811,Total Points,7.5,-109.0,-117.0
+401909963,4601025,Total Points,11.5,-114.0,-112.0
+401909963,4683766,Total Points,9.5,-114.0,-112.0
+401909963,4873138,Total Points,18.5,-102.0,-125.0
+401909963,5041955,Total Points,19.5,-118.0,-108.0
+401909963,5105839,Total Points,12.5,-122.0,-104.0
+401909963,5107157,Total Points,6.5,-111.0,-115.0
+401909963,6475,Total Assists,1.5,-146.0,111.0
+401909963,3032977,Total Assists,5.5,-133.0,101.0
+401909963,3059319,Total Assists,1.5,-113.0,-117.0
+401909963,4066261,Total Assists,2.5,-167.0,126.0
+401909963,4066336,Total Assists,1.5,-145.0,110.0
+401909963,4278053,Total Assists,7.5,-111.0,-119.0
+401909963,4601025,Total Assists,3.5,-105.0,-125.0
+401909963,4683766,Total Assists,6.5,102.0,-135.0
+401909963,4873138,Total Assists,2.5,141.0,-186.0
+401909963,5041955,Total Assists,5.5,-119.0,-110.0
+401909963,5105839,Total Assists,1.5,-127.0,-104.0
+401909963,6475,Total Rebounds,2.5,127.0,-168.0
+401909963,3032977,Total Rebounds,12.5,-102.0,-129.0
+401909963,3059319,Total Rebounds,3.5,121.0,-160.0
+401909963,3064482,Total Rebounds,5.5,-107.0,-123.0
+401909963,4065663,Total Rebounds,4.5,120.0,-158.0
+401909963,4066261,Total Rebounds,8.5,-137.0,104.0
+401909963,4066336,Total Rebounds,6.5,-124.0,-106.0
+401909963,4278053,Total Rebounds,2.5,-103.0,-128.0
+401909963,4397077,Total Rebounds,6.5,-128.0,-103.0
+401909963,4432811,Total Rebounds,2.5,-111.0,-118.0
+401909963,4601025,Total Rebounds,3.5,-109.0,-121.0
+401909963,4683766,Total Rebounds,2.5,126.0,-167.0
+401909963,4873138,Total Rebounds,5.5,-135.0,103.0
+401909963,5041955,Total Rebounds,4.5,-120.0,-110.0
+401909963,5105839,Total Rebounds,2.5,-160.0,121.0
+401909963,6475,Total 3-Point Field Goals,3.5,-113.0,-117.0
+401909963,3032977,Total 3-Point Field Goals,0.5,135.0,-179.0
+401909963,3059319,Total 3-Point Field Goals,1.5,131.0,-173.0
+401909963,3064482,Total 3-Point Field Goals,1.5,130.0,-172.0
+401909963,4065663,Total 3-Point Field Goals,0.5,-191.0,144.0
+401909963,4066261,Total 3-Point Field Goals,1.5,139.0,-185.0
+401909963,4066336,Total 3-Point Field Goals,3.5,104.0,-137.0
+401909963,4278053,Total 3-Point Field Goals,1.5,-182.0,137.0
+401909963,4432811,Total 3-Point Field Goals,1.5,123.0,-162.0
+401909963,4601025,Total 3-Point Field Goals,1.5,164.0,-219.0
+401909963,4683766,Total 3-Point Field Goals,0.5,130.0,-172.0
+401909963,4873138,Total 3-Point Field Goals,2.5,127.0,-168.0
+401909963,5041955,Total 3-Point Field Goals,2.5,-105.0,-125.0
+401909963,5105839,Total 3-Point Field Goals,1.5,-159.0,120.0
+401909963,5107157,Total 3-Point Field Goals,1.5,141.0,-187.0
+401909963,6475,Total Points and Assists,15.5,-106.0,-124.0
+401909963,3032977,Total Points and Assists,34.5,-107.0,-124.0
+401909963,3059319,Total Points and Assists,10.5,-118.0,-111.0
+401909963,4066261,Total Points and Assists,21.5,-109.0,-121.0
+401909963,4066336,Total Points and Assists,25.5,-106.0,-124.0
+401909963,4278053,Total Points and Assists,20.5,-127.0,-104.0
+401909963,4601025,Total Points and Assists,15.5,-105.0,-125.0
+401909963,4683766,Total Points and Assists,16.5,-104.0,-127.0
+401909963,4873138,Total Points and Assists,20.5,-108.0,-122.0
+401909963,5041955,Total Points and Assists,25.5,-121.0,-108.0
+401909963,5105839,Total Points and Assists,14.5,-120.0,-110.0
+401909963,6475,Total Points and Rebounds,15.5,-110.0,-119.0
+401909963,3032977,Total Points and Rebounds,40.5,-116.0,-114.0
+401909963,3059319,Total Points and Rebounds,12.5,-106.0,-124.0
+401909963,3064482,Total Points and Rebounds,13.5,-124.0,-106.0
+401909963,4065663,Total Points and Rebounds,11.5,-106.0,-124.0
+401909963,4066261,Total Points and Rebounds,27.5,-109.0,-121.0
+401909963,4066336,Total Points and Rebounds,30.5,-107.0,-123.0
+401909963,4278053,Total Points and Rebounds,15.5,-122.0,-108.0
+401909963,4397077,Total Points and Rebounds,16.5,-120.0,-109.0
+401909963,4432811,Total Points and Rebounds,10.5,-103.0,-127.0
+401909963,4601025,Total Points and Rebounds,15.5,-109.0,-121.0
+401909963,4683766,Total Points and Rebounds,11.5,-127.0,-104.0
+401909963,4873138,Total Points and Rebounds,24.5,-106.0,-124.0
+401909963,5041955,Total Points and Rebounds,24.5,-116.0,-114.0
+401909963,5105839,Total Points and Rebounds,16.5,-107.0,-122.0
+401909963,6475,Total Assists and Rebounds,3.5,-142.0,108.0
+401909963,3032977,Total Assists and Rebounds,18.5,-104.0,-127.0
+401909963,3059319,Total Assists and Rebounds,4.5,-136.0,103.0
+401909963,4066261,Total Assists and Rebounds,11.5,-140.0,106.0
+401909963,4066336,Total Assists and Rebounds,8.5,-118.0,-112.0
+401909963,4278053,Total Assists and Rebounds,10.5,105.0,-139.0
+401909963,4601025,Total Assists and Rebounds,7.5,111.0,-146.0
+401909963,4683766,Total Assists and Rebounds,8.5,-115.0,-115.0
+401909963,4873138,Total Assists and Rebounds,8.5,111.0,-146.0
+401909963,5041955,Total Assists and Rebounds,10.5,-113.0,-117.0
+401909963,5105839,Total Assists and Rebounds,4.5,-131.0,-101.0
+401909963,6475,"Total Points, Rebounds, and Assists",17.5,-109.0,-120.0
+401909963,3032977,"Total Points, Rebounds, and Assists",46.5,-119.0,-110.0
+401909963,3059319,"Total Points, Rebounds, and Assists",13.5,-128.0,-103.0
+401909963,3064482,"Total Points, Rebounds, and Assists",15.5,-106.0,-124.0
+401909963,4066261,"Total Points, Rebounds, and Assists",30.5,-115.0,-115.0
+401909963,4066336,"Total Points, Rebounds, and Assists",32.5,-107.0,-123.0
+401909963,4278053,"Total Points, Rebounds, and Assists",23.5,-117.0,-112.0
+401909963,4397077,"Total Points, Rebounds, and Assists",18.5,-120.0,-109.0
+401909963,4432811,"Total Points, Rebounds, and Assists",12.5,-108.0,-122.0
+401909963,4601025,"Total Points, Rebounds, and Assists",18.5,-126.0,-105.0
+401909963,4683766,"Total Points, Rebounds, and Assists",18.5,-113.0,-117.0
+401909963,4873138,"Total Points, Rebounds, and Assists",26.5,-113.0,-116.0
+401909963,5041955,"Total Points, Rebounds, and Assists",30.5,-118.0,-111.0
+401909963,5105839,"Total Points, Rebounds, and Assists",17.5,-125.0,-106.0
+401909962,3448,Total Points,12.5,100.0,-127.0
+401909962,2991139,Total Points,7.5,100.0,-127.0
+401909962,3136193,Total Points,26.5,-104.0,-122.0
+401909962,3155526,Total Points,16.5,-103.0,-124.0
+401909962,3936099,Total Points,10.5,-112.0,-114.0
+401909962,4065778,Total Points,9.5,-107.0,-119.0
+401909962,4066383,Total Points,16.5,-111.0,-115.0
+401909962,4066648,Total Points,16.5,-108.0,-118.0
+401909962,4278585,Total Points,8.5,-111.0,-115.0
+401909962,4396907,Total Points,21.5,-121.0,-106.0
+401909962,4437244,Total Points,15.5,-109.0,-116.0
+401909962,4601023,Total Points,6.5,-116.0,-109.0
+401909962,4702352,Total Points,7.5,-119.0,-107.0
+401909962,5203685,Total Points,6.5,-119.0,-107.0
+401909962,5254165,Total Points,9.5,-113.0,-113.0
+401909962,3448,Total Assists,1.5,125.0,-165.0
+401909962,2991139,Total Assists,4.5,116.0,-153.0
+401909962,3136193,Total Assists,5.5,111.0,-146.0
+401909962,3155526,Total Assists,2.5,126.0,-167.0
+401909962,4065778,Total Assists,2.5,102.0,-134.0
+401909962,4066383,Total Assists,2.5,-157.0,119.0
+401909962,4278585,Total Assists,3.5,111.0,-146.0
+401909962,4396907,Total Assists,7.5,114.0,-150.0
+401909962,4437244,Total Assists,2.5,-158.0,120.0
+401909962,4601023,Total Assists,2.5,-116.0,-113.0
+401909962,4702352,Total Assists,1.5,-146.0,111.0
+401909962,5254165,Total Assists,2.5,-113.0,-116.0
+401909962,3448,Total Rebounds,5.5,-105.0,-126.0
+401909962,2991139,Total Rebounds,3.5,-143.0,108.0
+401909962,3136193,Total Rebounds,3.5,112.0,-148.0
+401909962,3155526,Total Rebounds,3.5,-147.0,111.0
+401909962,3936099,Total Rebounds,4.5,-123.0,-107.0
+401909962,4065778,Total Rebounds,3.5,-155.0,117.0
+401909962,4066383,Total Rebounds,6.5,-147.0,111.0
+401909962,4066648,Total Rebounds,5.5,114.0,-151.0
+401909962,4278585,Total Rebounds,2.5,-157.0,119.0
+401909962,4396907,Total Rebounds,2.5,106.0,-139.0
+401909962,4437244,Total Rebounds,4.5,121.0,-160.0
+401909962,4601023,Total Rebounds,5.5,-105.0,-125.0
+401909962,4702352,Total Rebounds,2.5,102.0,-134.0
+401909962,5203685,Total Rebounds,6.5,115.0,-151.0
+401909962,5254165,Total Rebounds,3.5,130.0,-172.0
+401909962,3448,Total 3-Point Field Goals,1.5,146.0,-194.0
+401909962,2991139,Total 3-Point Field Goals,0.5,-160.0,121.0
+401909962,3136193,Total 3-Point Field Goals,1.5,-168.0,127.0
+401909962,3155526,Total 3-Point Field Goals,1.5,-147.0,112.0
+401909962,3913174,Total 3-Point Field Goals,1.5,133.0,-175.0
+401909962,3936099,Total 3-Point Field Goals,1.5,155.0,-207.0
+401909962,4065778,Total 3-Point Field Goals,2.5,139.0,-185.0
+401909962,4066383,Total 3-Point Field Goals,1.5,-162.0,123.0
+401909962,4066648,Total 3-Point Field Goals,2.5,146.0,-193.0
+401909962,4278585,Total 3-Point Field Goals,1.5,-157.0,119.0
+401909962,4396907,Total 3-Point Field Goals,2.5,-109.0,-121.0
+401909962,4437244,Total 3-Point Field Goals,1.5,102.0,-135.0
+401909962,4702352,Total 3-Point Field Goals,1.5,123.0,-162.0
+401909962,5254165,Total 3-Point Field Goals,0.5,-217.0,163.0
+401909962,3448,Total Points and Assists,13.5,-113.0,-116.0
+401909962,2991139,Total Points and Assists,11.5,-115.0,-115.0
+401909962,3136193,Total Points and Assists,31.5,-118.0,-112.0
+401909962,3155526,Total Points and Assists,18.5,-111.0,-118.0
+401909962,4065778,Total Points and Assists,11.5,-130.0,-102.0
+401909962,4066383,Total Points and Assists,19.5,-115.0,-114.0
+401909962,4278585,Total Points and Assists,11.5,-130.0,-101.0
+401909962,4396907,Total Points and Assists,29.5,-110.0,-120.0
+401909962,4437244,Total Points and Assists,18.5,-117.0,-113.0
+401909962,4601023,Total Points and Assists,9.5,-115.0,-115.0
+401909962,4702352,Total Points and Assists,9.5,-117.0,-113.0
+401909962,5254165,Total Points and Assists,12.5,-108.0,-122.0
+401909962,3448,Total Points and Rebounds,17.5,-119.0,-111.0
+401909962,2991139,Total Points and Rebounds,11.5,-106.0,-124.0
+401909962,3136193,Total Points and Rebounds,29.5,-119.0,-110.0
+401909962,3155526,Total Points and Rebounds,20.5,-107.0,-122.0
+401909962,3936099,Total Points and Rebounds,15.5,-112.0,-118.0
+401909962,4065778,Total Points and Rebounds,13.5,-116.0,-113.0
+401909962,4066383,Total Points and Rebounds,23.5,-119.0,-111.0
+401909962,4066648,Total Points and Rebounds,21.5,-118.0,-111.0
+401909962,4278585,Total Points and Rebounds,11.5,-119.0,-110.0
+401909962,4396907,Total Points and Rebounds,24.5,-116.0,-114.0
+401909962,4437244,Total Points and Rebounds,19.5,-118.0,-112.0
+401909962,4601023,Total Points and Rebounds,12.5,-107.0,-123.0
+401909962,4702352,Total Points and Rebounds,10.5,-105.0,-126.0
+401909962,5203685,Total Points and Rebounds,12.5,-131.0,-101.0
+401909962,5254165,Total Points and Rebounds,12.5,-120.0,-109.0
+401909962,3448,Total Assists and Rebounds,6.5,-130.0,-102.0
+401909962,2991139,Total Assists and Rebounds,8.5,108.0,-142.0
+401909962,3136193,Total Assists and Rebounds,8.5,-119.0,-111.0
+401909962,3155526,Total Assists and Rebounds,6.5,104.0,-137.0
+401909962,4065778,Total Assists and Rebounds,6.5,-111.0,-118.0
+401909962,4066383,Total Assists and Rebounds,9.5,-138.0,105.0
+401909962,4278585,Total Assists and Rebounds,6.5,-102.0,-128.0
+401909962,4396907,Total Assists and Rebounds,9.5,-115.0,-114.0
+401909962,4437244,Total Assists and Rebounds,7.5,108.0,-142.0
+401909962,4601023,Total Assists and Rebounds,8.5,105.0,-139.0
+401909962,4702352,Total Assists and Rebounds,4.5,107.0,-141.0
+401909962,5254165,Total Assists and Rebounds,5.5,-128.0,-103.0
+401909962,3448,"Total Points, Rebounds, and Assists",19.5,-107.0,-123.0
+401909962,2991139,"Total Points, Rebounds, and Assists",15.5,-114.0,-115.0
+401909962,3136193,"Total Points, Rebounds, and Assists",35.5,-107.0,-123.0
+401909962,3155526,"Total Points, Rebounds, and Assists",22.5,-114.0,-115.0
+401909962,4065778,"Total Points, Rebounds, and Assists",16.5,-106.0,-124.0
+401909962,4066383,"Total Points, Rebounds, and Assists",26.5,-122.0,-108.0
+401909962,4278585,"Total Points, Rebounds, and Assists",15.5,-105.0,-125.0
+401909962,4396907,"Total Points, Rebounds, and Assists",31.5,-121.0,-109.0
+401909962,4437244,"Total Points, Rebounds, and Assists",22.5,-120.0,-110.0
+401909962,4601023,"Total Points, Rebounds, and Assists",14.5,-131.0,100.0
+401909962,4702352,"Total Points, Rebounds, and Assists",12.5,-104.0,-126.0
+401909962,5254165,"Total Points, Rebounds, and Assists",15.5,-114.0,-115.0
+401909961,1966,Total Points,14.5,-119.0,-107.0
+401909961,4251,Total Points,17.5,-118.0,-108.0
+401909961,4251,Total Points,19.5,-118.0,-108.0
+401909961,3059318,Total Points,19.5,-106.0,-121.0
+401909961,3078576,Total Points,13.5,-109.0,-117.0
+401909961,3917376,Total Points,21.5,-122.0,-104.0
+401909961,4065648,Total Points,26.5,-119.0,-107.0
+401909961,4065804,Total Points,5.5,-116.0,-109.0
+401909961,4066354,Total Points,12.5,-124.0,-103.0
+401909961,4351851,Total Points,6.5,-108.0,-118.0
+401909961,4351852,Total Points,5.5,-102.0,-125.0
+401909961,4397424,Total Points,8.5,-119.0,-107.0
+401909961,4431678,Total Points,22.5,-117.0,-109.0
+401909961,5124612,Total Points,11.5,-120.0,-106.0
+401909961,1966,Total Assists,6.5,105.0,-138.0
+401909961,4251,Total Assists,3.5,-117.0,-112.0
+401909961,3059318,Total Assists,3.5,-104.0,-126.0
+401909961,3078576,Total Assists,4.5,-133.0,101.0
+401909961,3917376,Total Assists,3.5,-109.0,-121.0
+401909961,4065648,Total Assists,6.5,-132.0,100.0
+401909961,4066354,Total Assists,3.5,-106.0,-124.0
+401909961,4431678,Total Assists,5.5,105.0,-139.0
+401909961,5124612,Total Assists,2.5,-148.0,112.0
+401909961,1966,Total Rebounds,6.5,-116.0,-114.0
+401909961,4251,Total Rebounds,4.5,-157.0,119.0
+401909961,3059318,Total Rebounds,8.5,106.0,-139.0
+401909961,3078576,Total Rebounds,3.5,-115.0,-114.0
+401909961,3917376,Total Rebounds,6.5,-119.0,-110.0
+401909961,4065648,Total Rebounds,7.5,-102.0,-129.0
+401909961,4065804,Total Rebounds,2.5,104.0,-137.0
+401909961,4066354,Total Rebounds,2.5,-135.0,103.0
+401909961,4351852,Total Rebounds,6.5,111.0,-146.0
+401909961,4397424,Total Rebounds,6.5,-116.0,-113.0
+401909961,4431678,Total Rebounds,3.5,-118.0,-112.0
+401909961,5124612,Total Rebounds,6.5,-117.0,-112.0
+401909961,5124612,Total Rebounds,5.5,-115.0,-115.0
+401909961,1966,Total 3-Point Field Goals,1.5,154.0,-205.0
+401909961,4251,Total 3-Point Field Goals,2.5,-149.0,113.0
+401909961,3059318,Total 3-Point Field Goals,0.5,-185.0,140.0
+401909961,3078576,Total 3-Point Field Goals,1.5,-193.0,146.0
+401909961,3078576,Total 3-Point Field Goals,2.5,146.0,-194.0
+401909961,3917376,Total 3-Point Field Goals,1.5,-135.0,102.0
+401909961,4065648,Total 3-Point Field Goals,2.5,-127.0,-104.0
+401909961,4065804,Total 3-Point Field Goals,1.5,-106.0,-124.0
+401909961,4066354,Total 3-Point Field Goals,2.5,140.0,-186.0
+401909961,4351851,Total 3-Point Field Goals,1.5,102.0,-135.0
+401909961,4431678,Total 3-Point Field Goals,2.5,-102.0,-129.0
+401909961,5124612,Total 3-Point Field Goals,1.5,-133.0,101.0
+401909961,1966,Total Points and Assists,21.5,-105.0,-125.0
+401909961,4251,Total Points and Assists,21.5,-115.0,-114.0
+401909961,4251,Total Points and Assists,23.5,-115.0,-114.0
+401909961,2581018,Total Points and Assists,6.5,101.0,-134.0
+401909961,3059318,Total Points and Assists,22.5,-121.0,-108.0
+401909961,3078576,Total Points and Assists,18.5,-113.0,-116.0
+401909961,3917376,Total Points and Assists,25.5,-117.0,-112.0
+401909961,4065648,Total Points and Assists,33.5,-121.0,-109.0
+401909961,4066354,Total Points and Assists,16.5,-115.0,-115.0
+401909961,4431678,Total Points and Assists,28.5,-107.0,-123.0
+401909961,5124612,Total Points and Assists,14.5,-120.0,-110.0
+401909961,1966,Total Points and Rebounds,21.5,-113.0,-117.0
+401909961,4251,Total Points and Rebounds,22.5,-125.0,-105.0
+401909961,4251,Total Points and Rebounds,24.5,-125.0,-105.0
+401909961,3059318,Total Points and Rebounds,27.5,-117.0,-112.0
+401909961,3078576,Total Points and Rebounds,17.5,-106.0,-124.0
+401909961,3917376,Total Points and Rebounds,28.5,-122.0,-108.0
+401909961,4065648,Total Points and Rebounds,34.5,-112.0,-117.0
+401909961,4065804,Total Points and Rebounds,7.5,-125.0,-105.0
+401909961,4066354,Total Points and Rebounds,15.5,-123.0,-107.0
+401909961,4351851,Total Points and Rebounds,8.5,-110.0,-119.0
+401909961,4351852,Total Points and Rebounds,11.5,-111.0,-118.0
+401909961,4397424,Total Points and Rebounds,15.5,-116.0,-113.0
+401909961,4431678,Total Points and Rebounds,26.5,-113.0,-116.0
+401909961,5124612,Total Points and Rebounds,17.5,-112.0,-117.0
+401909961,5124612,Total Points and Rebounds,18.5,-115.0,-115.0
+401909961,1966,Total Assists and Rebounds,12.5,-129.0,-102.0
+401909961,4251,Total Assists and Rebounds,8.5,-127.0,-104.0
+401909961,3059318,Total Assists and Rebounds,11.5,-126.0,-104.0
+401909961,3078576,Total Assists and Rebounds,8.5,-107.0,-122.0
+401909961,3917376,Total Assists and Rebounds,10.5,-102.0,-129.0
+401909961,4065648,Total Assists and Rebounds,14.5,-103.0,-128.0
+401909961,4065804,Total Assists and Rebounds,3.5,104.0,-137.0
+401909961,4066354,Total Assists and Rebounds,6.5,-103.0,-127.0
+401909961,4397424,Total Assists and Rebounds,7.5,-129.0,-102.0
+401909961,4431678,Total Assists and Rebounds,8.5,-146.0,111.0
+401909961,4431678,Total Assists and Rebounds,9.5,110.0,-144.0
+401909961,5124612,Total Assists and Rebounds,8.5,-113.0,-117.0
+401909961,5124612,Total Assists and Rebounds,9.5,-115.0,-114.0
+401909961,1966,"Total Points, Rebounds, and Assists",27.5,-126.0,-104.0
+401909961,4251,"Total Points, Rebounds, and Assists",26.5,-119.0,-110.0
+401909961,4251,"Total Points, Rebounds, and Assists",28.5,-119.0,-110.0
+401909961,2581018,"Total Points, Rebounds, and Assists",8.5,-101.0,-130.0
+401909961,3059318,"Total Points, Rebounds, and Assists",31.5,-111.0,-119.0
+401909961,3078576,"Total Points, Rebounds, and Assists",22.5,-107.0,-123.0
+401909961,3917376,"Total Points, Rebounds, and Assists",32.5,-116.0,-114.0
+401909961,4065648,"Total Points, Rebounds, and Assists",41.5,-112.0,-117.0
+401909961,4065804,"Total Points, Rebounds, and Assists",8.5,-123.0,-107.0
+401909961,4066354,"Total Points, Rebounds, and Assists",19.5,-113.0,-116.0
+401909961,4351851,"Total Points, Rebounds, and Assists",9.5,-121.0,-109.0
+401909961,4397424,"Total Points, Rebounds, and Assists",16.5,-122.0,-108.0
+401909961,4431678,"Total Points, Rebounds, and Assists",32.5,-105.0,-125.0
+401909961,5124612,"Total Points, Rebounds, and Assists",20.5,-115.0,-115.0
+401909961,5124612,"Total Points, Rebounds, and Assists",21.5,-117.0,-113.0
+401909960,6585,Total Points,4.5,-113.0,-113.0
+401909960,3062679,Total Points,9.5,-112.0,-114.0
+401909960,3133628,Total Points,10.5,-105.0,-121.0
+401909960,3134907,Total Points,11.5,-121.0,-105.0
+401909960,3136195,Total Points,20.5,-104.0,-123.0
+401909960,3147657,Total Points,10.5,-120.0,-107.0
+401909960,3914044,Total Points,9.5,-118.0,-108.0
+401909960,3934672,Total Points,25.5,-120.0,-106.0
+401909960,3934719,Total Points,17.5,-112.0,-114.0
+401909960,4395725,Total Points,19.5,-112.0,-114.0
+401909960,4397475,Total Points,8.5,102.0,-130.0
+401909960,4431823,Total Points,6.5,-110.0,-115.0
+401909960,4432848,Total Points,14.5,-115.0,-110.0
+401909960,4591725,Total Points,13.5,-122.0,-104.0
+401909960,5082206,Total Points,12.5,-121.0,-105.0
+401909960,5105623,Total Points,6.5,-130.0,102.0
+401909960,5164559,Total Points,7.5,-120.0,-107.0
+401909960,5214640,Total Points,6.5,-111.0,-115.0
+401909960,3062679,Total Assists,3.5,-139.0,105.0
+401909960,3133628,Total Assists,1.5,-135.0,102.0
+401909960,3134907,Total Assists,2.5,-130.0,-101.0
+401909960,3136195,Total Assists,3.5,103.0,-136.0
+401909960,3147657,Total Assists,2.5,-154.0,117.0
+401909960,3934672,Total Assists,6.5,113.0,-148.0
+401909960,3934719,Total Assists,2.5,120.0,-158.0
+401909960,4395725,Total Assists,3.5,-155.0,117.0
+401909960,4397475,Total Assists,1.5,113.0,-149.0
+401909960,4432848,Total Assists,3.5,122.0,-162.0
+401909960,4591725,Total Assists,5.5,107.0,-141.0
+401909960,5082206,Total Assists,3.5,-103.0,-128.0
+401909960,5214640,Total Assists,3.5,120.0,-159.0
+401909960,6585,Total Rebounds,6.5,-119.0,-110.0
+401909960,3062679,Total Rebounds,7.5,105.0,-139.0
+401909960,3133628,Total Rebounds,5.5,110.0,-145.0
+401909960,3134907,Total Rebounds,5.5,114.0,-151.0
+401909960,3136195,Total Rebounds,13.5,-102.0,-129.0
+401909960,3147657,Total Rebounds,3.5,102.0,-134.0
+401909960,3934672,Total Rebounds,3.5,107.0,-141.0
+401909960,3934719,Total Rebounds,5.5,-120.0,-110.0
+401909960,4395725,Total Rebounds,4.5,113.0,-148.0
+401909960,4397475,Total Rebounds,2.5,140.0,-185.0
+401909960,4432848,Total Rebounds,4.5,-153.0,116.0
+401909960,4591725,Total Rebounds,4.5,120.0,-158.0
+401909960,5082206,Total Rebounds,5.5,-148.0,112.0
+401909960,5105623,Total Rebounds,4.5,-141.0,107.0
+401909960,5164559,Total Rebounds,2.5,-111.0,-119.0
+401909960,5214640,Total Rebounds,2.5,-108.0,-122.0
+401909960,3062679,Total 3-Point Field Goals,1.5,122.0,-162.0
+401909960,3133628,Total 3-Point Field Goals,1.5,-119.0,-110.0
+401909960,3134907,Total 3-Point Field Goals,1.5,-108.0,-122.0
+401909960,3136195,Total 3-Point Field Goals,1.5,130.0,-172.0
+401909960,3147657,Total 3-Point Field Goals,1.5,127.0,-167.0
+401909960,3914044,Total 3-Point Field Goals,2.5,119.0,-157.0
+401909960,3934672,Total 3-Point Field Goals,2.5,-121.0,-109.0
+401909960,3934719,Total 3-Point Field Goals,2.5,118.0,-156.0
+401909960,4395725,Total 3-Point Field Goals,2.5,-131.0,-101.0
+401909960,4397475,Total 3-Point Field Goals,2.5,133.0,-176.0
+401909960,4431823,Total 3-Point Field Goals,1.5,106.0,-140.0
+401909960,4432848,Total 3-Point Field Goals,1.5,171.0,-229.0
+401909960,4591725,Total 3-Point Field Goals,2.5,132.0,-175.0
+401909960,5082206,Total 3-Point Field Goals,1.5,103.0,-136.0
+401909960,5164559,Total 3-Point Field Goals,0.5,-233.0,174.0
+401909960,3062679,Total Points and Assists,13.5,-116.0,-113.0
+401909960,3133628,Total Points and Assists,12.5,-106.0,-124.0
+401909960,3134907,Total Points and Assists,14.5,-121.0,-109.0
+401909960,3136195,Total Points and Assists,23.5,-117.0,-113.0
+401909960,3147657,Total Points and Assists,13.5,-123.0,-107.0
+401909960,3934672,Total Points and Assists,32.5,-107.0,-123.0
+401909960,3934719,Total Points and Assists,19.5,-122.0,-108.0
+401909960,4395725,Total Points and Assists,23.5,-117.0,-113.0
+401909960,4397475,Total Points and Assists,9.5,-108.0,-121.0
+401909960,4432848,Total Points and Assists,17.5,-128.0,-103.0
+401909960,4591725,Total Points and Assists,19.5,-110.0,-120.0
+401909960,5082206,Total Points and Assists,16.5,-111.0,-119.0
+401909960,5214640,Total Points and Assists,9.5,-123.0,-107.0
+401909960,6585,Total Points and Rebounds,11.5,-117.0,-113.0
+401909960,3062679,Total Points and Rebounds,16.5,-125.0,-105.0
+401909960,3133628,Total Points and Rebounds,15.5,-117.0,-112.0
+401909960,3134907,Total Points and Rebounds,17.5,-103.0,-127.0
+401909960,3136195,Total Points and Rebounds,33.5,-117.0,-113.0
+401909960,3147657,Total Points and Rebounds,14.5,-108.0,-122.0
+401909960,3934672,Total Points and Rebounds,29.5,-108.0,-122.0
+401909960,3934719,Total Points and Rebounds,23.5,-110.0,-119.0
+401909960,4395725,Total Points and Rebounds,23.5,-123.0,-107.0
+401909960,4397475,Total Points and Rebounds,10.5,-104.0,-126.0
+401909960,4432848,Total Points and Rebounds,19.5,-122.0,-108.0
+401909960,4591725,Total Points and Rebounds,18.5,-110.0,-120.0
+401909960,5082206,Total Points and Rebounds,19.5,-105.0,-125.0
+401909960,5105623,Total Points and Rebounds,11.5,-124.0,-106.0
+401909960,5164559,Total Points and Rebounds,10.5,-112.0,-118.0
+401909960,5214640,Total Points and Rebounds,9.5,-106.0,-125.0
+401909960,3062679,Total Assists and Rebounds,11.5,101.0,-133.0
+401909960,3133628,Total Assists and Rebounds,7.5,110.0,-144.0
+401909960,3134907,Total Assists and Rebounds,7.5,-136.0,103.0
+401909960,3136195,Total Assists and Rebounds,16.5,-121.0,-109.0
+401909960,3147657,Total Assists and Rebounds,6.5,-104.0,-126.0
+401909960,3934672,Total Assists and Rebounds,9.5,-118.0,-111.0
+401909960,3934719,Total Assists and Rebounds,7.5,-140.0,106.0
+401909960,4395725,Total Assists and Rebounds,8.5,100.0,-132.0
+401909960,4397475,Total Assists and Rebounds,3.5,-113.0,-116.0
+401909960,4432848,Total Assists and Rebounds,8.5,102.0,-134.0
+401909960,4591725,Total Assists and Rebounds,9.5,-111.0,-119.0
+401909960,5082206,Total Assists and Rebounds,9.5,-114.0,-115.0
+401909960,5214640,Total Assists and Rebounds,5.5,-126.0,-104.0
+401909960,3062679,"Total Points, Rebounds, and Assists",20.5,-127.0,-104.0
+401909960,3133628,"Total Points, Rebounds, and Assists",17.5,-117.0,-112.0
+401909960,3134907,"Total Points, Rebounds, and Assists",20.5,-105.0,-125.0
+401909960,3136195,"Total Points, Rebounds, and Assists",37.5,-113.0,-117.0
+401909960,3147657,"Total Points, Rebounds, and Assists",17.5,-108.0,-122.0
+401909960,3934672,"Total Points, Rebounds, and Assists",35.5,-116.0,-113.0
+401909960,3934719,"Total Points, Rebounds, and Assists",25.5,-119.0,-111.0
+401909960,4395725,"Total Points, Rebounds, and Assists",27.5,-124.0,-106.0
+401909960,4397475,"Total Points, Rebounds, and Assists",11.5,-116.0,-114.0
+401909960,4432848,"Total Points, Rebounds, and Assists",23.5,-107.0,-123.0
+401909960,4591725,"Total Points, Rebounds, and Assists",23.5,-117.0,-112.0
+401909960,5082206,"Total Points, Rebounds, and Assists",22.5,-118.0,-111.0
+401909960,5214640,"Total Points, Rebounds, and Assists",12.5,-113.0,-116.0
+401909959,3975,Total Points,27.5,-109.0,-117.0
+401909959,6589,Total Points,5.5,-116.0,-110.0
+401909959,2990969,Total Points,8.5,104.0,-132.0
+401909959,3907497,Total Points,17.5,-122.0,-105.0
+401909959,4066436,Total Points,9.5,-110.0,-115.0
+401909959,4277813,Total Points,8.5,-119.0,-107.0
+401909959,4395628,Total Points,19.5,-118.0,-108.0
+401909959,4397040,Total Points,9.5,-126.0,-101.0
+401909959,4397136,Total Points,18.5,-111.0,-114.0
+401909959,4397688,Total Points,16.5,-102.0,-125.0
+401909959,4683634,Total Points,9.5,-122.0,-104.0
+401909959,4709138,Total Points,15.5,-117.0,-109.0
+401909959,4869780,Total Points,12.5,-109.0,-117.0
+401909959,4997536,Total Points,8.5,103.0,-131.0
+401909959,4997538,Total Points,8.5,-124.0,-103.0
+401909959,5144091,Total Points,17.5,-101.0,-126.0
+401909959,5175737,Total Points,19.5,-117.0,-109.0
+401909959,3975,Total Assists,4.5,-128.0,-103.0
+401909959,6589,Total Assists,6.5,108.0,-142.0
+401909959,3907497,Total Assists,5.5,109.0,-144.0
+401909959,4066436,Total Assists,2.5,144.0,-191.0
+401909959,4277813,Total Assists,1.5,-156.0,118.0
+401909959,4395628,Total Assists,2.5,-138.0,105.0
+401909959,4397040,Total Assists,2.5,-121.0,-109.0
+401909959,4397136,Total Assists,2.5,108.0,-142.0
+401909959,4397688,Total Assists,2.5,-171.0,129.0
+401909959,4683634,Total Assists,1.5,-124.0,-106.0
+401909959,4709138,Total Assists,3.5,-124.0,-106.0
+401909959,4869780,Total Assists,2.5,-156.0,118.0
+401909959,5144091,Total Assists,4.5,-131.0,-101.0
+401909959,5175737,Total Assists,3.5,-139.0,105.0
+401909959,3975,Total Rebounds,3.5,-126.0,-104.0
+401909959,6589,Total Rebounds,5.5,-108.0,-121.0
+401909959,2990969,Total Rebounds,2.5,-132.0,100.0
+401909959,3907497,Total Rebounds,5.5,104.0,-137.0
+401909959,4066436,Total Rebounds,2.5,-146.0,111.0
+401909959,4277813,Total Rebounds,3.5,-114.0,-115.0
+401909959,4395628,Total Rebounds,5.5,-109.0,-121.0
+401909959,4397040,Total Rebounds,2.5,132.0,-175.0
+401909959,4397136,Total Rebounds,5.5,-129.0,-102.0
+401909959,4397688,Total Rebounds,4.5,-136.0,104.0
+401909959,4683634,Total Rebounds,3.5,-107.0,-123.0
+401909959,4709138,Total Rebounds,5.5,109.0,-143.0
+401909959,4869780,Total Rebounds,7.5,-117.0,-112.0
+401909959,4997536,Total Rebounds,3.5,-104.0,-127.0
+401909959,4997538,Total Rebounds,4.5,-155.0,117.0
+401909959,5144091,Total Rebounds,4.5,-126.0,-104.0
+401909959,5175737,Total Rebounds,7.5,102.0,-135.0
+401909959,3975,Total 3-Point Field Goals,4.5,-101.0,-130.0
+401909959,2990969,Total 3-Point Field Goals,1.5,-105.0,-126.0
+401909959,3907497,Total 3-Point Field Goals,1.5,134.0,-177.0
+401909959,4066436,Total 3-Point Field Goals,1.5,107.0,-140.0
+401909959,4277813,Total 3-Point Field Goals,1.5,156.0,-208.0
+401909959,4397040,Total 3-Point Field Goals,0.5,-152.0,115.0
+401909959,4397136,Total 3-Point Field Goals,1.5,-179.0,135.0
+401909959,4397688,Total 3-Point Field Goals,2.5,116.0,-154.0
+401909959,4683634,Total 3-Point Field Goals,0.5,-171.0,129.0
+401909959,4709138,Total 3-Point Field Goals,2.5,139.0,-184.0
+401909959,5144091,Total 3-Point Field Goals,1.5,101.0,-133.0
+401909959,5175737,Total 3-Point Field Goals,1.5,-132.0,100.0
+401909959,3975,Total Points and Assists,32.5,-109.0,-121.0
+401909959,6589,Total Points and Assists,12.5,-104.0,-127.0
+401909959,3907497,Total Points and Assists,23.5,-108.0,-122.0
+401909959,4066436,Total Points and Assists,11.5,-119.0,-110.0
+401909959,4277813,Total Points and Assists,10.5,-121.0,-109.0
+401909959,4395628,Total Points and Assists,22.5,-119.0,-111.0
+401909959,4397040,Total Points and Assists,12.5,-122.0,-108.0
+401909959,4397136,Total Points and Assists,21.5,-104.0,-126.0
+401909959,4397688,Total Points and Assists,19.5,-110.0,-120.0
+401909959,4683634,Total Points and Assists,11.5,-119.0,-110.0
+401909959,4709138,Total Points and Assists,19.5,-111.0,-118.0
+401909959,4869780,Total Points and Assists,15.5,-118.0,-111.0
+401909959,5144091,Total Points and Assists,22.5,-105.0,-125.0
+401909959,5175737,Total Points and Assists,23.5,-120.0,-110.0
+401909959,3975,Total Points and Rebounds,31.5,-108.0,-122.0
+401909959,6589,Total Points and Rebounds,11.5,-112.0,-118.0
+401909959,2990969,Total Points and Rebounds,10.5,-129.0,-102.0
+401909959,3907497,Total Points and Rebounds,23.5,-110.0,-120.0
+401909959,4066436,Total Points and Rebounds,12.5,-111.0,-118.0
+401909959,4277813,Total Points and Rebounds,12.5,-113.0,-116.0
+401909959,4395628,Total Points and Rebounds,25.5,-113.0,-117.0
+401909959,4397040,Total Points and Rebounds,12.5,-106.0,-124.0
+401909959,4397136,Total Points and Rebounds,24.5,-113.0,-116.0
+401909959,4397688,Total Points and Rebounds,21.5,-105.0,-125.0
+401909959,4683634,Total Points and Rebounds,13.5,-115.0,-114.0
+401909959,4709138,Total Points and Rebounds,20.5,-126.0,-104.0
+401909959,4869780,Total Points and Rebounds,20.5,-107.0,-123.0
+401909959,4997536,Total Points and Rebounds,11.5,-121.0,-109.0
+401909959,4997538,Total Points and Rebounds,13.5,-128.0,-102.0
+401909959,5144091,Total Points and Rebounds,21.5,-126.0,-105.0
+401909959,5175737,Total Points and Rebounds,27.5,-106.0,-124.0
+401909959,3975,Total Assists and Rebounds,8.5,-114.0,-115.0
+401909959,6589,Total Assists and Rebounds,11.5,-129.0,-102.0
+401909959,3907497,Total Assists and Rebounds,10.5,-119.0,-111.0
+401909959,4066436,Total Assists and Rebounds,4.5,-152.0,115.0
+401909959,4277813,Total Assists and Rebounds,5.5,-112.0,-117.0
+401909959,4395628,Total Assists and Rebounds,8.5,-105.0,-126.0
+401909959,4397040,Total Assists and Rebounds,4.5,-136.0,103.0
+401909959,4397136,Total Assists and Rebounds,8.5,104.0,-137.0
+401909959,4397688,Total Assists and Rebounds,7.5,-145.0,110.0
+401909959,4683634,Total Assists and Rebounds,5.5,105.0,-138.0
+401909959,4709138,Total Assists and Rebounds,8.5,-143.0,109.0
+401909959,4869780,Total Assists and Rebounds,10.5,-121.0,-109.0
+401909959,5144091,Total Assists and Rebounds,9.5,-117.0,-112.0
+401909959,5175737,Total Assists and Rebounds,11.5,100.0,-132.0
+401909959,3975,"Total Points, Rebounds, and Assists",36.5,-110.0,-120.0
+401909959,6589,"Total Points, Rebounds, and Assists",17.5,-130.0,-101.0
+401909959,3907497,"Total Points, Rebounds, and Assists",28.5,-119.0,-111.0
+401909959,4066436,"Total Points, Rebounds, and Assists",14.5,-118.0,-111.0
+401909959,4277813,"Total Points, Rebounds, and Assists",14.5,-115.0,-114.0
+401909959,4395628,"Total Points, Rebounds, and Assists",28.5,-110.0,-119.0
+401909959,4397040,"Total Points, Rebounds, and Assists",15.5,-102.0,-129.0
+401909959,4397136,"Total Points, Rebounds, and Assists",26.5,-125.0,-105.0
+401909959,4397688,"Total Points, Rebounds, and Assists",24.5,-111.0,-118.0
+401909959,4683634,"Total Points, Rebounds, and Assists",15.5,-111.0,-118.0
+401909959,4709138,"Total Points, Rebounds, and Assists",24.5,-120.0,-110.0
+401909959,4869780,"Total Points, Rebounds, and Assists",23.5,-113.0,-116.0
+401909959,5144091,"Total Points, Rebounds, and Assists",27.5,-105.0,-125.0
+401909959,5175737,"Total Points, Rebounds, and Assists",31.5,-108.0,-122.0
+401909958,6578,Total Points,5.5,-132.0,104.0
+401909958,3064560,Total Points,3.5,-144.0,112.0
+401909958,3136193,Total Points,23.5,-111.0,-115.0
+401909958,3155526,Total Points,14.5,-119.0,-107.0
+401909958,4066259,Total Points,14.5,-106.0,-120.0
+401909958,4066383,Total Points,15.5,-102.0,-126.0
+401909958,4278585,Total Points,8.5,101.0,-129.0
+401909958,4395630,Total Points,10.5,100.0,-127.0
+401909958,4395723,Total Points,10.5,-122.0,-104.0
+401909958,4437244,Total Points,14.5,-117.0,-109.0
+401909958,4592479,Total Points,11.5,-102.0,-125.0
+401909958,4601023,Total Points,5.5,-131.0,103.0
+401909958,4845367,Total Points,16.5,-109.0,-117.0
+401909958,5037871,Total Points,16.5,-109.0,-117.0
+401909958,5104157,Total Points,26.5,-110.0,-116.0
+401909958,5203685,Total Points,6.5,103.0,-132.0
+401909958,3136193,Total Assists,4.5,-146.0,111.0
+401909958,3155526,Total Assists,1.5,-167.0,126.0
+401909958,4066259,Total Assists,5.5,-124.0,-106.0
+401909958,4066383,Total Assists,2.5,-167.0,127.0
+401909958,4278585,Total Assists,3.5,121.0,-160.0
+401909958,4395630,Total Assists,2.5,127.0,-168.0
+401909958,4437244,Total Assists,2.5,-152.0,115.0
+401909958,4601023,Total Assists,3.5,112.0,-147.0
+401909958,4845367,Total Assists,5.5,-145.0,110.0
+401909958,5037871,Total Assists,4.5,113.0,-149.0
+401909958,5104157,Total Assists,2.5,-150.0,114.0
+401909958,3064560,Total Rebounds,4.5,-118.0,-111.0
+401909958,3136193,Total Rebounds,3.5,109.0,-144.0
+401909958,3155526,Total Rebounds,3.5,-107.0,-123.0
+401909958,4066259,Total Rebounds,3.5,-108.0,-121.0
+401909958,4066383,Total Rebounds,6.5,116.0,-153.0
+401909958,4278585,Total Rebounds,2.5,-164.0,124.0
+401909958,4395630,Total Rebounds,3.5,-128.0,-103.0
+401909958,4395723,Total Rebounds,5.5,102.0,-134.0
+401909958,4437244,Total Rebounds,3.5,-138.0,105.0
+401909958,4592479,Total Rebounds,5.5,119.0,-157.0
+401909958,4601023,Total Rebounds,5.5,112.0,-147.0
+401909958,4845367,Total Rebounds,4.5,-144.0,110.0
+401909958,5037871,Total Rebounds,5.5,111.0,-146.0
+401909958,5104157,Total Rebounds,11.5,-118.0,-112.0
+401909958,5203685,Total Rebounds,5.5,-123.0,-107.0
+401909958,6578,Total 3-Point Field Goals,1.5,162.0,-216.0
+401909958,3136193,Total 3-Point Field Goals,1.5,-131.0,-101.0
+401909958,3155526,Total 3-Point Field Goals,1.5,-152.0,115.0
+401909958,4066259,Total 3-Point Field Goals,1.5,166.0,-222.0
+401909958,4066383,Total 3-Point Field Goals,1.5,-144.0,109.0
+401909958,4278585,Total 3-Point Field Goals,1.5,-177.0,134.0
+401909958,4395630,Total 3-Point Field Goals,1.5,-125.0,-105.0
+401909958,4395723,Total 3-Point Field Goals,1.5,159.0,-213.0
+401909958,4437244,Total 3-Point Field Goals,1.5,-120.0,-110.0
+401909958,4592479,Total 3-Point Field Goals,2.5,-106.0,-124.0
+401909958,4845367,Total 3-Point Field Goals,1.5,-111.0,-118.0
+401909958,5037871,Total 3-Point Field Goals,0.5,-241.0,180.0
+401909958,5104157,Total 3-Point Field Goals,1.5,-153.0,116.0
+401909958,3136193,Total Points and Assists,28.5,-119.0,-111.0
+401909958,3155526,Total Points and Assists,16.5,-124.0,-106.0
+401909958,4066259,Total Points and Assists,20.5,-105.0,-125.0
+401909958,4066383,Total Points and Assists,18.5,-106.0,-124.0
+401909958,4278585,Total Points and Assists,11.5,-111.0,-119.0
+401909958,4395630,Total Points and Assists,12.5,-113.0,-116.0
+401909958,4437244,Total Points and Assists,17.5,-119.0,-111.0
+401909958,4601023,Total Points and Assists,9.5,-105.0,-126.0
+401909958,4845367,Total Points and Assists,22.5,-115.0,-114.0
+401909958,5037871,Total Points and Assists,20.5,-124.0,-106.0
+401909958,5104157,Total Points and Assists,29.5,-115.0,-115.0
+401909958,3064560,Total Points and Rebounds,8.5,-117.0,-113.0
+401909958,3136193,Total Points and Rebounds,27.5,-105.0,-125.0
+401909958,3155526,Total Points and Rebounds,18.5,-113.0,-116.0
+401909958,4066259,Total Points and Rebounds,17.5,-126.0,-104.0
+401909958,4066383,Total Points and Rebounds,21.5,-112.0,-117.0
+401909958,4278585,Total Points and Rebounds,11.5,-106.0,-125.0
+401909958,4395630,Total Points and Rebounds,13.5,-131.0,100.0
+401909958,4395723,Total Points and Rebounds,16.5,-108.0,-122.0
+401909958,4437244,Total Points and Rebounds,18.5,-117.0,-112.0
+401909958,4592479,Total Points and Rebounds,16.5,-112.0,-118.0
+401909958,4601023,Total Points and Rebounds,11.5,-101.0,-130.0
+401909958,4845367,Total Points and Rebounds,21.5,-118.0,-112.0
+401909958,5037871,Total Points and Rebounds,21.5,-118.0,-111.0
+401909958,5104157,Total Points and Rebounds,38.5,-111.0,-119.0
+401909958,5203685,Total Points and Rebounds,11.5,-132.0,101.0
+401909958,3136193,Total Assists and Rebounds,8.5,-105.0,-125.0
+401909958,3155526,Total Assists and Rebounds,5.5,-109.0,-121.0
+401909958,4066259,Total Assists and Rebounds,9.5,102.0,-135.0
+401909958,4066383,Total Assists and Rebounds,9.5,105.0,-138.0
+401909958,4278585,Total Assists and Rebounds,6.5,105.0,-138.0
+401909958,4395630,Total Assists and Rebounds,5.5,-149.0,113.0
+401909958,4437244,Total Assists and Rebounds,6.5,-128.0,-103.0
+401909958,4601023,Total Assists and Rebounds,8.5,-111.0,-119.0
+401909958,4845367,Total Assists and Rebounds,11.5,104.0,-137.0
+401909958,5037871,Total Assists and Rebounds,9.5,-113.0,-117.0
+401909958,5104157,Total Assists and Rebounds,14.5,-119.0,-111.0
+401909958,3064560,"Total Points, Rebounds, and Assists",9.5,-127.0,-104.0
+401909958,3136193,"Total Points, Rebounds, and Assists",32.5,-109.0,-121.0
+401909958,3155526,"Total Points, Rebounds, and Assists",20.5,-112.0,-117.0
+401909958,4066259,"Total Points, Rebounds, and Assists",23.5,-122.0,-107.0
+401909958,4066383,"Total Points, Rebounds, and Assists",24.5,-115.0,-114.0
+401909958,4278585,"Total Points, Rebounds, and Assists",14.5,-116.0,-113.0
+401909958,4395630,"Total Points, Rebounds, and Assists",16.5,-110.0,-120.0
+401909958,4437244,"Total Points, Rebounds, and Assists",21.5,-118.0,-111.0
+401909958,4592479,"Total Points, Rebounds, and Assists",17.5,-128.0,-103.0
+401909958,4601023,"Total Points, Rebounds, and Assists",14.5,-115.0,-114.0
+401909958,4845367,"Total Points, Rebounds, and Assists",27.5,-121.0,-109.0
+401909958,5037871,"Total Points, Rebounds, and Assists",26.5,-107.0,-123.0
+401909958,5104157,"Total Points, Rebounds, and Assists",41.5,-113.0,-116.0
+401909957,3202,Total Points,21.5,-111.0,-114.0
+401909957,3978,Total Points,10.5,100.0,-127.0
+401909957,2990992,Total Points,6.5,-121.0,-105.0
+401909957,2991230,Total Points,11.5,-124.0,-103.0
+401909957,3064290,Total Points,12.5,100.0,-128.0
+401909957,3112335,Total Points,24.5,-113.0,-113.0
+401909957,3138196,Total Points,10.5,-128.0,101.0
+401909957,3936299,Total Points,21.5,-117.0,-109.0
+401909957,4431767,Total Points,10.5,-116.0,-110.0
+401909957,4432639,Total Points,15.5,100.0,-128.0
+401909957,4433192,Total Points,9.5,-115.0,-111.0
+401909957,4592427,Total Points,4.5,-103.0,-123.0
+401909957,4684740,Total Points,15.5,-102.0,-125.0
+401909957,4711272,Total Points,8.5,-109.0,-117.0
+401909957,4871144,Total Points,19.5,-125.0,-102.0
+401909957,3202,Total Assists,3.5,-153.0,116.0
+401909957,3978,Total Assists,2.5,117.0,-155.0
+401909957,2991230,Total Assists,5.5,118.0,-155.0
+401909957,3064290,Total Assists,1.5,-191.0,144.0
+401909957,3112335,Total Assists,8.5,-125.0,-105.0
+401909957,3138196,Total Assists,1.5,-139.0,105.0
+401909957,3936299,Total Assists,5.5,-104.0,-127.0
+401909957,4431767,Total Assists,2.5,141.0,-187.0
+401909957,4432639,Total Assists,1.5,-128.0,-103.0
+401909957,4684740,Total Assists,3.5,-115.0,-114.0
+401909957,4871144,Total Assists,6.5,-115.0,-114.0
+401909957,3202,Total Rebounds,5.5,100.0,-132.0
+401909957,3978,Total Rebounds,2.5,137.0,-182.0
+401909957,2991230,Total Rebounds,3.5,125.0,-166.0
+401909957,3064290,Total Rebounds,4.5,-126.0,-105.0
+401909957,3112335,Total Rebounds,10.5,-118.0,-111.0
+401909957,3138196,Total Rebounds,3.5,-111.0,-119.0
+401909957,3936299,Total Rebounds,3.5,-142.0,108.0
+401909957,4431767,Total Rebounds,3.5,-145.0,110.0
+401909957,4432639,Total Rebounds,6.5,-119.0,-110.0
+401909957,4433192,Total Rebounds,5.5,106.0,-140.0
+401909957,4592427,Total Rebounds,2.5,-115.0,-114.0
+401909957,4684740,Total Rebounds,7.5,106.0,-139.0
+401909957,4871144,Total Rebounds,9.5,105.0,-139.0
+401909957,3202,Total 3-Point Field Goals,1.5,-149.0,113.0
+401909957,3978,Total 3-Point Field Goals,0.5,144.0,-191.0
+401909957,2990992,Total 3-Point Field Goals,1.5,133.0,-176.0
+401909957,2991230,Total 3-Point Field Goals,2.5,-120.0,-110.0
+401909957,3064290,Total 3-Point Field Goals,1.5,135.0,-179.0
+401909957,3112335,Total 3-Point Field Goals,1.5,131.0,-174.0
+401909957,3138196,Total 3-Point Field Goals,1.5,-138.0,105.0
+401909957,3936299,Total 3-Point Field Goals,2.5,-116.0,-113.0
+401909957,4431767,Total 3-Point Field Goals,1.5,131.0,-173.0
+401909957,4432639,Total 3-Point Field Goals,2.5,103.0,-135.0
+401909957,4433192,Total 3-Point Field Goals,1.5,152.0,-203.0
+401909957,4711272,Total 3-Point Field Goals,1.5,-155.0,117.0
+401909957,4871144,Total 3-Point Field Goals,0.5,125.0,-165.0
+401909957,3202,Total Points and Assists,25.5,-116.0,-113.0
+401909957,3978,Total Points and Assists,12.5,-116.0,-113.0
+401909957,2991230,Total Points and Assists,17.5,-105.0,-126.0
+401909957,3064290,Total Points and Assists,14.5,-108.0,-121.0
+401909957,3112335,Total Points and Assists,33.5,-114.0,-115.0
+401909957,3138196,Total Points and Assists,12.5,-125.0,-106.0
+401909957,3936299,Total Points and Assists,27.5,-109.0,-121.0
+401909957,4431767,Total Points and Assists,12.5,-126.0,-104.0
+401909957,4432639,Total Points and Assists,16.5,-120.0,-110.0
+401909957,4684740,Total Points and Assists,18.5,-127.0,-104.0
+401909957,4871144,Total Points and Assists,26.5,-126.0,-105.0
+401909957,3202,Total Points and Rebounds,26.5,-126.0,-105.0
+401909957,3978,Total Points and Rebounds,12.5,-104.0,-127.0
+401909957,2990992,Total Points and Rebounds,8.5,-125.0,-105.0
+401909957,2991230,Total Points and Rebounds,15.5,-106.0,-124.0
+401909957,3064290,Total Points and Rebounds,16.5,-127.0,-104.0
+401909957,3112335,Total Points and Rebounds,35.5,-113.0,-116.0
+401909957,3138196,Total Points and Rebounds,14.5,-119.0,-111.0
+401909957,3936299,Total Points and Rebounds,25.5,-120.0,-109.0
+401909957,4431767,Total Points and Rebounds,14.5,-120.0,-110.0
+401909957,4432639,Total Points and Rebounds,21.5,-124.0,-106.0
+401909957,4433192,Total Points and Rebounds,14.5,-128.0,-102.0
+401909957,4592427,Total Points and Rebounds,6.5,-133.0,101.0
+401909957,4684740,Total Points and Rebounds,22.5,-115.0,-114.0
+401909957,4871144,Total Points and Rebounds,29.5,-113.0,-117.0
+401909957,3202,Total Assists and Rebounds,9.5,-107.0,-123.0
+401909957,3978,Total Assists and Rebounds,4.5,109.0,-144.0
+401909957,2991230,Total Assists and Rebounds,8.5,-101.0,-130.0
+401909957,3064290,Total Assists and Rebounds,6.5,-134.0,102.0
+401909957,3112335,Total Assists and Rebounds,19.5,-112.0,-118.0
+401909957,3138196,Total Assists and Rebounds,5.5,-104.0,-127.0
+401909957,3936299,Total Assists and Rebounds,9.5,-105.0,-126.0
+401909957,4431767,Total Assists and Rebounds,6.5,113.0,-149.0
+401909957,4432639,Total Assists and Rebounds,8.5,-106.0,-124.0
+401909957,4684740,Total Assists and Rebounds,10.5,-136.0,103.0
+401909957,4871144,Total Assists and Rebounds,15.5,-128.0,-103.0
+401909957,3202,"Total Points, Rebounds, and Assists",31.5,-107.0,-124.0
+401909957,3978,"Total Points, Rebounds, and Assists",14.5,-117.0,-113.0
+401909957,2991230,"Total Points, Rebounds, and Assists",20.5,-111.0,-118.0
+401909957,3064290,"Total Points, Rebounds, and Assists",19.5,-105.0,-125.0
+401909957,3112335,"Total Points, Rebounds, and Assists",44.5,-115.0,-114.0
+401909957,3138196,"Total Points, Rebounds, and Assists",16.5,-113.0,-116.0
+401909957,3936299,"Total Points, Rebounds, and Assists",31.5,-110.0,-120.0
+401909957,4431767,"Total Points, Rebounds, and Assists",16.5,-129.0,-102.0
+401909957,4432639,"Total Points, Rebounds, and Assists",23.5,-117.0,-112.0
+401909957,4684740,"Total Points, Rebounds, and Assists",26.5,-110.0,-120.0
+401909957,4871144,"Total Points, Rebounds, and Assists",36.5,-111.0,-118.0
+401909956,6442,Total Points,21.5,-108.0,-118.0
+401909956,3133603,Total Points,7.5,-113.0,-112.0
+401909956,3149673,Total Points,21.5,-110.0,-116.0
+401909956,4017837,Total Points,11.5,-131.0,103.0
+401909956,4278049,Total Points,9.5,-120.0,-106.0
+401909956,4278078,Total Points,13.5,-126.0,-102.0
+401909956,4278355,Total Points,11.5,-117.0,-109.0
+401909956,4278594,Total Points,10.5,102.0,-130.0
+401909956,4395712,Total Points,15.5,-120.0,-106.0
+401909956,4396909,Total Points,11.5,-120.0,-107.0
+401909956,4873153,Total Points,6.5,-119.0,-107.0
+401909956,5041939,Total Points,25.5,-110.0,-116.0
+401909956,5106060,Total Points,6.5,-122.0,-104.0
+401909956,6442,Total Assists,4.5,113.0,-149.0
+401909956,3149673,Total Assists,2.5,-174.0,132.0
+401909956,4278594,Total Assists,3.5,129.0,-171.0
+401909956,4395712,Total Assists,6.5,-135.0,103.0
+401909956,5041939,Total Assists,7.5,113.0,-150.0
+401909956,6442,Total Rebounds,3.5,-137.0,104.0
+401909956,3133603,Total Rebounds,2.5,-128.0,-103.0
+401909956,3149673,Total Rebounds,6.5,112.0,-147.0
+401909956,4017837,Total Rebounds,9.5,-119.0,-110.0
+401909956,4278049,Total Rebounds,6.5,-120.0,-110.0
+401909956,4278078,Total Rebounds,6.5,-145.0,110.0
+401909956,4278355,Total Rebounds,4.5,103.0,-135.0
+401909956,4278594,Total Rebounds,3.5,116.0,-153.0
+401909956,4395712,Total Rebounds,2.5,-135.0,103.0
+401909956,4396909,Total Rebounds,3.5,102.0,-134.0
+401909956,5041939,Total Rebounds,7.5,108.0,-143.0
+401909956,5106060,Total Rebounds,3.5,-127.0,-103.0
+401909956,6442,Total 3-Point Field Goals,2.5,-146.0,111.0
+401909956,3149673,Total 3-Point Field Goals,1.5,130.0,-172.0
+401909956,4278078,Total 3-Point Field Goals,1.5,-148.0,113.0
+401909956,4278355,Total 3-Point Field Goals,1.5,100.0,-132.0
+401909956,4395712,Total 3-Point Field Goals,1.5,-146.0,111.0
+401909956,4396909,Total 3-Point Field Goals,1.5,-190.0,143.0
+401909956,5041939,Total 3-Point Field Goals,1.5,130.0,-172.0
+401909956,5106060,Total 3-Point Field Goals,1.5,152.0,-202.0
+401909956,6442,Total Points and Assists,25.5,-120.0,-109.0
+401909956,3149673,Total Points and Assists,24.5,-116.0,-113.0
+401909956,4278594,Total Points and Assists,13.5,-106.0,-124.0
+401909956,4395712,Total Points and Assists,22.5,-128.0,-103.0
+401909956,5041939,Total Points and Assists,32.5,-120.0,-110.0
+401909956,6442,Total Points and Rebounds,25.5,-109.0,-121.0
+401909956,3133603,Total Points and Rebounds,10.5,-110.0,-119.0
+401909956,3149673,Total Points and Rebounds,27.5,-116.0,-114.0
+401909956,4017837,Total Points and Rebounds,21.5,-120.0,-110.0
+401909956,4278049,Total Points and Rebounds,16.5,-109.0,-121.0
+401909956,4278078,Total Points and Rebounds,21.5,-103.0,-128.0
+401909956,4278355,Total Points and Rebounds,16.5,-106.0,-124.0
+401909956,4278594,Total Points and Rebounds,13.5,-111.0,-118.0
+401909956,4395712,Total Points and Rebounds,18.5,-118.0,-111.0
+401909956,4396909,Total Points and Rebounds,15.5,-110.0,-120.0
+401909956,5041939,Total Points and Rebounds,32.5,-119.0,-110.0
+401909956,5106060,Total Points and Rebounds,10.5,-121.0,-109.0
+401909956,6442,Total Assists and Rebounds,8.5,110.0,-145.0
+401909956,3149673,Total Assists and Rebounds,9.5,-101.0,-130.0
+401909956,4278594,Total Assists and Rebounds,6.5,-106.0,-124.0
+401909956,4395712,Total Assists and Rebounds,9.5,-124.0,-106.0
+401909956,5041939,Total Assists and Rebounds,14.5,-109.0,-121.0
+401909956,6442,"Total Points, Rebounds, and Assists",29.5,-119.0,-110.0
+401909956,3149673,"Total Points, Rebounds, and Assists",30.5,-120.0,-110.0
+401909956,4017837,"Total Points, Rebounds, and Assists",23.5,-122.0,-108.0
+401909956,4278594,"Total Points, Rebounds, and Assists",16.5,-117.0,-112.0
+401909956,4395712,"Total Points, Rebounds, and Assists",25.5,-124.0,-106.0
+401909956,5041939,"Total Points, Rebounds, and Assists",40.5,-108.0,-122.0
+401909955,2991070,Total Points,10.5,-108.0,-118.0
+401909955,3134908,Total Points,11.5,-119.0,-107.0
+401909955,4065733,Total Points,21.5,-119.0,-108.0
+401909955,4395625,Total Points,25.5,-122.0,-104.0
+401909955,4395724,Total Points,18.5,-105.0,-121.0
+401909955,4431893,Total Points,8.5,-103.0,-124.0
+401909955,4432241,Total Points,11.5,-108.0,-118.0
+401909955,4433083,Total Points,8.5,-111.0,-115.0
+401909955,4433134,Total Points,23.5,-115.0,-111.0
+401909955,4600663,Total Points,9.5,-129.0,101.0
+401909955,4684272,Total Points,14.5,-104.0,-122.0
+401909955,4702656,Total Points,11.5,-122.0,-105.0
+401909955,4903027,Total Points,13.5,-107.0,-119.0
+401909955,5041935,Total Points,16.5,-112.0,-114.0
+401909955,5093267,Total Points,12.5,-120.0,-106.0
+401909955,5112087,Total Points,9.5,-120.0,-106.0
+401909955,5149115,Total Points,7.5,-101.0,-126.0
+401909955,2993874,Total Assists,2.5,-103.0,-127.0
+401909955,3134908,Total Assists,2.5,120.0,-158.0
+401909955,4065733,Total Assists,5.5,-115.0,-114.0
+401909955,4395625,Total Assists,4.5,-134.0,102.0
+401909955,4395724,Total Assists,5.5,-139.0,106.0
+401909955,4432241,Total Assists,8.5,-142.0,108.0
+401909955,4433083,Total Assists,4.5,-134.0,102.0
+401909955,4433134,Total Assists,5.5,-108.0,-121.0
+401909955,4684272,Total Assists,2.5,132.0,-175.0
+401909955,4903027,Total Assists,2.5,-103.0,-127.0
+401909955,5041935,Total Assists,4.5,-126.0,-105.0
+401909955,5093267,Total Assists,1.5,-190.0,143.0
+401909955,5112087,Total Assists,1.5,138.0,-183.0
+401909955,2991070,Total Rebounds,2.5,107.0,-141.0
+401909955,3134908,Total Rebounds,8.5,108.0,-142.0
+401909955,4065733,Total Rebounds,2.5,-156.0,118.0
+401909955,4395625,Total Rebounds,6.5,107.0,-140.0
+401909955,4395724,Total Rebounds,3.5,-139.0,105.0
+401909955,4432241,Total Rebounds,2.5,-108.0,-122.0
+401909955,4433083,Total Rebounds,2.5,104.0,-137.0
+401909955,4433134,Total Rebounds,7.5,-106.0,-124.0
+401909955,4600663,Total Rebounds,7.5,-131.0,100.0
+401909955,4684272,Total Rebounds,3.5,-150.0,114.0
+401909955,4903027,Total Rebounds,6.5,-117.0,-112.0
+401909955,5041935,Total Rebounds,8.5,-124.0,-106.0
+401909955,5093267,Total Rebounds,6.5,110.0,-144.0
+401909955,5112087,Total Rebounds,2.5,-170.0,129.0
+401909955,2991070,Total 3-Point Field Goals,1.5,119.0,-157.0
+401909955,4065733,Total 3-Point Field Goals,2.5,-103.0,-128.0
+401909955,4395625,Total 3-Point Field Goals,2.5,119.0,-157.0
+401909955,4395724,Total 3-Point Field Goals,2.5,-132.0,100.0
+401909955,4432241,Total 3-Point Field Goals,1.5,-108.0,-121.0
+401909955,4433083,Total 3-Point Field Goals,1.5,124.0,-164.0
+401909955,4433134,Total 3-Point Field Goals,0.5,-229.0,171.0
+401909955,4684272,Total 3-Point Field Goals,2.5,101.0,-132.0
+401909955,4903027,Total 3-Point Field Goals,1.5,-150.0,114.0
+401909955,5041935,Total 3-Point Field Goals,1.5,-146.0,111.0
+401909955,5093267,Total 3-Point Field Goals,0.5,138.0,-183.0
+401909955,5112087,Total 3-Point Field Goals,1.5,-114.0,-115.0
+401909955,3134908,Total Points and Assists,13.5,-130.0,-101.0
+401909955,4065733,Total Points and Assists,27.5,-114.0,-116.0
+401909955,4395625,Total Points and Assists,30.5,-125.0,-105.0
+401909955,4395724,Total Points and Assists,24.5,-109.0,-121.0
+401909955,4432241,Total Points and Assists,20.5,-120.0,-110.0
+401909955,4433083,Total Points and Assists,13.5,-118.0,-111.0
+401909955,4433134,Total Points and Assists,29.5,-109.0,-121.0
+401909955,4600663,Total Points and Assists,11.5,-108.0,-122.0
+401909955,4684272,Total Points and Assists,16.5,-112.0,-118.0
+401909955,4903027,Total Points and Assists,15.5,-128.0,-103.0
+401909955,5041935,Total Points and Assists,21.5,-113.0,-116.0
+401909955,5093267,Total Points and Assists,14.5,-128.0,-103.0
+401909955,5112087,Total Points and Assists,11.5,-104.0,-126.0
+401909955,2991070,Total Points and Rebounds,12.5,-127.0,-104.0
+401909955,3134908,Total Points and Rebounds,19.5,-123.0,-107.0
+401909955,4065733,Total Points and Rebounds,24.5,-120.0,-110.0
+401909955,4395625,Total Points and Rebounds,32.5,-111.0,-118.0
+401909955,4395724,Total Points and Rebounds,22.5,-107.0,-123.0
+401909955,4432241,Total Points and Rebounds,14.5,-102.0,-129.0
+401909955,4433083,Total Points and Rebounds,11.5,100.0,-132.0
+401909955,4433134,Total Points and Rebounds,31.5,-110.0,-120.0
+401909955,4600663,Total Points and Rebounds,17.5,-125.0,-105.0
+401909955,4684272,Total Points and Rebounds,18.5,-107.0,-124.0
+401909955,4903027,Total Points and Rebounds,20.5,-105.0,-126.0
+401909955,5041935,Total Points and Rebounds,25.5,-114.0,-115.0
+401909955,5093267,Total Points and Rebounds,19.5,-105.0,-125.0
+401909955,5112087,Total Points and Rebounds,12.5,-128.0,-103.0
+401909955,3134908,Total Assists and Rebounds,10.5,-113.0,-117.0
+401909955,4065733,Total Assists and Rebounds,8.5,-116.0,-113.0
+401909955,4395625,Total Assists and Rebounds,11.5,103.0,-136.0
+401909955,4395724,Total Assists and Rebounds,9.5,-127.0,-103.0
+401909955,4432241,Total Assists and Rebounds,11.5,-118.0,-111.0
+401909955,4433083,Total Assists and Rebounds,7.5,100.0,-131.0
+401909955,4433134,Total Assists and Rebounds,13.5,104.0,-137.0
+401909955,4600663,Total Assists and Rebounds,9.5,-102.0,-129.0
+401909955,4684272,Total Assists and Rebounds,6.5,109.0,-144.0
+401909955,4903027,Total Assists and Rebounds,9.5,102.0,-135.0
+401909955,5041935,Total Assists and Rebounds,13.5,-120.0,-110.0
+401909955,5093267,Total Assists and Rebounds,8.5,-102.0,-129.0
+401909955,5112087,Total Assists and Rebounds,4.5,-108.0,-122.0
+401909955,3134908,"Total Points, Rebounds, and Assists",22.5,-110.0,-120.0
+401909955,4065733,"Total Points, Rebounds, and Assists",30.5,-117.0,-112.0
+401909955,4395625,"Total Points, Rebounds, and Assists",37.5,-116.0,-113.0
+401909955,4395724,"Total Points, Rebounds, and Assists",28.5,-110.0,-120.0
+401909955,4432241,"Total Points, Rebounds, and Assists",23.5,-113.0,-116.0
+401909955,4433083,"Total Points, Rebounds, and Assists",16.5,-105.0,-125.0
+401909955,4433134,"Total Points, Rebounds, and Assists",36.5,-121.0,-108.0
+401909955,4600663,"Total Points, Rebounds, and Assists",19.5,-108.0,-122.0
+401909955,4684272,"Total Points, Rebounds, and Assists",20.5,-116.0,-113.0
+401909955,4903027,"Total Points, Rebounds, and Assists",22.5,-119.0,-110.0
+401909955,5041935,"Total Points, Rebounds, and Assists",30.5,-115.0,-114.0
+401909955,5093267,"Total Points, Rebounds, and Assists",21.5,-108.0,-122.0
+401909955,5112087,"Total Points, Rebounds, and Assists",14.5,-112.0,-117.0
+401909954,6583,Total Points,20.5,-114.0,-111.0
+401909954,2596112,Total Points,5.5,-120.0,-106.0
+401909954,3157465,Total Points,14.5,-115.0,-110.0
+401909954,3908845,Total Points,11.5,-109.0,-117.0
+401909954,4066372,Total Points,8.5,-111.0,-115.0
+401909954,4277905,Total Points,17.5,-107.0,-119.0
+401909954,4278562,Total Points,10.5,-114.0,-111.0
+401909954,4432166,Total Points,25.5,-120.0,-106.0
+401909954,4684742,Total Points,10.5,-116.0,-110.0
+401909954,4845374,Total Points,5.5,-135.0,106.0
+401909954,5107199,Total Points,12.5,-115.0,-111.0
+401909954,5142718,Total Points,15.5,-117.0,-109.0
+401909954,5160992,Total Points,10.5,-107.0,-119.0
+401909954,5174563,Total Points,14.5,-125.0,-102.0
+401909954,5238230,Total Points,8.5,-111.0,-115.0
+401909954,6583,Total Assists,1.5,-195.0,146.0
+401909954,3157465,Total Assists,2.5,137.0,-181.0
+401909954,4277905,Total Assists,8.5,100.0,-132.0
+401909954,4278562,Total Assists,1.5,-150.0,114.0
+401909954,4432166,Total Assists,8.5,-124.0,-106.0
+401909954,4684742,Total Assists,4.5,120.0,-159.0
+401909954,5107199,Total Assists,4.5,-117.0,-112.0
+401909954,5142718,Total Assists,2.5,128.0,-169.0
+401909954,5160992,Total Assists,1.5,-192.0,145.0
+401909954,5174563,Total Assists,4.5,117.0,-155.0
+401909954,6583,Total Rebounds,9.5,-116.0,-113.0
+401909954,3157465,Total Rebounds,2.5,-102.0,-129.0
+401909954,3908845,Total Rebounds,6.5,109.0,-143.0
+401909954,4277905,Total Rebounds,2.5,-114.0,-116.0
+401909954,4278562,Total Rebounds,7.5,105.0,-139.0
+401909954,4432166,Total Rebounds,5.5,-104.0,-127.0
+401909954,4684742,Total Rebounds,7.5,-122.0,-108.0
+401909954,5107199,Total Rebounds,3.5,124.0,-164.0
+401909954,5142718,Total Rebounds,5.5,116.0,-152.0
+401909954,5160992,Total Rebounds,6.5,104.0,-137.0
+401909954,5174563,Total Rebounds,4.5,-111.0,-119.0
+401909954,6583,Total 3-Point Field Goals,0.5,-126.0,-104.0
+401909954,3157465,Total 3-Point Field Goals,3.5,109.0,-144.0
+401909954,3908845,Total 3-Point Field Goals,0.5,-176.0,133.0
+401909954,4066372,Total 3-Point Field Goals,1.5,106.0,-139.0
+401909954,4277905,Total 3-Point Field Goals,2.5,142.0,-188.0
+401909954,4432166,Total 3-Point Field Goals,2.5,133.0,-176.0
+401909954,5107199,Total 3-Point Field Goals,1.5,101.0,-132.0
+401909954,5142718,Total 3-Point Field Goals,1.5,162.0,-217.0
+401909954,5160992,Total 3-Point Field Goals,0.5,-223.0,167.0
+401909954,5174563,Total 3-Point Field Goals,2.5,142.0,-189.0
+401909954,6583,Total Points and Assists,22.5,-123.0,-107.0
+401909954,3157465,Total Points and Assists,16.5,-124.0,-106.0
+401909954,4277905,Total Points and Assists,25.5,-122.0,-108.0
+401909954,4278562,Total Points and Assists,12.5,-117.0,-113.0
+401909954,4432166,Total Points and Assists,34.5,-120.0,-110.0
+401909954,4684742,Total Points and Assists,15.5,-101.0,-130.0
+401909954,5107199,Total Points and Assists,17.5,-111.0,-118.0
+401909954,5142718,Total Points and Assists,18.5,-103.0,-128.0
+401909954,5160992,Total Points and Assists,12.5,-118.0,-112.0
+401909954,5174563,Total Points and Assists,19.5,-110.0,-120.0
+401909954,6583,Total Points and Rebounds,30.5,-113.0,-116.0
+401909954,3157465,Total Points and Rebounds,17.5,-108.0,-122.0
+401909954,3908845,Total Points and Rebounds,17.5,-124.0,-106.0
+401909954,4277905,Total Points and Rebounds,20.5,-104.0,-127.0
+401909954,4278129,Total Points and Rebounds,9.5,-114.0,-115.0
+401909954,4278562,Total Points and Rebounds,18.5,-104.0,-127.0
+401909954,4432166,Total Points and Rebounds,31.5,-112.0,-117.0
+401909954,4684742,Total Points and Rebounds,18.5,-116.0,-113.0
+401909954,5107199,Total Points and Rebounds,15.5,-125.0,-106.0
+401909954,5142718,Total Points and Rebounds,21.5,-105.0,-126.0
+401909954,5160992,Total Points and Rebounds,16.5,-123.0,-107.0
+401909954,5174563,Total Points and Rebounds,19.5,-118.0,-111.0
+401909954,6583,Total Assists and Rebounds,11.5,-127.0,-103.0
+401909954,3157465,Total Assists and Rebounds,4.5,-126.0,-105.0
+401909954,4277905,Total Assists and Rebounds,10.5,-138.0,105.0
+401909954,4278562,Total Assists and Rebounds,9.5,104.0,-137.0
+401909954,4432166,Total Assists and Rebounds,14.5,101.0,-134.0
+401909954,4684742,Total Assists and Rebounds,11.5,-132.0,100.0
+401909954,5107199,Total Assists and Rebounds,7.5,-132.0,100.0
+401909954,5142718,Total Assists and Rebounds,7.5,-107.0,-123.0
+401909954,5160992,Total Assists and Rebounds,8.5,-104.0,-127.0
+401909954,5174563,Total Assists and Rebounds,8.5,-128.0,-103.0
+401909954,6583,"Total Points, Rebounds, and Assists",32.5,-118.0,-112.0
+401909954,3157465,"Total Points, Rebounds, and Assists",19.5,-112.0,-117.0
+401909954,4277905,"Total Points, Rebounds, and Assists",28.5,-115.0,-114.0
+401909954,4278562,"Total Points, Rebounds, and Assists",20.5,-104.0,-126.0
+401909954,4432166,"Total Points, Rebounds, and Assists",40.5,-108.0,-122.0
+401909954,4684742,"Total Points, Rebounds, and Assists",22.5,-126.0,-104.0
+401909954,5107199,"Total Points, Rebounds, and Assists",20.5,-117.0,-112.0
+401909954,5142718,"Total Points, Rebounds, and Assists",23.5,-110.0,-119.0
+401909954,5160992,"Total Points, Rebounds, and Assists",19.5,-103.0,-128.0
+401909954,5174563,"Total Points, Rebounds, and Assists",24.5,-106.0,-125.0
+401909953,3992,Total Points,16.5,-119.0,-107.0
+401909953,2583632,Total Points,8.5,-122.0,-105.0
+401909953,2995706,Total Points,8.5,-110.0,-116.0
+401909953,3135045,Total Points,17.5,-111.0,-115.0
+401909953,3908809,Total Points,22.5,-124.0,-103.0
+401909953,4066328,Total Points,12.5,-101.0,-126.0
+401909953,4395651,Total Points,14.5,-105.0,-121.0
+401909953,4396971,Total Points,19.5,-111.0,-115.0
+401909953,4432158,Total Points,16.5,-125.0,-102.0
+401909953,4433249,Total Points,8.5,-114.0,-111.0
+401909953,4576060,Total Points,7.5,-126.0,-101.0
+401909953,4576087,Total Points,11.5,-115.0,-111.0
+401909953,4602025,Total Points,7.5,-103.0,-124.0
+401909953,5041951,Total Points,8.5,-113.0,-113.0
+401909953,5211176,Total Points,7.5,-109.0,-117.0
+401909953,3992,Total Assists,6.5,100.0,-132.0
+401909953,3135045,Total Assists,3.5,-132.0,100.0
+401909953,3908809,Total Assists,4.5,-140.0,106.0
+401909953,4395651,Total Assists,3.5,-124.0,-106.0
+401909953,4396971,Total Assists,2.5,106.0,-140.0
+401909953,4432158,Total Assists,3.5,107.0,-141.0
+401909953,4576087,Total Assists,2.5,138.0,-183.0
+401909953,4602025,Total Assists,2.5,-128.0,-103.0
+401909953,3992,Total Rebounds,4.5,-108.0,-122.0
+401909953,2583632,Total Rebounds,4.5,102.0,-134.0
+401909953,2995706,Total Rebounds,4.5,-132.0,101.0
+401909953,3135045,Total Rebounds,3.5,105.0,-139.0
+401909953,3908809,Total Rebounds,4.5,-106.0,-124.0
+401909953,4066328,Total Rebounds,7.5,102.0,-134.0
+401909953,4395651,Total Rebounds,2.5,-118.0,-111.0
+401909953,4396971,Total Rebounds,8.5,-120.0,-110.0
+401909953,4432158,Total Rebounds,7.5,-146.0,111.0
+401909953,4433249,Total Rebounds,9.5,-107.0,-123.0
+401909953,4576060,Total Rebounds,6.5,-127.0,-104.0
+401909953,4576087,Total Rebounds,4.5,108.0,-142.0
+401909953,4602025,Total Rebounds,3.5,-135.0,102.0
+401909953,5041951,Total Rebounds,2.5,117.0,-154.0
+401909953,3992,Total 3-Point Field Goals,2.5,117.0,-155.0
+401909953,2583632,Total 3-Point Field Goals,2.5,106.0,-139.0
+401909953,2995706,Total 3-Point Field Goals,1.5,158.0,-211.0
+401909953,3135045,Total 3-Point Field Goals,3.5,-101.0,-130.0
+401909953,3908809,Total 3-Point Field Goals,2.5,-106.0,-124.0
+401909953,4395651,Total 3-Point Field Goals,2.5,115.0,-152.0
+401909953,4396971,Total 3-Point Field Goals,2.5,-136.0,104.0
+401909953,4432158,Total 3-Point Field Goals,1.5,154.0,-205.0
+401909953,4576087,Total 3-Point Field Goals,1.5,149.0,-197.0
+401909953,4602025,Total 3-Point Field Goals,1.5,101.0,-133.0
+401909953,5041951,Total 3-Point Field Goals,1.5,122.0,-161.0
+401909953,5211176,Total 3-Point Field Goals,1.5,160.0,-214.0
+401909953,3992,Total Points and Assists,23.5,-110.0,-119.0
+401909953,3135045,Total Points and Assists,21.5,-113.0,-117.0
+401909953,3908809,Total Points and Assists,27.5,-125.0,-105.0
+401909953,4395651,Total Points and Assists,18.5,-104.0,-127.0
+401909953,4396971,Total Points and Assists,21.5,-125.0,-105.0
+401909953,4432158,Total Points and Assists,20.5,-113.0,-117.0
+401909953,4576087,Total Points and Assists,13.5,-124.0,-106.0
+401909953,4602025,Total Points and Assists,10.5,-102.0,-129.0
+401909953,3992,Total Points and Rebounds,21.5,-113.0,-116.0
+401909953,2583632,Total Points and Rebounds,13.5,-105.0,-126.0
+401909953,2995706,Total Points and Rebounds,13.5,-110.0,-120.0
+401909953,3135045,Total Points and Rebounds,20.5,-124.0,-106.0
+401909953,3908809,Total Points and Rebounds,27.5,-120.0,-110.0
+401909953,4066328,Total Points and Rebounds,19.5,-119.0,-111.0
+401909953,4395651,Total Points and Rebounds,16.5,-125.0,-105.0
+401909953,4396971,Total Points and Rebounds,28.5,-114.0,-115.0
+401909953,4432158,Total Points and Rebounds,25.5,-107.0,-123.0
+401909953,4433249,Total Points and Rebounds,18.5,-109.0,-120.0
+401909953,4576060,Total Points and Rebounds,14.5,-114.0,-115.0
+401909953,4576087,Total Points and Rebounds,15.5,-126.0,-104.0
+401909953,4602025,Total Points and Rebounds,11.5,-104.0,-126.0
+401909953,5211176,Total Points and Rebounds,12.5,-105.0,-125.0
+401909953,3992,Total Assists and Rebounds,10.5,-135.0,103.0
+401909953,3135045,Total Assists and Rebounds,7.5,103.0,-136.0
+401909953,3908809,Total Assists and Rebounds,9.5,-108.0,-122.0
+401909953,4395651,Total Assists and Rebounds,6.5,-112.0,-118.0
+401909953,4396971,Total Assists and Rebounds,11.5,103.0,-135.0
+401909953,4432158,Total Assists and Rebounds,11.5,-113.0,-117.0
+401909953,4576087,Total Assists and Rebounds,6.5,-106.0,-124.0
+401909953,4602025,Total Assists and Rebounds,6.5,-123.0,-107.0
+401909953,3992,"Total Points, Rebounds, and Assists",27.5,-127.0,-104.0
+401909953,3135045,"Total Points, Rebounds, and Assists",24.5,-125.0,-105.0
+401909953,3908809,"Total Points, Rebounds, and Assists",32.5,-117.0,-112.0
+401909953,4395651,"Total Points, Rebounds, and Assists",20.5,-123.0,-107.0
+401909953,4396971,"Total Points, Rebounds, and Assists",30.5,-123.0,-107.0
+401909953,4432158,"Total Points, Rebounds, and Assists",28.5,-117.0,-113.0
+401909953,4576087,"Total Points, Rebounds, and Assists",18.5,-107.0,-123.0
+401909953,4602025,"Total Points, Rebounds, and Assists",14.5,-105.0,-125.0
+401909952,2490149,Total Points,12.5,-108.0,-118.0
+401909952,3907498,Total Points,7.5,101.0,-129.0
+401909952,3945274,Total Points,37.5,-113.0,-113.0
+401909952,4066457,Total Points,21.5,-116.0,-110.0
+401909952,4277811,Total Points,14.5,-120.0,-106.0
+401909952,4278039,Total Points,20.5,-106.0,-120.0
+401909952,4278580,Total Points,9.5,-119.0,-107.0
+401909952,4397020,Total Points,7.5,-112.0,-114.0
+401909952,4397183,Total Points,12.5,-121.0,-105.0
+401909952,4431680,Total Points,13.5,-103.0,-124.0
+401909952,4433136,Total Points,14.5,-111.0,-115.0
+401909952,4433137,Total Points,10.5,100.0,-128.0
+401909952,4592691,Total Points,6.5,-131.0,102.0
+401909952,4701230,Total Points,20.5,-107.0,-120.0
+401909952,4869342,Total Points,10.5,-120.0,-106.0
+401909952,5149077,Total Points,8.5,-121.0,-105.0
+401909952,2490149,Total Assists,3.5,123.0,-163.0
+401909952,3945274,Total Assists,8.5,-135.0,103.0
+401909952,4066457,Total Assists,4.5,-156.0,118.0
+401909952,4277811,Total Assists,2.5,-165.0,125.0
+401909952,4278039,Total Assists,2.5,-146.0,111.0
+401909952,4431680,Total Assists,2.5,-113.0,-116.0
+401909952,4433136,Total Assists,1.5,-125.0,-105.0
+401909952,4701230,Total Assists,7.5,-107.0,-123.0
+401909952,4869342,Total Assists,4.5,-154.0,117.0
+401909952,5149077,Total Assists,3.5,-156.0,118.0
+401909952,2490149,Total Rebounds,2.5,141.0,-187.0
+401909952,3907498,Total Rebounds,2.5,-102.0,-129.0
+401909952,3945274,Total Rebounds,7.5,-134.0,102.0
+401909952,4066457,Total Rebounds,3.5,-128.0,-103.0
+401909952,4277811,Total Rebounds,2.5,141.0,-187.0
+401909952,4278039,Total Rebounds,3.5,121.0,-160.0
+401909952,4278580,Total Rebounds,4.5,-114.0,-115.0
+401909952,4397020,Total Rebounds,2.5,-164.0,124.0
+401909952,4397183,Total Rebounds,3.5,-110.0,-119.0
+401909952,4431680,Total Rebounds,7.5,105.0,-139.0
+401909952,4433136,Total Rebounds,11.5,101.0,-133.0
+401909952,4433137,Total Rebounds,3.5,118.0,-155.0
+401909952,4592691,Total Rebounds,4.5,113.0,-148.0
+401909952,4701230,Total Rebounds,8.5,-127.0,-104.0
+401909952,4869342,Total Rebounds,6.5,101.0,-133.0
+401909952,5149077,Total Rebounds,2.5,-122.0,-108.0
+401909952,2490149,Total 3-Point Field Goals,1.5,-116.0,-114.0
+401909952,3907498,Total 3-Point Field Goals,1.5,127.0,-168.0
+401909952,3945274,Total 3-Point Field Goals,4.5,-119.0,-111.0
+401909952,4066457,Total 3-Point Field Goals,1.5,-156.0,118.0
+401909952,4277811,Total 3-Point Field Goals,1.5,108.0,-142.0
+401909952,4278039,Total 3-Point Field Goals,3.5,119.0,-157.0
+401909952,4278580,Total 3-Point Field Goals,1.5,153.0,-203.0
+401909952,4397020,Total 3-Point Field Goals,1.5,104.0,-137.0
+401909952,4397183,Total 3-Point Field Goals,2.5,138.0,-182.0
+401909952,4431680,Total 3-Point Field Goals,1.5,-111.0,-119.0
+401909952,4433137,Total 3-Point Field Goals,1.5,-102.0,-128.0
+401909952,4701230,Total 3-Point Field Goals,1.5,116.0,-154.0
+401909952,2490149,Total Points and Assists,15.5,-120.0,-110.0
+401909952,3945274,Total Points and Assists,46.5,-117.0,-112.0
+401909952,4066457,Total Points and Assists,26.5,-124.0,-106.0
+401909952,4277811,Total Points and Assists,18.5,-103.0,-128.0
+401909952,4278039,Total Points and Assists,23.5,-109.0,-120.0
+401909952,4431680,Total Points and Assists,15.5,-123.0,-107.0
+401909952,4433136,Total Points and Assists,16.5,-108.0,-122.0
+401909952,4701230,Total Points and Assists,27.5,-124.0,-106.0
+401909952,4869342,Total Points and Assists,15.5,-125.0,-105.0
+401909952,5149077,Total Points and Assists,12.5,-131.0,-101.0
+401909952,2490149,Total Points and Rebounds,14.5,-119.0,-110.0
+401909952,3907498,Total Points and Rebounds,9.5,-121.0,-108.0
+401909952,3945274,Total Points and Rebounds,45.5,-115.0,-114.0
+401909952,4066457,Total Points and Rebounds,25.5,-115.0,-114.0
+401909952,4277811,Total Points and Rebounds,16.5,-129.0,-102.0
+401909952,4278039,Total Points and Rebounds,23.5,-115.0,-115.0
+401909952,4278580,Total Points and Rebounds,14.5,-115.0,-114.0
+401909952,4397020,Total Points and Rebounds,10.5,-116.0,-114.0
+401909952,4397183,Total Points and Rebounds,16.5,-113.0,-116.0
+401909952,4431680,Total Points and Rebounds,20.5,-114.0,-115.0
+401909952,4433136,Total Points and Rebounds,25.5,-127.0,-104.0
+401909952,4433137,Total Points and Rebounds,13.5,-112.0,-118.0
+401909952,4592691,Total Points and Rebounds,11.5,-114.0,-116.0
+401909952,4701230,Total Points and Rebounds,29.5,-111.0,-119.0
+401909952,4869342,Total Points and Rebounds,17.5,-107.0,-123.0
+401909952,5149077,Total Points and Rebounds,11.5,-118.0,-111.0
+401909952,2490149,Total Assists and Rebounds,5.5,100.0,-132.0
+401909952,3945274,Total Assists and Rebounds,16.5,-128.0,-103.0
+401909952,4066457,Total Assists and Rebounds,8.5,-133.0,101.0
+401909952,4277811,Total Assists and Rebounds,5.5,109.0,-144.0
+401909952,4278039,Total Assists and Rebounds,6.5,111.0,-146.0
+401909952,4431680,Total Assists and Rebounds,9.5,-131.0,100.0
+401909952,4433136,Total Assists and Rebounds,12.5,-135.0,102.0
+401909952,4701230,Total Assists and Rebounds,16.5,-105.0,-125.0
+401909952,4869342,Total Assists and Rebounds,11.5,-108.0,-121.0
+401909952,5149077,Total Assists and Rebounds,6.5,-125.0,-105.0
+401909952,2490149,"Total Points, Rebounds, and Assists",17.5,-128.0,-103.0
+401909952,3945274,"Total Points, Rebounds, and Assists",54.5,-118.0,-112.0
+401909952,4066457,"Total Points, Rebounds, and Assists",30.5,-119.0,-110.0
+401909952,4277811,"Total Points, Rebounds, and Assists",20.5,-107.0,-123.0
+401909952,4278039,"Total Points, Rebounds, and Assists",26.5,-115.0,-114.0
+401909952,4431680,"Total Points, Rebounds, and Assists",23.5,-110.0,-120.0
+401909952,4433136,"Total Points, Rebounds, and Assists",27.5,-119.0,-110.0
+401909952,4701230,"Total Points, Rebounds, and Assists",36.5,-124.0,-106.0
+401909952,4869342,"Total Points, Rebounds, and Assists",22.5,-111.0,-119.0
+401909952,5149077,"Total Points, Rebounds, and Assists",15.5,-124.0,-106.0
 401909951,6475,Total Points,12.5,-108.0,-118.0
 401909951,3032977,Total Points,30.5,-111.0,-115.0
 401909951,3059319,Total Points,9.5,-109.0,-117.0

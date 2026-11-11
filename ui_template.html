@@ -110,6 +110,10 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
     <section>
       <div class="summary" id="bt-tiles"></div>
     </section>
+    <section id="bp-wrap" hidden>
+      <div class="sh"><h2>Double-up parlay</h2><span class="meta" id="bp-meta"></span></div>
+      <div class="summary" id="bt-parlay"></div>
+    </section>
     <section>
       <div class="sh"><h2>Locks: only the most confident picks</h2><span class="meta" id="bl-meta"></span></div>
       <div class="list tbl" id="bt-locks"></div>
@@ -138,6 +142,12 @@ h2 { margin: 0; font-size: 13px; font-weight: 600; text-transform: uppercase; le
   </div>
 
   <div class="view" id="v-tonight">
+  <section id="pl-wrap" hidden>
+    <div class="sh"><h2>Double-up parlay</h2><span class="meta" id="pl-meta"></span></div>
+    <div class="list" id="parlay"></div>
+    <div class="summary" id="pl-sum"></div>
+  </section>
+
   <div class="budget">
     <label for="budget">Budget</label>
     <div class="field"><span>$</span><input id="budget" inputmode="decimal" placeholder="0" autocomplete="off"></div>
@@ -257,6 +267,33 @@ document.querySelectorAll(".chips button").forEach(b => b.addEventListener("clic
 try { const v = localStorage.getItem("budget"); if (v) $("#budget").value = v; } catch (e) {}
 render();
 
+// ---------- Double-up parlay ----------
+(function () {
+  const P = D.parlay;
+  if (!P) return;
+  $("#pl-wrap").hidden = false;
+  const pb = P.backtest;
+  $("#pl-meta").textContent = pb ? `${Math.round(pb.hit_rate * 100)}% hit in backtest` : "";
+  if (!P.parlay) {
+    $("#parlay").innerHTML = `<div class="empty">No parlay tonight. Nothing left to play pays at least $${P.min_profit} on $${P.stake}.</div>`;
+    $("#pl-sum").hidden = true;
+    return;
+  }
+  const x = P.parlay;
+  $("#parlay").innerHTML = x.legs.map(l => {
+    const t = l.tip ? new Date(l.tip).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" }) : "";
+    return `<div class="row">
+      <div class="who"><span class="dot" style="background:#${esc(l.color || "8a8f98")}"></span>
+        <div class="txt"><div class="name">${esc(l.team)}</div>
+        <div class="sub">${l.at_home ? "vs" : "at"} ${esc(l.opp)}${t ? " · " + t : ""} · ${Math.round(l.price * 100)}¢ on ${esc(l.source)}</div></div></div>
+      <div class="right"><div class="conf"><span class="pct">${Math.round(l.p * 100)}%</span><span class="bar"><i style="width:${(l.p * 100).toFixed(0)}%"></i></span></div></div></div>`;
+  }).join("");
+  $("#pl-sum").innerHTML = `
+    <div><div class="k">Bet</div><div class="v">${usd(P.stake)}</div><div class="s">${x.legs.length} legs</div></div>
+    <div><div class="k">Wins</div><div class="v">${usd(x.profit)}</div><div class="s">${usd(P.stake + x.profit)} back</div></div>
+    <div><div class="k">Chance to hit</div><div class="v">${Math.round(x.p * 100)}%</div><div class="s">model</div></div>`;
+})();
+
 // ---------- Backtest tab ----------
 const B = D.bt || {};
 const pct = (v, d = 1) => v == null ? "–" : (v * 100).toFixed(d) + "%";
@@ -292,6 +329,15 @@ function renderBacktest() {
         <span class="num dim">${r.games.toLocaleString()}</span><span class="num">${pct(r.acc)}</span>
         <span class="num dim">${(r.games * LK.per_night / LK.games).toFixed(1)}</span></div>`).join("");
   } else $("#bt-locks").closest("section").hidden = true;
+  const PB = D.parlay && D.parlay.backtest;
+  if (PB) {
+    $("#bp-wrap").hidden = false;
+    $("#bp-meta").textContent = `$${PB.stake} a night · ${PB.nights.toLocaleString()} nights`;
+    $("#bt-parlay").innerHTML = `
+      <div><div class="k">Hit</div><div class="v">${pct(PB.hit_rate)}</div><div class="s">model said ${pct(PB.model_said)}</div></div>
+      <div><div class="k">Won when it hit</div><div class="v">${usd(PB.avg_profit_when_hit)}</div><div class="s">on $${PB.stake}</div></div>
+      <div><div class="k">Total</div><div class="v">${(PB.total_profit >= 0 ? "+" : "−") + usd(Math.abs(PB.total_profit))}</div><div class="s">${(PB.roi >= 0 ? "+" : "") + pct(PB.roi)} per parlay</div></div>`;
+  }
   const vs = B.variants || {};
   $("#bt-variants").innerHTML = `<div class="row hd"><span>Version</span><span class="num">Winner</span><span class="num">Error</span><span class="num">Book</span></div>` +
     Object.keys(vs).map(k => `<div class="row">

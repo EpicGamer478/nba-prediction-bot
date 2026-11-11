@@ -14,7 +14,7 @@ def backtest_payload():
     r = rep[best]
     out = {"model": best, "accuracy": r["accuracy"], "acc_by_season": r.get("acc_by_season", {}),
            "by_threshold": r["by_threshold"], "locks": r.get("locks"), "variants": {
-               k: rep[k]["accuracy"] for k in rep if k != "best"}}
+               k: rep[k]["accuracy"] for k in rep if isinstance(rep[k], dict) and "accuracy" in rep[k]}}
     # Running profit of every bet the model would have made (4%+ edge, 1 unit each).
     b = pd.read_csv(os.path.join(HERE, "data", "backtest_bets.csv"))
     b = b[b.model == best]
@@ -33,6 +33,12 @@ def backtest_payload():
 with open(os.path.join(HERE, "data", "picks.json")) as f:
     data = json.load(f)
 data["bt"] = backtest_payload()
+pp = os.path.join(HERE, "data", "parlay.json")
+if os.path.exists(pp):
+    with open(pp) as f:
+        pj = json.load(f)
+    if pj.get("date") == data.get("date"):
+        data["parlay"] = pj
 with open(os.path.join(HERE, "ui_template.html")) as f:
     html = f.read()
 with open(os.path.join(HERE, "picks.html"), "w") as f:

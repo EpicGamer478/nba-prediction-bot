@@ -1,10 +1,14 @@
 date,id,game,market,side,edge,spread,total,home_ml,away_ml,model,profit
-2026-11-09,401909952,LAL @ ATL,moneyline,home,0.0806,-1.5,236.5,-120.0,102.0,market_blend,
-2026-11-09,401909952,LAL @ ATL,total,over,0.0253,-1.5,236.5,-120.0,102.0,market_blend,
-2026-11-09,401909953,CLE @ CHA,moneyline,away,0.0531,8.5,214.5,270.0,-337.0,market_blend,
-2026-11-09,401909954,WSH @ DET,spread,home,0.021,-10.5,219.5,-518.0,394.0,market_blend,
-2026-11-09,401909956,IND @ DAL,moneyline,home,0.0457,-3.5,226.5,-170.0,143.0,market_blend,
-2026-11-09,401909957,DEN @ HOU,moneyline,home,0.0595,-4.5,222.5,-182.0,152.0,market_blend,
-2026-11-09,401909958,SA @ PHX,moneyline,away,0.0257,8.5,226.5,296.0,-372.0,market_blend,
-2026-11-09,401909959,NO @ GS,moneyline,home,0.0598,-8.5,232.5,-382.0,303.0,market_blend,
-2026-11-09,401909959,NO @ GS,spread,home,0.0657,-8.5,232.5,-382.0,303.0,market_blend,
+2026-11-09,401909952,LAL @ ATL,moneyline,home,0.0806,-1.5,236.5,-120.0,102.0,market_blend,-1.0
+2026-11-09,401909952,LAL @ ATL,total,over,0.0253,-1.5,236.5,-120.0,102.0,market_blend,0.9090909090909092
+2026-11-09,401909953,CLE @ CHA,moneyline,away,0.0531,8.5,214.5,270.0,-337.0,market_blend,-1.0
+2026-11-09,401909954,WSH @ DET,spread,home,0.021,-10.5,219.5,-518.0,394.0,market_blend,0.9090909090909092
+2026-11-09,401909956,IND @ DAL,moneyline,home,0.0457,-3.5,226.5,-170.0,143.0,market_blend,0.5882352941176471
+2026-11-09,401909957,DEN @ HOU,moneyline,home,0.0595,-4.5,222.5,-182.0,152.0,market_blend,0.5494505494505495
+2026-11-09,401909958,SA @ PHX,moneyline,away,0.0257,8.5,226.5,296.0,-372.0,market_blend,0.2688172043010752
+2026-11-09,401909959,NO @ GS,moneyline,home,0.0598,-8.5,232.5,-382.0,303.0,market_blend,0.2617801047120419
+2026-11-09,401909959,NO @ GS,spread,home,0.0657,-8.5,232.5,-382.0,303.0,market_blend,0.9090909090909092
+2026-11-10,401909961,BOS @ PHI,moneyline,away,0.042,1.5,217.5,-101.0,-117.0,market_blend,0.8547008547008547
+2026-11-10,401909963,MIA @ UTAH,moneyline,home,0.0454,9.5,227.5,341.0,-438.0,market_blend,-1.0
+2026-11-11,401909972,BKN @ NO,moneyline,away,0.0212,-3.5,228.5,-162.0,136.0,market_blend,
+2026-11-11,401909975,OKC @ POR,moneyline,away,0.0462,1.5,225.5,-105.0,-113.0,market_blend,
